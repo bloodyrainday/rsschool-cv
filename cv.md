@@ -55,4 +55,4 @@ function rentalCarCost(d) {
 
 ### english language:
 
-    A2+ - I used to go on english courses (StreamLine) for 2 years. After the courses I started learning english on my owm. Downloading an app for communicating with people from other countries, I found my friend who I've been texting for more than 1 year.
+A2+ - I used to go on english courses (StreamLine) for 2 years. After the courses I started learning english on my owm. Downloading an app for communicating with people from other countries, I found my friend who I've been texting for more than 1 year.
