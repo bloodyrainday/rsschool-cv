@@ -1,0 +1,54 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Roboto, sans-serif;
+}
+
+.container {
+  max-width: 2040px;
+  margin: 0 auto;
+  padding: 0 220px;
+}
+
+.header-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #000;
+}
+
+.menu-list {
+  display: flex;
+  color: #fff;
+}
+
+li {
+  list-style-type: none;
+}
+
+.menu-item + .menu-item {
+  margin-left: 58px;
+  font-size: 16px;
+}
+
+.logo {
+  margin-right: 63px;
+}
+
+.author {
+  text-decoration: none;
+  color: #fff;
+}
+
+.giant-panda {
+  margin: 0 auto;
+}
+
+.giant-panda-img {
+  width: 1600px;
+  height: 780px;
+}
