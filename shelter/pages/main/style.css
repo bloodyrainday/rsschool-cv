@@ -413,13 +413,18 @@ footer {
     #211f20;
 }
 
-.footer-column-questions {
+.footer-container {
+  display: flex;
+}
+
+.footer-column-questions,
+.footer-column-visit {
   width: 278px;
-  padding: 35px 40px 60px;
-  background: url(images/footer-puppy.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: right;
+  margin: 35px 40px 0 40px;
+}
+
+.footer-column-questions {
+  margin-right: 160px;
 }
 
 .footer-title {
@@ -427,4 +432,40 @@ footer {
   font-size: 35px;
   line-height: 130%;
   color: #ffffff;
+  margin-bottom: 40px;
+}
+
+.footer-email,
+.footer-addres-boston,
+.footer-addres-london {
+  display: flex;
+  align-items: center;
+  width: 251px;
+  margin-bottom: 40px;
+}
+
+.footer-email-text,
+.footer-phone-number,
+.footer-addres {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 115%;
+  color: #f1cdb3;
+  margin-left: 20px;
+}
+
+.footer-column-img {
+  width: 300px;
+  height: 310px;
+}
+
+.footer-phone {
+  display: flex;
+  align-items: center;
+  width: 251px;
+}
+
+.footer-column-image {
+  margin-left: 120px;
+  margin-top: 35px;
 }
