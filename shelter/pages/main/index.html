@@ -9,11 +9,11 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <section class="first-page">
+    <section class="not-only" id="not-only">
       <header>
         <div class="container" id="main-menu">
           <div class="header-inner">
-            <a class="logo" href="">
+            <a class="logo" href="#">
               <h5 class="logo-title">Cozy House</h5>
               <p class="logo-subtitle">Shelter for pets in Boston</p>
             </a>
@@ -21,16 +21,18 @@
             <nav>
               <ul class="menu">
                 <li class="menu-item">
-                  <a class="menu-link" href="">About the shelter</a>
+                  <a class="menu-link" href="#not-only" id="active-menu-link"
+                    >About the shelter</a
+                  >
                 </li>
                 <li class="menu-item">
-                  <a class="menu-link" href="">Our pets</a>
+                  <a class="menu-link" href="pets.html">Our pets</a>
                 </li>
                 <li class="menu-item">
-                  <a class="menu-link" href="">Help the shelter</a>
+                  <a class="menu-link" href="#help">Help the shelter</a>
                 </li>
                 <li class="menu-item">
-                  <a class="menu-link" href="">Contacts</a>
+                  <a class="menu-link" href="#contacts">Contacts</a>
                 </li>
               </ul>
             </nav>
@@ -41,13 +43,15 @@
       <div class="container">
         <div class="puppy-inner">
           <div class="text-column">
-            <h2 class="puppy-title">Not only people need a house</h2>
+            <h1 class="puppy-title">Not only people need a house</h1>
             <p class="puppy-description">
               We offer to give a chance to a little and nice puppy with an
               extremely wide and open heart. He or she will love you more than
               anybody else in the world, you will see!
             </p>
-            <button class="puppy-btn">Make a friend</button>
+            <a href="#friends"
+              ><button class="puppy-btn">Make a friend</button></a
+            >
           </div>
           <div class="img-column">
             <img
@@ -85,7 +89,7 @@
         </div>
       </div>
     </section>
-    <section class="friends">
+    <section class="friends" id="friends">
       <div class="friends-container">
         <div class="friends-inner">
           <h3 class="friends-title">Our friends who are looking for a house</h3>
@@ -167,7 +171,7 @@
         </div>
       </div>
     </section>
-    <section class="donate">
+    <section class="donate" id="help">
       <h3 class="donate-title">How you can help our shelter</h3>
       <div class="donate-first-line">
         <div class="donate-item-1">
@@ -245,30 +249,38 @@
         </div>
       </div>
     </section>
-    <footer>
+    <footer id="contacts">
       <div class="footer-container">
         <div class="footer-column-questions">
           <h3 class="footer-title">For questions and suggestions</h3>
           <div class="footer-email">
             <img src="icons/mail.svg" alt="email" class="footer-email-icon" />
-            <p class="footer-email-text">email@shelter.com</p>
+            <a href="mailto:email@shelter.com"
+              ><p class="footer-email-text">email@shelter.com</p></a
+            >
           </div>
           <div class="footer-phone">
             <img src="icons/phone.svg" alt="email" class="footer-phone-icon" />
-            <p class="footer-phone-number">+13 674 567 75 54</p>
+            <a href="tel:+13674567755"
+              ><p class="footer-phone-number">+13 674 567 75 54</p></a
+            >
           </div>
         </div>
         <div class="footer-column-visit">
           <h3 class="footer-title">We are waiting for your visit</h3>
           <div class="footer-addres-boston">
             <img src="icons/pin.svg" alt="pin" class="footer-location-icon" />
-            <p class="footer-addres">
-              1 Central Street, Boston (entrance from the store)
-            </p>
+            <a href="https://goo.gl/maps/X1oMBnMbvqwEzvV9A" target="_blank"
+              ><p class="footer-addres">
+                1 Central Street, Boston (entrance from the store)
+              </p></a
+            >
           </div>
           <div class="footer-addres-london">
             <img src="icons/pin.svg" alt="pin" class="footer-location-icon" />
-            <p class="footer-addres">18 South Park, London</p>
+            <a href="https://goo.gl/maps/5kQVNSzXpSA3Yiyz8" target="_blank"
+              ><p class="footer-addres">18 South Park, London</p></a
+            >
           </div>
         </div>
         <div class="footer-column-image">
