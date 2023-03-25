@@ -148,37 +148,7 @@ li + li {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
-}
-
-.slick-slide img {
-  display: inline;
-  border-radius: 9px;
-}
-
-.slick-prev {
-  position: absolute;
-  font-size: 0;
-  left: 0;
-  bottom: 190px;
-  border: 2px solid #f1cdb3;
-  border-radius: 100px;
-  width: 52px;
-  height: 52px;
-}
-
-.slick-next {
-  position: absolute;
-  font-size: 0;
-  right: 0;
-  bottom: 190px;
-  border: 2px solid #f1cdb3;
-  border-radius: 100px;
-  width: 52px;
-  height: 52px;
-}
-
-.slick-list {
-  margin: 0 53px;
+  width: 1200px;
 }
 
 .friends-slider-img {
