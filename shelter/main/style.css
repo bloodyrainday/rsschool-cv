@@ -301,6 +301,10 @@ li + li {
   padding-bottom: 90px;
 }
 
+#donate-container {
+  text-align: center;
+}
+
 .donate-title {
   width: 308px;
   font-weight: 400;
