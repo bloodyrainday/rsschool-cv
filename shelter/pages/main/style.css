@@ -6,6 +6,10 @@
   padding: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   max-width: 1280px;
   margin: 0 auto;
@@ -15,9 +19,11 @@ body {
   padding: 0 40px;
 }
 
-.first-page {
-  background-image: url(images/start-screen-gradient-background.jpg);
-  background-repeat: no-repeat;
+.not-only {
+  background: url(noise_lines_transparent@2X.png),
+    radial-gradient(110.67% 538.64% at 5.73% 50%, #513d2f 0%, #1a1a1c 100%),
+    #211f20;
+  width: 100%;
 }
 
 .header-inner {
@@ -79,6 +85,11 @@ li + li {
   font-weight: 400;
 }
 
+#active-menu-link {
+  color: #fafafa;
+  border-bottom: 2px solid #f1cdb3;
+}
+
 .menu-link:active {
   border-bottom: 2px solid #f1cdb3;
 }
@@ -109,7 +120,7 @@ li + li {
 }
 .puppy-img {
   position: relative;
-  bottom: 10px;
+  top: 5px;
 }
 .puppy-description {
   font-family: Arial;
@@ -155,6 +166,7 @@ li + li {
   letter-spacing: 0.06em;
   text-align: left;
   color: #545454;
+  margin-bottom: 25px;
 }
 
 .about-discription {
@@ -164,6 +176,7 @@ li + li {
   color: #4c4c4c;
   width: 430px;
   text-align: left;
+  margin-bottom: 25px;
 }
 
 .about-discription2 {
@@ -262,10 +275,19 @@ li + li {
   background: #fff;
   border: 2px solid #f1cdb3;
   border-radius: 100px;
+  cursor: pointer;
 }
 
 .friends-slider-btn:hover {
   background: #f1cdb3;
+}
+
+.slick-prev {
+  cursor: pointer;
+}
+
+.slick-next {
+  cursor: pointer;
 }
 
 .friends-btn {
@@ -279,6 +301,7 @@ li + li {
   border: 2px solid #f1cdb3;
   border-radius: 100px;
   margin: 79px 510px 100px;
+  cursor: pointer;
 }
 
 .donate {
@@ -411,6 +434,9 @@ footer {
   background: url(noise_lines_transparent@2X.png),
     radial-gradient(110.67% 538.64% at 5.73% 50%, #513d2f 0%, #1a1a1c 100%),
     #211f20;
+  width: 100%;
+  margin: 0 auto;
+  height: 100%;
 }
 
 .footer-container {
@@ -467,5 +493,6 @@ footer {
 
 .footer-column-image {
   margin-left: 120px;
-  margin-top: 35px;
+  position: relative;
+  top: 14px;
 }
