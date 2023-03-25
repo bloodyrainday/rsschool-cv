@@ -101,6 +101,7 @@ li + li {
 
 .puppy-inner {
   display: flex;
+  justify-content: space-between;
 }
 
 .img-column {
@@ -122,6 +123,7 @@ li + li {
 .puppy-img {
   position: relative;
   top: 5px;
+  width: 698px;
 }
 .puppy-description {
   font-family: Arial;
@@ -205,7 +207,6 @@ li + li {
   color: #545454;
   text-align: center;
   padding: 80px 400px 40px;
-  margin: 0;
 }
 
 .friends-slider-item {
