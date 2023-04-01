@@ -330,6 +330,26 @@ li + li {
   margin: 80px auto 60px auto;
 }
 
+.donate-lines {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 120px;
+  margin: 0 82px;
+  justify-content: space-between;
+}
+
+.donate-item-2 {
+  text-align: center;
+}
+
+#donate-first-item-2 {
+  margin-left: 84px;
+}
+
+.donate-item-2:last-child {
+  margin-right: 84px;
+}
+
 .donate-first-line {
   display: flex;
   align-items: center;
@@ -346,11 +366,20 @@ li + li {
   color: #545454;
 }
 
-.donate-item-1 {
+/**.donate-item-1 {
   width: 89px;
   margin: 0;
   padding: 0;
+}**/
+/**.donate-item-1 {
+  width: 170px;
+  height: 113px;
 }
+
+.donate-item-2 {
+  width: 170px;
+  height: 113px;
+}**/
 
 .donate-subtext {
   padding: 0 10px;
@@ -529,6 +558,34 @@ footer {
   }
 }
 
+@media (max-width: 1230px) {
+  #donate-first-item-2 {
+    margin: 0;
+  }
+  .donate-item-2:last-child {
+    margin: 0;
+  }
+
+  .donate-item-1 {
+    width: 170px;
+    height: 113px;
+  }
+
+  .donate-item-2 {
+    width: 170px;
+    height: 113px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .donate-lines {
+    gap: 60px;
+    justify-content: center;
+    align-items: center;
+    margin: 0 39px;
+  }
+}
+
 @media (max-width: 1160px) {
   .donate-first-line {
     flex-wrap: wrap;
@@ -543,6 +600,10 @@ footer {
     justify-content: center;
   }
 
+  .donate-card-info {
+    margin-bottom: 60px;
+  }
+
   footer {
     height: 100%;
   }
@@ -552,6 +613,15 @@ footer {
     justify-content: center;
     padding: 40px 30px 0;
   }
+
+  .footer-column-image {
+    margin: 0;
+    margin-top: 65px;
+  }
+
+  .footer-column-questions {
+    margin-right: 60px;
+  }
 }
 
 @media (max-width: 1130px) {
@@ -559,8 +629,19 @@ footer {
     flex-direction: column;
     align-items: center;
   }
+
+  .puppy-img {
+    margin-left: 129px;
+  }
+
   .container {
     max-width: 1130px;
+  }
+  .text-column {
+    margin: 60px auto 100px;
+  }
+  .puppy-button {
+    text-align: center;
   }
 }
 
@@ -568,10 +649,36 @@ footer {
   .friends-slider-item {
     margin: 0 0.5em;
   }
+  .about-inner {
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+  }
+
+  .about-text-column {
+    padding-bottom: 80px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 810px) {
+  .logo {
+    margin-right: 65px;
+  }
+  .container {
+    padding: 0 30px;
+  }
+  .menu {
+    margin: 0;
+  }
 }
 
 @media (max-width: 768px) {
   .donate-lines {
-    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .donate-second-line {
+    margin: 0;
   }
 }
