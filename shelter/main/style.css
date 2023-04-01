@@ -44,7 +44,6 @@ a {
   line-height: 35.2px;
   color: #f1cdb3;
   text-decoration: none;
-  width: 184px;
   margin-top: 60px;
   text-align: center;
 }
@@ -210,6 +209,8 @@ li + li {
 
 .friends-inner {
   text-align: center;
+  display: flex;
+  flex-direction: column;
 }
 
 .friends-title {
@@ -218,7 +219,7 @@ li + li {
   font-size: 35px;
   color: #545454;
   text-align: center;
-  padding: 80px 400px 40px;
+  margin: 80px 0 60px;
 }
 
 .friends-slider-item {
@@ -310,11 +311,13 @@ li + li {
 }
 
 .donate {
-  margin: 0 auto;
+  margin: 0;
   padding-bottom: 90px;
 }
 
 #donate-container {
+  display: flex;
+  flex-direction: column;
   text-align: center;
 }
 
@@ -328,9 +331,9 @@ li + li {
 }
 
 .donate-first-line {
-  margin: 0 120px;
-  display: inline-flex;
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .donate-icon {
@@ -349,24 +352,15 @@ li + li {
   padding: 0;
 }
 
-.donate-item-1 + .donate-item-1 {
-  margin-left: 120px;
-}
-
 .donate-subtext {
   padding: 0 10px;
 }
 
 .donate-second-line {
-  margin: 0 120px;
-  padding: 0 84px;
-  display: inline-flex;
-  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
   margin-top: 55px;
-}
-
-.donate-item-2 + .donate-item-2 {
-  margin-left: 120px;
 }
 
 .donate-card {
@@ -457,8 +451,6 @@ footer {
   align-items: center;
   justify-content: space-between;
   padding: 40px 40px 0px;
-  max-width: 1280px;
-  margin: auto;
 }
 
 .footer-column-questions,
@@ -517,4 +509,69 @@ footer {
 
 .footer-column-image {
   margin-left: 120px;
+}
+
+@media (max-width: 1280px) {
+  #woody {
+    display: none;
+  }
+}
+
+@media (max-width: 1240px) {
+  .puppy-img {
+    height: 593px;
+    width: 569px;
+  }
+
+  #donate-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 1160px) {
+  .donate-first-line {
+    flex-wrap: wrap;
+  }
+
+  .donate-second-line {
+    flex-wrap: wrap;
+  }
+
+  #donate-card-container {
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+  }
+
+  footer {
+    height: 100%;
+  }
+
+  .footer-container {
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 40px 30px 0;
+  }
+}
+
+@media (max-width: 1130px) {
+  .puppy-inner {
+    flex-direction: column;
+    align-items: center;
+  }
+  .container {
+    max-width: 1130px;
+  }
+}
+
+@media (max-width: 910px) {
+  .friends-slider-item {
+    margin: 0 0.5em;
+  }
+}
+
+@media (max-width: 768px) {
+  .donate-lines {
+    display: inline-flex;
+  }
 }
