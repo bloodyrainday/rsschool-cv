@@ -895,7 +895,7 @@ footer {
     margin: 0;
     gap: 30px;
     margin-bottom: 42px;
-    justify-content: flex-start;
+    justify-content: space-between;
   }
 
   .donate-title {
