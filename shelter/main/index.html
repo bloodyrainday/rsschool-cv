@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>main</title>
+    <link rel="shortcut icon" href="icons/favicon.png" type="image/png" />
+
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -35,6 +37,10 @@
                 </li>
               </ul>
             </nav>
+            <div class="nav-burger">
+              <span></span>
+            </div>
+
           </div>
         </div>
       </header>
@@ -48,15 +54,18 @@
               extremely wide and open heart. He or she will love you more than
               anybody else in the world, you will see!
             </p>
-            <a href="#friends"
-              ><button class="puppy-btn">Make a friend</button></a
-            >
+
+            <div class="puppy-button">
+              <a href="#friends"
+                ><button class="puppy-btn">Make a friend</button></a
+              >
+            </div>
           </div>
           <div class="img-column">
             <img
               class="puppy-img"
               src="images/start-screen-puppy2.png"
-              alt=""
+              alt="puppy"
             />
           </div>
         </div>
@@ -91,7 +100,10 @@
     <section class="friends" id="friends">
       <div class="container">
         <div class="friends-inner">
-          <h3 class="friends-title">Our friends who are looking for a house</h3>
+          <h3 class="friends-title">
+            Our friends who <br />
+            are looking for a house
+          </h3>
           <div class="friends-slider">
             <!--        <div class="friends-slider-item">
               <img
@@ -150,7 +162,7 @@
               <p class="friends-slider-name">Sophia</p>
               <button class="friends-slider-btn">Learn more</button>
             </div>
-            <div class="friends-slider-item">
+            <div class="friends-slider-item" id="timmy">
               <img
                 src="images/pets-timmy.jpg"
                 alt="friend"
@@ -159,7 +171,7 @@
               <p class="friends-slider-name">Timmy</p>
               <button class="friends-slider-btn">Learn more</button>
             </div>
-            <div class="friends-slider-item">
+            <div class="friends-slider-item" id="woody">
               <img
                 src="images/pets-woody.jpg"
                 alt="friend"
@@ -185,7 +197,7 @@
     <section class="donate" id="help">
       <div class="container" id="donate-container">
         <h3 class="donate-title">How you can help our shelter</h3>
-        <div class="donate-first-line">
+        <div class="donate-lines">
           <div class="donate-item-1">
             <img src="icons/Vector1.svg" alt="icon" class="donate-icon" />
             <p class="donate-subtext">Pet food</p>
@@ -214,9 +226,7 @@
             <img src="icons/shampoos.svg" alt="icon" class="donate-icon" />
             <p class="donate-subtext">Shampoos</p>
           </div>
-        </div>
-        <div class="donate-second-line">
-          <div class="donate-item-2">
+          <div class="donate-item-2" id="donate-first-item-2">
             <img src="icons/icon-vitamins.svg" alt="icon" class="donate-icon" />
             <p class="donate-subtext">Vitamins</p>
           </div>
