@@ -69,6 +69,7 @@ nav {
 .nav-burger {
   display: none;
 }
+
 ul {
   display: flex;
   margin-right: 40px;
@@ -204,7 +205,6 @@ li + li {
   width: 430px;
   text-align: left;
   line-height: 24px;
-
 }
 
 .friends {
@@ -384,7 +384,6 @@ li + li {
   width: 170px;
   height: 113px;
 }**/
-
 
 .donate-subtext {
   padding: 0 10px;
