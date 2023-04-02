@@ -66,6 +66,10 @@ nav {
   margin-top: 76px;
 }
 
+.nav-burger {
+  display: none;
+}
+
 ul {
   display: flex;
   margin-right: 40px;
@@ -544,14 +548,13 @@ footer {
   #woody {
     display: none;
   }
+  .puppy-inner {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 @media (max-width: 1240px) {
-  .puppy-img {
-    height: 593px;
-    width: 569px;
-  }
-
   #donate-container {
     display: flex;
     flex-wrap: wrap;
@@ -583,6 +586,11 @@ footer {
     justify-content: center;
     align-items: center;
     margin: 0 39px;
+  }
+
+  .puppy-img {
+    width: 569px;
+    height: 593px;
   }
 }
 
@@ -625,11 +633,6 @@ footer {
 }
 
 @media (max-width: 1130px) {
-  .puppy-inner {
-    flex-direction: column;
-    align-items: center;
-  }
-
   .puppy-img {
     margin-left: 129px;
   }
@@ -673,6 +676,15 @@ footer {
 }
 
 @media (max-width: 768px) {
+  .img-column {
+    margin-top: 0;
+  }
+  .puppy-img {
+    width: 260px;
+    height: 271.77px;
+    margin-left: 0;
+    margin-top: 0;
+  }
   .donate-lines {
     flex-wrap: wrap;
     justify-content: center;
@@ -680,5 +692,221 @@ footer {
 
   .donate-second-line {
     margin: 0;
+  }
+
+  #timmy {
+    display: none;
+  }
+  .friends-slider-item {
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 680px) {
+  .footer-container {
+    display: flex;
+    flex-direction: column;
+    padding: 0 10px;
+  }
+  .footer-column-questions {
+    margin: 0 0 40px;
+  }
+
+  .footer-column-questions:first-child {
+    margin-top: 36px;
+  }
+
+  .footer-addres-london {
+    margin: 0;
+  }
+  .footer-title {
+    font-size: 25px;
+    text-align: center;
+    width: 230px;
+    margin: 0 auto 40px;
+  }
+  .footer-column-img {
+    width: 260px;
+  }
+}
+
+@media (max-width: 625px) {
+  header {
+    padding: 0 10px;
+  }
+  nav {
+    display: none;
+  }
+
+  .nav-burger {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: flex-end;
+    width: 30px;
+    height: 20px;
+    margin-top: 49px;
+  }
+
+  .nav-burger span {
+    height: 2px;
+    width: 100%;
+    background-color: #f1cdb3;
+  }
+
+  .nav-burger::before,
+  .nav-burger::after {
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    background-color: #f1cdb3;
+  }
+
+  .nav-burger::before {
+    top: 0;
+  }
+
+  .nav-burger::after {
+    bottom: 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .container {
+    padding: 0 10px;
+  }
+  .text-column {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .puppy-title {
+    margin: 0 auto;
+    font-size: 25px;
+    margin-bottom: 42px;
+    width: 200px;
+  }
+
+  .puppy-description {
+    width: 300px;
+  }
+
+  .about {
+    padding: 0;
+  }
+
+  .about-inner {
+    padding: 0;
+  }
+
+  .about-text-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    padding-bottom: 42px;
+    width: 100%;
+  }
+
+  .about-title {
+    margin: 42px 0 25px;
+    text-align: center;
+    font-size: 25px;
+    width: 250px;
+  }
+
+  .about-discription {
+    width: 270px;
+    word-wrap: break-word;
+    margin-bottom: 25px;
+    text-align: justify;
+  }
+
+  .about-discription2 {
+    width: 270px;
+    word-wrap: break-word;
+    margin: 0;
+    text-align: justify;
+  }
+  .about-img {
+    margin-left: 0;
+    width: 260px;
+    margin-bottom: 42.4px;
+  }
+
+  .donate-card {
+    padding: 0;
+  }
+  .donate-card-info {
+    text-align: center;
+  }
+
+  .donate-card-title {
+    margin: 42px auto 20px;
+  }
+  .donate-card-number {
+    width: 241px;
+    margin: 0 auto 20px;
+  }
+
+  .donate-card-numbers {
+    padding-top: 2.5px;
+    width: 100%;
+    font-size: 15px;
+  }
+
+  .donate-card-discription {
+    text-align: justify;
+    width: 280px;
+  }
+  .donate-card-img {
+    width: 260px;
+    margin-right: 0;
+    margin-bottom: 42px;
+  }
+}
+
+@media (max-width: 500px) {
+  .donate {
+    padding: 0;
+  }
+  .donate-lines {
+    margin: 0;
+    gap: 30px;
+    margin-bottom: 42px;
+    justify-content: flex-start;
+  }
+
+  .donate-title {
+    margin: 42px auto;
+    font-size: 25px;
+    width: 200px;
+  }
+  .donate-item-1 {
+    width: 130px;
+  }
+
+  .donate-item-2 {
+    width: 130px;
+  }
+}
+
+@media (max-width: 420px) {
+  .friends-title {
+    font-size: 25px;
+  }
+
+  .friends-slider {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .friends-slider-item {
+    order: -1;
+    margin: 0 40px 20px;
+  }
+  .friends-btn {
+    margin: 42px 0;
   }
 }
