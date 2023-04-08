@@ -70,6 +70,20 @@ nav {
   display: none;
 }
 
+.menu-toggle {
+  display: none;
+}
+
+input:checked ~ nav .menu {
+  transform: translateX(0);
+}
+
+input:checked ~ .nav-burger {
+  transition: 0.6s;
+  transform: rotate(-90deg);
+  z-index: 1;
+}
+
 ul {
   display: flex;
   margin-right: 40px;
@@ -753,8 +767,29 @@ footer {
   header {
     padding: 0 10px;
   }
-  nav {
-    display: none;
+  nav .menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    background: #292929;
+    width: 320px;
+    height: 100%;
+    transform: translateX(100%);
+    z-index: 1;
+    top: 0;
+    right: 0;
+    transition: 0.6s;
+    gap: 40px;
+  }
+
+  .menu-item {
+    margin: 0;
+  }
+
+  .menu-link {
+    font-size: 2.1em;
   }
 
   .nav-burger {
@@ -771,6 +806,7 @@ footer {
     height: 2px;
     width: 100%;
     background-color: #f1cdb3;
+    z-index: 1;
   }
 
   .nav-burger::before,
@@ -780,6 +816,7 @@ footer {
     height: 2px;
     width: 100%;
     background-color: #f1cdb3;
+    z-index: 1;
   }
 
   .nav-burger::before {
