@@ -75,13 +75,23 @@ nav {
 }
 
 input:checked ~ nav .menu {
+  display: flex;
   transform: translateX(0);
+  opacity: 1;
+  visibility: visible;
+  pointer-events: none;
+  z-index: 1;
+  transition: left 0.6s ease 0s;
 }
 
 input:checked ~ .nav-burger {
   transition: 0.6s;
   transform: rotate(-90deg);
   z-index: 1;
+}
+
+input:checked ~ body {
+  overflow: hidden;
 }
 
 ul {
@@ -699,6 +709,67 @@ footer {
 }
 
 @media (max-width: 768px) {
+  nav .menu {
+    opacity: 0;
+    visibility: hidden;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    background: #292929;
+    width: 320px;
+    height: 100%;
+    transform: translateX(100%);
+    z-index: 1;
+    top: 0;
+    right: 0;
+    transition: 0.6s;
+    gap: 40px;
+  }
+
+  .menu-item {
+    margin: 0;
+  }
+
+  .menu-link {
+    font-size: 2.1em;
+  }
+
+  .nav-burger {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: flex-end;
+    width: 30px;
+    height: 20px;
+    margin-top: 49px;
+  }
+
+  .nav-burger span {
+    height: 2px;
+    width: 100%;
+    background-color: #f1cdb3;
+    z-index: 1;
+  }
+
+  .nav-burger::before,
+  .nav-burger::after {
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    background-color: #f1cdb3;
+    z-index: 1;
+  }
+
+  .nav-burger::before {
+    top: 0;
+  }
+
+  .nav-burger::after {
+    bottom: 0;
+  }
   .img-column {
     margin-top: 0;
   }
@@ -766,65 +837,6 @@ footer {
 @media (max-width: 625px) {
   header {
     padding: 0 10px;
-  }
-  nav .menu {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    background: #292929;
-    width: 320px;
-    height: 100%;
-    transform: translateX(100%);
-    z-index: 1;
-    top: 0;
-    right: 0;
-    transition: 0.6s;
-    gap: 40px;
-  }
-
-  .menu-item {
-    margin: 0;
-  }
-
-  .menu-link {
-    font-size: 2.1em;
-  }
-
-  .nav-burger {
-    display: flex;
-    position: relative;
-    align-items: center;
-    justify-content: flex-end;
-    width: 30px;
-    height: 20px;
-    margin-top: 49px;
-  }
-
-  .nav-burger span {
-    height: 2px;
-    width: 100%;
-    background-color: #f1cdb3;
-    z-index: 1;
-  }
-
-  .nav-burger::before,
-  .nav-burger::after {
-    content: "";
-    position: absolute;
-    height: 2px;
-    width: 100%;
-    background-color: #f1cdb3;
-    z-index: 1;
-  }
-
-  .nav-burger::before {
-    top: 0;
-  }
-
-  .nav-burger::after {
-    bottom: 0;
   }
 }
 
