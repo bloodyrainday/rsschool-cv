@@ -48,6 +48,6 @@ initials('mikita bialko')
 
 ##languags:
 
-- [B2](https://www.efset.org/cert/wUnBhV) - I used to go on english courses (StreamLine) for 2 years. After that I started off learning english on my owm. The goal is being fluent.
+- [B2](https://www.efset.org/cert/wUnBhV) - I used to enroll on english courses (StreamLine) for 2 years. After that I started off learning english on my owm. The goal is being fluent.
 - Belarusian(native)
 - Russian(native)
