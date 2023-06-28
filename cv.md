@@ -23,6 +23,7 @@ My name is Mikita. You can call me Miki in a short form. Currently I work as a m
 - Figma
 - Git/GitHub
 - editors: VS Code
+- React JS
 
 ---
 
