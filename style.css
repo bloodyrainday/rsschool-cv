@@ -114,11 +114,12 @@ code {
 
 footer {
   background-color: rgb(30, 30, 30);
-  width: 100%
+  width: 100%;
 }
 
 footer .container {
   padding: 2.5rem 2.5rem;
+  width: 100%;
 }
 
 footer h2 {
@@ -127,13 +128,33 @@ footer h2 {
   padding: 0;
 }
 
-footer .link {
+footer .link-inner {
+  width: 100%;
   display: flex;
-  align-items: center;
+  gap: 1%
+}
+
+footer .link {
+display: flex;
+align-items: center;
 }
 
 footer a {
   font-size: 1.5rem;
   letter-spacing: 0.1rem;
   
+}
+
+.footer-course {
+  background-color: white;
+  width: 100px;
+  padding: 3px;
+  margin: 0;
+}
+
+footer span {
+  color: white;
+  font-size: 2rem;
+  letter-spacing: 0.1rem;
+  margin-left: 1.5rem;
 }
