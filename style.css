@@ -107,3 +107,33 @@ main .about-text {
 main li {
   list-style:circle;
 }
+
+code {
+  font-size: 1.3rem;
+}
+
+footer {
+  background-color: rgb(30, 30, 30);
+  width: 100%
+}
+
+footer .container {
+  padding: 2.5rem 2.5rem;
+}
+
+footer h3 {
+  color: white;
+  border-bottom: none;
+  padding: 0;
+}
+
+footer .link {
+  display: flex;
+  align-items: center;
+}
+
+footer a {
+  font-size: 1.5rem;
+  letter-spacing: 0.1rem;
+  
+}
