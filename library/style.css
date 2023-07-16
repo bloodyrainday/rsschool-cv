@@ -10,19 +10,16 @@ header {
 
 header .container {
     display: flex;
-    padding: 0 1.25em;
+    padding: 1.25em;
     justify-content: space-between;
     align-items: center;
 }
 
-h1 .title {
+h1 {
     font-family: 'Forum', cursive;
-    font-size: 1em;
-}
-
-h1 .title-link {
-    font-weight: 200;
-    font-size: 0.9375em;
+    font-size: 1.25em;
+    margin: 0;
+    font-weight: 400;
 }
 
 li {
@@ -30,6 +27,7 @@ li {
 }
 
 nav .nav-items {
+    margin: 0;
     display: flex;
     align-items: center;
 }
