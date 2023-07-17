@@ -20,11 +20,11 @@
                     <li class="nav-item"><a href="#" class="nav-item-link">Coffee shop</a></li>
                     <li class="nav-item"><a href="#" class="nav-item-link">Contacts</a></li>
                     <li class="nav-item"><a href="#" class="nav-item-link">Library Card</a></li>
-                    <li class="nav-item"><a href="#" class="nav-item-link">
-                        <img src="icons/icon_profile.svg" alt="account-icon">
-                    </a></li>
                 </ul>
             </nav>
+            <a href="#" class="icon-profile">
+                <img src="icons/icon_profile.svg" alt="account-icon">
+            </a>
         </div>
     </header>
     <main>
@@ -34,9 +34,12 @@
                         to the Brooklyn <br> Library</h2>
                     </div>-->
             </section>
+
+
             <section class="about">
                 <div class="container">
                     <h2 class="about-title">About</h2>
+                    <div class="underline about"></div>
                     <p class="about-subtitle">The Brooklyn Library is a free workspace, a large number of books and a cozy coffee shop inside </p>
                     <div class="about-slider">
                         <div class="about-slider-item">
@@ -50,9 +53,43 @@
                         </div>
                     </div>
                     <div class="about-switcher">
-                        <div class="about-switcher-left"></div>
-                        <div class="about-switcher-center"></div>
-                        <div class="about-switcher-right"></div>
+                        <div class="about-switcher-button left"></div>
+                        <div class="about-switcher-button center"></div>
+                        <div class="about-switcher-button right"></div>
+                    </div>
+                </div>
+              </section>
+
+
+              <section class="favorites">
+                <div class="container">
+                    <h2 class="favorites title">Favorites</h2>
+                    <div class="underline favorites"></div>
+                    <p class="favorites-radio-text">Pick favorites of season</p>
+                    <div class="favorites-radio"></div> 
+                    
+                        <input type="radio" id="check1" value="Winter" name="season">
+                        <label for="check1">Winter</label>
+                    
+                        <input type="radio" id="check2" value="Spring" name="season">
+                        <label for="check2">Spring</label>
+                    
+                        <input type="radio" id="check3" value="Summer" name="season">
+                        <label for="check3">Summer</label>
+                    
+                        <input type="radio" id="check4" value="Autumn" name="season">
+                        <label for="check4">Autumn</label>
+                </div>
+                <div class="favorites-books">
+                    <div class="favourites-book">
+                        <div class="favourites-book-title">Staff Picks</div>
+                        <div class="favourites-book-underline"></div>
+                        <p class="favorites-book-name">
+                            The Book Eaters<br>
+                            By Sunyi Dean
+                        </p>
+                        <p class="favorites-book-text">An unusual sci-fi story about a book eater woman who tries desperately to save her dangerous mind-eater son from tradition and certain death. Complete with dysfunctional family values, light Sapphic romance, and a strong, complex protagonist. Not for the faint of heart.       </p>
+                        <button class="favorites-book-btn">Buy</button>
                     </div>
                 </div>
               </section>
