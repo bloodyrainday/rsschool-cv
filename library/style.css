@@ -142,3 +142,28 @@ a {
 }
 
 /* about end*/
+
+/*favorites start*/
+
+.favorites-title {
+    font-family: 'Forum', cursive;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 200;
+    margin: 0.5em 0
+}
+
+.favorites-radio-text {
+    font-size: 20px;
+    margin-bottom: 2em;
+    margin-top: 0;
+    font-weight: 600;
+}
+
+label {
+    font-size: 20px;
+    margin-right: 4.5em;
+    margin-left: 1em;
+}
+
+/*favorites end*/
