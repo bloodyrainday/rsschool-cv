@@ -170,11 +170,18 @@ label {
     margin-left: 1em;
 }
 
-.favourites-book {
+.favorites-books {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.favorites-book {
     border: 1px solid #0C0C0E;
     padding: 0.9375em 1.25em;
     width: 550px;
     position: relative;
+    gap: 16.25;
 }
 
 .favourites-book-title {
