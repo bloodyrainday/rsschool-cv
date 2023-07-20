@@ -5,7 +5,7 @@
 body {
     margin: 0 auto;
     font-family: 'Inter', sans-serif;
-    max-width: 1440px;
+    width: 1440px;
 }
 
 /* header start*/
@@ -176,12 +176,18 @@ label {
     justify-content: space-between;
 }
 
+.favorites-wrapper {
+    position: relative;
+    width: 590px;
+    height: 100%
+}
+
 .favorites-book {
+    
     border: 1px solid #0C0C0E;
     padding: 0.9375em 1.25em;
     width: 550px;
-    position: relative;
-    gap: 16.25;
+    margin-bottom: 2.5em;
 }
 
 .favourites-book-title {
@@ -216,6 +222,8 @@ label {
     width: 355px;
     height: 320px;
     margin: 0;
+    text-align: left;
+    text-transform: capitalize;
 }
 
 .favorites-book-btn {
@@ -227,10 +235,15 @@ label {
     background-color: #FFFFFF;
 }
 
+.favorites-book-btn.the-last-queen {
+    color: #BB945F;
+    border:1px solid #BB945F
+}
+
 .favorites-book-cover {
     position: absolute;
-    left: 390px;
-    bottom: -1px;
+    left: 385px;
+    bottom: 40px;
     border: 1px solid #0C0C0E;
 }
 
