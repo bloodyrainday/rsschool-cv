@@ -70,18 +70,29 @@ a {
 /* welcome start*/
 
 .welcome {
-    background-image: url(images/Welcome.png);
+    background: url(images/library-background.jpg);
+    background-position: 50%;
     background-repeat: no-repeat;
+    background-size: cover;
+    width: 1440px;
     height: 600px;
+    
 }
 
-/*.welcome-title {
-    padding-top: 13.75em;
+.welcome-overlay {
+    width: 1440px;
+    height: 300px;
+    flex-shrink: 0;
+    background: linear-gradient(180deg, #0C0C0E 0%, #0C0C0E 0.01%, rgba(18, 18, 21, 0.10) 100%);
+}
+
+.welcome-title {
     background-color: #0C0C0E;
-    width: 100px;
-    text-align: center;
-    letter-spacing: 3px;
-    line-height: 50px;
+    width: 600px;
+    flex-shrink: 0;
+    font-style: normal;
+    position: relative;
+    bottom: 80px;
 }
 
 .welcome-title-text {
@@ -91,10 +102,12 @@ a {
     font-weight: 200;
     margin: 0;
     font-size: 40px;
+    text-transform: uppercase;
+    line-height: 50px;
+    letter-spacing: 3px;
+    text-align: center;
     padding: 35px 40px;
-    width: 520px;
-    height: 150px;
-}*/
+}
 
 /* welcome end*/
 
