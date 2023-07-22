@@ -143,7 +143,14 @@ a {
     display: flex;
     justify-content: center;
     margin: 2.5em 0;
-    gap: 10px;
+}
+
+.about-switcher-button-wrapper {
+    width: 26px;
+    height: 26px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .about-switcher-button {
@@ -151,7 +158,10 @@ a {
     height: 16px;
     background-color: #0C0C0E;
     border-radius: 10px;
-    
+}
+
+.about-switcher-button-wrapper:hover {
+    cursor: pointer;
 }
 
 .about-switcher-button.left {
