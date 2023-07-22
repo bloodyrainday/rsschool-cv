@@ -15,7 +15,7 @@ header {
 }
 
 .container {
-    padding: 1.25em;
+    padding: 0 1.25em;
 }
 
 header .container {
@@ -282,3 +282,110 @@ a {
 }
 
 /*favorites end*/
+
+/*coffee-shop start*/
+
+.coffee_shop-title {
+    font-family: 'Forum', cursive;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 200;
+    margin: 0.5em 0
+}
+
+.coffee_shop-subtitle {
+    margin: 0;
+    font-size: 20px;
+    letter-spacing: 2px;
+    text-align: center;
+    line-height: 40px;
+    margin-bottom: 2em
+}
+
+.coffee_shop-menu {
+    display: flex;
+    justify-content: space-between;
+}
+
+.coffee_shop-drinks-title {
+    font-family: 'Forum', cursive;
+    font-weight: 200;
+    font-size: 40px;
+    color: #BB945F;
+    line-height: 40px;
+    letter-spacing: 2px;
+    text-align: left;
+    margin: 0;
+    margin-bottom: 2em;
+}
+
+.coffee_shop-drinks-string {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+    align-items: center;
+}
+
+.coffee_shop-drinks-string-name {
+    line-height: 40px;
+    letter-spacing: 2px;
+    font-size: 20px;
+    width: 200px;
+    margin-right: 60px;
+}
+
+.coffee_shop-drinks-string-line {
+    width: 100px;
+    height: 1px;
+    background-color: #BB945F;
+}
+
+.coffee_shop-drinks-string-price {
+    line-height: 40px;
+    letter-spacing: 2px;
+    font-size: 20px;
+    margin-left: 60px;
+}
+
+.coffee_shop-desserts-title {
+    font-family: 'Forum', cursive;
+    font-weight: 200;
+    font-size: 40px;
+    color: #BB945F;
+    line-height: 40px;
+    letter-spacing: 2px;
+    text-align: right;
+    margin: 0;
+    margin-bottom: 2em;
+}
+
+.coffee_shop-desserts-string {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+    align-items: center;
+}
+
+.coffee_shop-desserts-string-name {
+    line-height: 40px;
+    letter-spacing: 2px;
+    font-size: 20px;
+    width: 215px;
+    margin-right: 60px;
+    text-align: right;
+}
+
+.coffee_shop-desserts-string-line {
+    width: 100px;
+    height: 1px;
+    background-color: #BB945F;
+}
+
+.coffee_shop-desserts-string-price {
+    line-height: 40px;
+    letter-spacing: 2px;
+    font-size: 20px;
+    margin-left: 60px;
+}
+
+/*coffee-shop end*/
