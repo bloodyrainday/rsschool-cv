@@ -177,10 +177,21 @@ a {
     font-weight: 600;
 }
 
-label {
+
+.favorites-radio-name {
     font-size: 20px;
     margin-right: 4.5em;
-    margin-left: 1em;
+    padding: 5px;
+}
+
+.favorites-radio-name:hover {
+    cursor: pointer;
+}
+
+.favorites-radio-btn {
+    margin: 0;
+    margin-right: 20px;
+    accent-color: black;
 }
 
 .favorites-books {
