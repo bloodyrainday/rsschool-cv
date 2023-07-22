@@ -194,7 +194,7 @@ a {
     padding: 5px;
 }
 
-.favorites-radio-name:hover {
+.favorites-radio-name, .favorites-radio-btn:hover {
     cursor: pointer;
 }
 
@@ -403,6 +403,7 @@ a {
 .our_contacts-columns {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 2em;
 }
 
 .our_contacts-contacts-column1-text {
@@ -422,4 +423,126 @@ a {
     margin-bottom: 1.7em;
 }
 
+.phone-number, .mail-adress {
+    color: black;
+}
+
 /*our-contacts end*/
+
+/*digital-library-card start*/
+
+.digital_library_card-title {
+    font-family: 'Forum', cursive;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 200;
+    margin: 0.5em 0
+}
+
+.digital_library_card-columns {
+    display: flex;
+    justify-content: space-between;
+}
+
+.digital_library_card-form-title {
+    font-size: 30px;
+    line-height: auto;
+    letter-spacing: 2px;
+    font-weight: 400;
+    margin: 0;
+    margin-bottom: 1em;
+    text-align: center;
+}
+
+.digital_library_card-form-wrapper {
+    border: 3px solid #BB945F;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    padding: 20px 20px 30px;
+    margin-bottom: 71px;
+}
+
+.digital_library_card-form-wrapper form {
+    background: #BB945F;
+    padding: 20px 20px 0;
+    margin-bottom: 20px;
+}
+
+.digital_library_card-form-subtitle {
+    font-family: 'Forum', cursive;
+    font-size: 30px;
+    line-height: 50px;
+    letter-spacing: 0.6px;
+    font-weight: 200;
+    margin: 0;
+}
+
+.digital_library_card-form-input {
+    width: 520px;
+    height: 66px;
+    border-radius: 10px;
+    margin-bottom: 25px ;
+    border: none;
+    align-items: center;
+}
+
+.digital_library_card-form-input::placeholder {
+    color: #8E8E8E;
+    font-family: 'Forum', cursive;
+    font-size: 30px;
+    letter-spacing: 0.6px;
+    font-weight: 200;
+    padding-left: 20px;
+}
+
+.digital_library_card-form-btn {
+    padding: 10px 40px;
+    align-items: flex-end;
+    border-radius: 2px;
+    border: 1px solid #0C0C0E;
+    background-color: #FFFFFF;
+    font-size: 20px;
+    letter-spacing: 1px;
+    font-weight: 700;
+    margin-left: 7.95em;
+}
+
+.digital_library_card-account-title {
+    font-family: 'Forum', cursive;
+    font-size: 30px;
+    font-weight: 400;
+    letter-spacing: 0.6px;
+    text-align: right;
+    margin: 0;
+    margin-bottom: 35px;
+}
+
+.digital_library_card-account-text {
+    font-size: 20px;
+    text-align: right;
+    font-weight: 400;
+    line-height: 40px;
+    letter-spacing: 0.4px;
+    width: 456px;
+    margin: 0;
+    margin-bottom: 35px;
+}
+
+.digital_library_card-account-buttons {
+    text-align: right;
+}
+
+.digital_library_card-account-btn {
+    width: 75px;
+    height: 30px;
+    padding: 10px 0px;
+    border-radius: 2px;
+    border: 1px solid #0C0C0E;
+    background-color: white;
+    text-align: center;
+    font-weight: 700;
+    letter-spacing: 1px;
+    font-size: 10px;
+    margin-left: 20px;
+}
+
+/*digital-library-card end*/
