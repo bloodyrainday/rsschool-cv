@@ -546,3 +546,90 @@ a {
 }
 
 /*digital-library-card end*/
+
+/*footer start*/
+
+footer {
+    background-color: #0C0C0E;
+}
+
+.footer-columns {
+    padding-top: 20px;
+}
+
+.footer-columns-contacts {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.footer-columns-schedule-text {
+    color: #FFF;
+    font-size: 15px;
+    font-weight: 200;
+    line-height: 20px;
+    text-align: right;
+    margin: 0;
+}
+
+.footer-columns-contacts-text {
+    color: #FFF;
+    font-size: 15px;
+    font-weight: 200;
+    line-height: 20px;
+}
+
+.footer-columns-contacts-icons-link {
+    margin-right: 15px;
+}
+
+
+.footer-columns-schedule {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.footer-columns-contacts-icons {
+    display: flex;
+    align-items: center;
+}
+
+.footer-underline {
+    width: 1400px;
+    height: 1px;
+    background-color: #FFFFFF;
+    margin-bottom: 44px;
+}
+
+.footer-author {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 44px;
+}
+
+.footer-author-year {
+    color: #FFF;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 2px;
+}
+
+.footer-author-course {
+    margin: 0;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 2px;
+}
+
+.footer-author-github {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 40px;
+    letter-spacing: 2px;
+}
+
+/*footer end*/
