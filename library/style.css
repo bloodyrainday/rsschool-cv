@@ -389,3 +389,37 @@ a {
 }
 
 /*coffee-shop end*/
+
+/*our-contacts start*/
+
+.our_contacts-title {
+    font-family: 'Forum', cursive;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 200;
+    margin: 0.5em 0
+}
+
+.our_contacts-columns {
+    display: flex;
+    justify-content: space-between;
+}
+
+.our_contacts-contacts-column1-text {
+    line-height: 40px;
+    letter-spacing: 2px;
+    font-size: 20px;
+    margin-bottom: 2em;
+    margin-top: 0;
+}
+
+.our_contacts-contacts-column1-text.p-2 {
+    line-height: 50px;
+}
+
+.our_contacts-contacts-column1-text.p-3 {
+    line-height: 50px;
+    margin-bottom: 1.7em;
+}
+
+/*our-contacts end*/
