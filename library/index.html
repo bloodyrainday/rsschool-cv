@@ -7,6 +7,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Forum&family=Inter:wght@400;700&display=swap" rel="stylesheet">
+<link rel="apple-touch-icon" sizes="180x180" href="icons/favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="icons/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="icons/favicon/favicon-16x16.png">
+<link rel="manifest" href="icons/favicon/site.webmanifest">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -29,11 +33,14 @@
     </header>
     <main>
             <section class="welcome">
-              <div class="welcome-overlay"></div>
-              <div class="welcome-title">
-                    <h2 class="welcome-title-text">Welcome <br> 
-                        to the Brooklyn <br> Library</h2>
+            <div class="welcome-overlay"></div>    
+                <div class="container welcome">
+                    
+                    <div class="welcome-title">
+                        <h2 class="welcome-title-text">Welcome <br> 
+                            to the Brooklyn <br> Library</h2>
                     </div>
+                </div>
             </section>
 
 
@@ -142,7 +149,7 @@
                                 By Sunyi Dean
                             </p>
                             <p class="favorites-book-text">A timely and revelatory new biography of Queen Elizabeth (and her family) exploring how the Windsors have evolved and thrived as the modern world has changed around them.       </p>
-                            <button class="favorites-book-btn the-last-queen" disabled >Own</button>
+                            <button disabled="disabled" class="favorites-book-btn the-last-queen">Own</button>
                             <img src="images/book4.png" alt="book-cover" class="favorites-book-cover">
                         </div>
                         </div>
@@ -428,10 +435,10 @@
                             <div class="digital_library_card-form-wrapper">
                                 <form action="">
                                     <h4 class="digital_library_card-form-subtitle">Brooklyn Public Library</h4>
-                                    <input class='digital_library_card-form-input' type="text" placeholder="Reader's name"><br>
-                                    <input class='digital_library_card-form-input' type="text" placeholder="Card number">
+                                    <input class='digital_library_card-form-input' type="text" pattern='[0-9A-Za-z-]' placeholder="Reader's name"><br>
+                                    <input class='digital_library_card-form-input' type="text"  placeholder="Card number">
                                 </form>
-                                <button class="digital_library_card-form-btn">Check the card</button>
+                                <button type="submit" class="digital_library_card-form-btn">Check the card</button>
                             </div>
                         </div>
                         <div class="digital_library_card-account">
@@ -450,15 +457,15 @@
                 <div class="container footer">
                     <div class="footer-columns">
                         <div class="footer-columns-contacts">
-                            <a class="footer-columns-contacts-text" href="https://www.google.com/maps/place/286+Cadman+Plaza+E,+Brooklyn,+NY+11201,+USA/@40.6956215,-73.9949653,17z/data=!3m1!4b1!4m9!1m2!2m1!1s286+Cadman+Plaza,+New+York,+NY+11238,+United+States!3m5!1s0x89c25a49ebbb4533:0x83b2f30fade7bf9f!8m2!3d40.6956216!4d-73.9900944!15sCjMyODYgQ2FkbWFuIFBsYXphLCBOZXcgWW9yaywgTlkgMTEyMzgsIFVuaXRlZCBTdGF0ZXOSARBnZW9jb2RlZF9hZGRyZXNz4AEA?entry=ttu" >286 Cadman Plaza, New York,<br> NY 11238, United States</a>
+                            <a target="_blank class="footer-columns-contacts-text" href="https://www.google.com/maps/place/286+Cadman+Plaza+E,+Brooklyn,+NY+11201,+USA/@40.6956215,-73.9949653,17z/data=!3m1!4b1!4m9!1m2!2m1!1s286+Cadman+Plaza,+New+York,+NY+11238,+United+States!3m5!1s0x89c25a49ebbb4533:0x83b2f30fade7bf9f!8m2!3d40.6956216!4d-73.9900944!15sCjMyODYgQ2FkbWFuIFBsYXphLCBOZXcgWW9yaywgTlkgMTEyMzgsIFVuaXRlZCBTdGF0ZXOSARBnZW9jb2RlZF9hZGRyZXNz4AEA?entry=ttu" >286 Cadman Plaza, New York,<br> NY 11238, United States</a>
                             <p class="footer-columns-schedule-text">Mon - Fri<br>
                                 08:00 am - 07:00 pm</p>
                         </div>
                         <div class="footer-columns-schedule">
                             <ul class="footer-columns-contacts-icons">
-                                <li><a class="footer-columns-contacts-icons-link" href="#"><img src="icons/twitter.svg" alt="icon-contact" class="footer-columns-contacts-icons-link-icon"></a></li>
-                                <li><a class="footer-columns-contacts-icons-link" href="#"><img src="icons/inst.svg" alt="icon-contact" class="footer-columns-contacts-icons-link-icon"></a></li>
-                                <li><a class="footer-columns-contacts-icons-link" href="#"><img src="icons/facebook.svg" alt="icon-contact" class="footer-columns-contacts-icons-link-icon"></a></li>
+                                <li><a target="_blank" class="footer-columns-contacts-icons-link" href="https://twitter.com/i/flow/login?redirect_after_login=%2F%3Flang%3Den"><img src="icons/twitter.svg" alt="icon-contact" class="footer-columns-contacts-icons-link-icon"></a></li>
+                                <li><a target="_blank" class="footer-columns-contacts-icons-link" href="https://www.instagram.com/"><img src="icons/inst.svg" alt="icon-contact" class="footer-columns-contacts-icons-link-icon"></a></li>
+                                <li><a target="_blank" class="footer-columns-contacts-icons-link" href="https://www.facebook.com/"><img src="icons/facebook.svg" alt="icon-contact" class="footer-columns-contacts-icons-link-icon"></a></li>
                             </ul>
                                 <p class="footer-columns-schedule-text">Sat - Sun<br>
                                     10:00 am - 06:00 pm</p>
@@ -467,12 +474,13 @@
                     <div class="footer-underline"></div>
                     <div class="footer-author">
                         <p class="footer-author-year">2023</p>
-                        <a class="footer-author-course" href="https://rs.school/js-stage0/">The Rolling Scopes School</a>
-                        <a href="https://github.com/bloodyrainday" class="footer-author-github">bloodyrainday</a>
+                        <a target="_blank" class="footer-author-course" href="https://rs.school/js-stage0/">The Rolling Scopes School</a>
+                        <a target="_blank" href="https://github.com/bloodyrainday" class="footer-author-github">bloodyrainday</a>
                     </div>
                 </div>
               </footer>
 
     </main>
+    <script src="index.js"></script>
 </body>
 </html>
