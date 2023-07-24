@@ -650,10 +650,15 @@ footer {
 }
 
 .footer-author {
-    display: flex;
-    justify-content: space-between;
     align-items: center;
     height: 22px;
+}
+
+.footer-author-wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
 }
 
 .footer-author-year {
@@ -673,12 +678,6 @@ footer {
     letter-spacing: 2px;
 }
 
-.footer-author-course:hover {
-    border-bottom: 2px solid #FFFFFF;
-    transition: 0.5s;
-    cursor: pointer;
-}
-
 .footer-author-github {
     font-size: 20px;
     font-weight: 400;
@@ -686,10 +685,11 @@ footer {
     letter-spacing: 2px;
 }
 
-.footer-author-github:hover {
+.footer-author-item.course:hover, .footer-author-item.github:hover {
     border-bottom: 2px solid #FFFFFF;
     transition: 0.5s;
     cursor: pointer;
 }
+
 
 /*footer end*/
