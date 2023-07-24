@@ -1,0 +1,695 @@
+*   {
+    box-sizing: border-box;
+  }
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0 auto;
+    font-family: 'Inter', sans-serif;
+}
+
+/* header start*/
+
+header {
+    background-color: #0C0C0E;
+}
+
+.container {
+    margin: 0 auto;
+    width: 1440px;
+    padding: 0 1.25em;
+}
+
+header .container {
+    display: flex;
+    padding: 1.25em;
+    align-items: center;
+    justify-content:end
+}
+
+h1 {
+    font-family: 'Forum', cursive;
+    font-size: 30px;
+    margin: 0;
+    font-weight: 400;
+    letter-spacing: 0.02em;
+    width: 25%;
+    color: #FFFFFF;
+    line-height: 50px;
+}
+
+li {
+    list-style: none;
+}
+
+nav {
+    width: 70%
+}
+
+nav .nav-items {
+    margin: 0;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding: 0;
+}
+
+.nav-item:hover {
+    border-bottom: 2px solid #FFFFFF;
+    transition: 0.5s;
+}
+
+nav  li:not(:first-child) {
+    margin-left: 1.875em;
+}
+
+a {
+    text-decoration: none;
+    color: #FFFFFF
+}
+
+.icon-profile {
+    padding-left: 2.5em;
+}
+
+/* header end*/
+
+
+
+/* welcome start*/
+
+.welcome {
+    background: url(images/library-background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    height: 600px;
+}
+
+.container.welcome {
+    margin: 0 auto;
+    width: 1440px;
+    padding: 0;
+    padding-top: 220px;
+}
+
+.welcome-overlay {
+    height: 300px;
+    background: linear-gradient(180deg, #0C0C0E 0%, #0C0C0E 0.01%, rgba(18, 18, 21, 0.10) 100%);
+    width: 100%;
+}
+
+.welcome-title {
+    background-color: #0C0C0E;
+    width: 600px;
+    flex-shrink: 0;
+    bottom: 80px;
+    margin: 0;
+}
+
+.welcome-title-text {
+    color: #FFFFFF;
+    font-family: 'Forum', cursive;
+    margin: 0;
+    font-weight: 200;
+    margin: 0;
+    font-size: 40px;
+    text-transform: uppercase;
+    line-height: 50px;
+    letter-spacing: 3px;
+    text-align: center;
+    padding: 35px 40px;
+}
+
+/* welcome end*/
+
+/* about start*/
+
+.about-title {
+    font-family: 'Forum', cursive;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 200;
+    margin: 0.5em 0
+}
+
+.underline {
+    width: 50px;
+    height: 1px;
+    background-color: #0C0C0E;
+    margin: 0 auto;
+    margin-bottom: 2.5em
+}
+
+.about-subtitle {
+    text-align: center;
+    font-size: 20px;
+}
+
+.about-slider {
+    display: flex;
+    justify-content: space-between;
+}
+
+.about-switcher {
+    display: flex;
+    justify-content: center;
+    margin: 2.5em 0;
+}
+
+.about-switcher-button-wrapper {
+    width: 26px;
+    height: 26px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-switcher-button {
+    width: 16px;
+    height: 16px;
+    background-color: #0C0C0E;
+    border-radius: 10px;
+}
+
+.about-switcher-button-wrapper:hover {
+    cursor: pointer;
+}
+
+.about-switcher-button.left {
+    background-color: #BB945F
+}
+
+/* about end*/
+
+/*favorites start*/
+
+.favorites-title {
+    font-family: 'Forum', cursive;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 200;
+    margin: 0.5em 0
+}
+
+.favorites-radio-text {
+    font-size: 20px;
+    margin-bottom: 2em;
+    margin-top: 0;
+    font-weight: 600;
+}
+
+
+.favorites-radio-name {
+    font-size: 20px;
+    margin-right: 4.5em;
+    padding: 5px;
+}
+
+.favorites-radio-name, .favorites-radio-btn:hover {
+    cursor: pointer;
+}
+
+.favorites-radio-btn {
+    margin: 0;
+    margin-right: 20px;
+    accent-color: black;
+}
+
+.favorites-books {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.favorites-wrapper {
+    position: relative;
+    width: 590px;
+    height: 100%
+}
+
+.favorites-wrapper.spring, .favorites-wrapper.summer, .favorites-wrapper.autumn {
+    display: none;
+}
+
+.favorites-book {
+    
+    border: 1px solid #0C0C0E;
+    padding: 0.9375em 1.25em;
+    width: 550px;
+    margin-bottom: 2.5em;
+}
+
+.favourites-book-title {
+    font-family: 'Forum', cursive;
+    font-size: 20px;
+    font-weight: 200;
+    margin: 0 0 1em;
+}
+
+.favourites-book-underline {
+    width: 60px;
+    height: 1px;
+    background-color: #BB945F;
+}
+
+.favorites-radio {
+    margin-bottom: 2.5em;
+}
+
+.favorites-book-name {
+    margin: 20px 0 20px;
+    letter-spacing: 2px;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 40px;   
+}
+
+.favorites-book-text {
+    font-size: 15px;
+    letter-spacing: 2px;
+    line-height: 40px;
+    width: 355px;
+    height: 320px;
+    margin: 0;
+    text-align: left;
+    text-transform: capitalize;
+}
+
+.favorites-book-btn {
+    font-size: 10px;
+    font-weight: 600;
+    padding: 9px 27px;
+    margin-top: 2.4em;
+    border-radius: 2px;
+    background-color: #FFFFFF;
+}
+
+.favorites-book-btn:hover {
+    border: 2px solid #BB945F;
+    background-color: #BB945F;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.favorites-book-btn.the-last-queen {
+    color: #BB945F;
+    border:1px solid #BB945F;
+    cursor: default;
+    background-color: #FFF;
+}
+
+.favorites-book-cover {
+    position: absolute;
+    left: 385px;
+    bottom: 40px;
+    border: 1px solid #0C0C0E;
+}
+
+/*favorites end*/
+
+/*coffee-shop start*/
+
+.coffee_shop-title {
+    font-family: 'Forum', cursive;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 200;
+    margin: 0.5em 0
+}
+
+.coffee_shop-subtitle {
+    margin: 0;
+    font-size: 20px;
+    letter-spacing: 2px;
+    text-align: center;
+    line-height: 40px;
+    margin-bottom: 2em
+}
+
+.coffee_shop-menu {
+    display: flex;
+    justify-content: space-between;
+}
+
+.coffee_shop-drinks-title {
+    font-family: 'Forum', cursive;
+    font-weight: 200;
+    font-size: 40px;
+    color: #BB945F;
+    line-height: 40px;
+    letter-spacing: 2px;
+    text-align: left;
+    margin: 0;
+    margin-bottom: 2em;
+}
+
+.coffee_shop-drinks-string {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+    align-items: center;
+}
+
+.coffee_shop-drinks-string-name {
+    line-height: 40px;
+    letter-spacing: 2px;
+    font-size: 20px;
+    width: 200px;
+    margin-right: 60px;
+}
+
+.coffee_shop-drinks-string-line {
+    width: 100px;
+    height: 1px;
+    background-color: #BB945F;
+}
+
+.coffee_shop-drinks-string-price {
+    line-height: 40px;
+    letter-spacing: 2px;
+    font-size: 20px;
+    margin-left: 60px;
+}
+
+.coffee_shop-desserts-title {
+    font-family: 'Forum', cursive;
+    font-weight: 200;
+    font-size: 40px;
+    color: #BB945F;
+    line-height: 40px;
+    letter-spacing: 2px;
+    text-align: right;
+    margin: 0;
+    margin-bottom: 2em;
+}
+
+.coffee_shop-desserts-string {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+    align-items: center;
+}
+
+.coffee_shop-desserts-string-name {
+    line-height: 40px;
+    letter-spacing: 2px;
+    font-size: 20px;
+    width: 215px;
+    margin-right: 60px;
+    text-align: right;
+}
+
+.coffee_shop-desserts-string-line {
+    width: 100px;
+    height: 1px;
+    background-color: #BB945F;
+}
+
+.coffee_shop-desserts-string-price {
+    line-height: 40px;
+    letter-spacing: 2px;
+    font-size: 20px;
+    margin-left: 60px;
+}
+
+/*coffee-shop end*/
+
+/*our-contacts start*/
+
+.our_contacts-title {
+    font-family: 'Forum', cursive;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 200;
+    margin: 0.5em 0
+}
+
+.our_contacts-columns {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2em;
+}
+
+.our_contacts-contacts-column1-text {
+    line-height: 40px;
+    letter-spacing: 2px;
+    font-size: 20px;
+    margin-bottom: 2em;
+    margin-top: 0;
+}
+
+.our_contacts-contacts-column1-text.p-2 {
+    line-height: 50px;
+}
+
+.our_contacts-contacts-column1-text.p-3 {
+    line-height: 50px;
+    margin-bottom: 1.7em;
+}
+
+.phone-number, .mail-adress {
+    color: black;
+}
+
+/*our-contacts end*/
+
+/*digital-library-card start*/
+
+.digital_library_card-title {
+    font-family: 'Forum', cursive;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 200;
+    margin: 0.5em 0
+}
+
+.digital_library_card-columns {
+    display: flex;
+    justify-content: space-between;
+}
+
+.digital_library_card-form-title {
+    font-size: 30px;
+    line-height: auto;
+    letter-spacing: 2px;
+    font-weight: 400;
+    margin: 0;
+    margin-bottom: 1em;
+    text-align: center;
+}
+
+.digital_library_card-form-wrapper {
+    border: 3px solid #BB945F;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    padding: 20px 20px 30px;
+    margin-bottom: 71px;
+}
+
+.digital_library_card-form-wrapper form {
+    background: #BB945F;
+    padding: 20px 20px 0;
+    margin-bottom: 20px;
+}
+
+.digital_library_card-form-subtitle {
+    font-family: 'Forum', cursive;
+    font-size: 30px;
+    line-height: 50px;
+    letter-spacing: 0.6px;
+    font-weight: 200;
+    margin: 0;
+}
+
+.digital_library_card-form-input {
+    width: 520px;
+    height: 66px;
+    border-radius: 10px;
+    margin-bottom: 25px ;
+    align-items: center;
+    font-size: 30px;
+    padding-left: 20px;
+    color: #BB945F;
+    border: 2px solid #BB945F;
+}
+
+.digital_library_card-form-input::placeholder {
+    color: #8E8E8E;
+    font-family: 'Forum', cursive;
+    font-size: 30px;
+    letter-spacing: 0.6px;
+    font-weight: 200;
+}
+
+.digital_library_card-form-btn {
+    padding: 10px 40px;
+    align-items: flex-end;
+    border-radius: 2px;
+    border: 1px solid #0C0C0E;
+    background-color: #FFFFFF;
+    font-size: 20px;
+    letter-spacing: 1px;
+    font-weight: 700;
+    margin-left: 7.95em;
+}
+
+.digital_library_card-form-btn:hover {
+    background-color: #BB945F;
+    cursor: pointer;
+    border: 2px solid #BB945F;
+    transition: 0.5s;
+}
+
+.digital_library_card-account-title {
+    font-family: 'Forum', cursive;
+    font-size: 30px;
+    font-weight: 400;
+    letter-spacing: 0.6px;
+    text-align: right;
+    margin: 0;
+    margin-bottom: 35px;
+}
+
+.digital_library_card-account-text {
+    font-size: 20px;
+    text-align: right;
+    font-weight: 400;
+    line-height: 40px;
+    letter-spacing: 0.4px;
+    width: 456px;
+    margin: 0;
+    margin-bottom: 35px;
+}
+
+.digital_library_card-account-buttons {
+    text-align: right;
+}
+
+.digital_library_card-account-btn {
+    width: 75px;
+    height: 30px;
+    padding: 10px 0px;
+    border-radius: 2px;
+    border: 1px solid #0C0C0E;
+    background-color: white;
+    text-align: center;
+    font-weight: 700;
+    letter-spacing: 1px;
+    font-size: 10px;
+    margin-left: 20px;
+}
+
+.digital_library_card-account-btn:hover {
+    background-color: #BB945F;
+    cursor: pointer;
+    border: 2px solid #BB945F;
+    transition: 0.5s;
+}
+
+/*digital-library-card end*/
+
+/*footer start*/
+
+footer {
+    background-color: #0C0C0E;
+    padding-bottom: 44px;
+}
+
+.footer-columns {
+    padding-top: 20px;
+}
+
+.footer-columns-contacts {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.footer-columns-schedule-text {
+    color: #FFF;
+    font-size: 15px;
+    font-weight: 200;
+    line-height: 20px;
+    text-align: right;
+    margin: 0;
+}
+
+.footer-columns-contacts-text {
+    color: #FFF;
+    font-size: 15px;
+    font-weight: 200;
+    line-height: 20px;
+}
+
+.footer-columns-contacts-icons-link {
+    margin-right: 15px;
+}
+
+
+.footer-columns-schedule {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.footer-columns-contacts-icons {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.footer-underline {
+    width: 1400px;
+    height: 1px;
+    background-color: #FFFFFF;
+    margin-bottom: 44px;
+}
+
+.footer-author {
+    align-items: center;
+    height: 22px;
+}
+
+.footer-author-wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+}
+
+.footer-author-year {
+    color: #FFF;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 2px;
+    margin: 0;
+}
+
+.footer-author-course {
+    margin: 0;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 2px;
+}
+
+.footer-author-github {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 2px;
+}
+
+.footer-author-item.course:hover, .footer-author-item.github:hover {
+    border-bottom: 2px solid #FFFFFF;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+
+/*footer end*/
