@@ -84,27 +84,28 @@ a {
 .welcome {
     background: url(images/library-background.jpg);
     background-size: cover;
-    background-position: 50%;
     background-repeat: no-repeat;
-    width: 100%;
+    background-position: 50%;
+    height: 600px;
 }
 
 .container.welcome {
     margin: 0 auto;
     width: 1440px;
     padding: 0;
+    padding-top: 220px;
 }
 
 .welcome-overlay {
     height: 300px;
     background: linear-gradient(180deg, #0C0C0E 0%, #0C0C0E 0.01%, rgba(18, 18, 21, 0.10) 100%);
+    width: 100%;
 }
 
 .welcome-title {
     background-color: #0C0C0E;
     width: 600px;
     flex-shrink: 0;
-    position: relative;
     bottom: 80px;
     margin: 0;
 }
