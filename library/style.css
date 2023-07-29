@@ -13,10 +13,6 @@ body {
 
 /* header start*/
 
-header {
-    
-}
-
 .container {
     margin: 0 auto;
     width: 1440px;
@@ -541,7 +537,7 @@ a {
 .digital_library_card-form-btn:hover {
     background-color: #BB945F;
     cursor: pointer;
-    border: 2px solid #BB945F;
+    border: 1px solid #BB945F;
     transition: 0.5s;
 }
 
@@ -587,7 +583,7 @@ a {
 .digital_library_card-account-btn:hover {
     background-color: #BB945F;
     cursor: pointer;
-    border: 2px solid #BB945F;
+    border: 1px solid #BB945F;
     transition: 0.5s;
 }
 
