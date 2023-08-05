@@ -13,10 +13,6 @@ body {
 
 /* header start*/
 
-header {
-    background-color: #0C0C0E;
-}
-
 .container {
     margin: 0 auto;
     width: 1440px;
@@ -27,18 +23,22 @@ header .container {
     display: flex;
     padding: 1.25em;
     align-items: center;
-    justify-content:end
+    justify-content:end;
+    background-color: #0C0C0E;
 }
 
-h1 {
+.title {
     font-family: 'Forum', cursive;
     font-size: 30px;
     margin: 0;
     font-weight: 400;
     letter-spacing: 0.02em;
-    width: 25%;
     color: #FFFFFF;
     line-height: 50px;
+}
+
+.title-link {
+  width: 26%;  
 }
 
 li {
@@ -55,6 +55,10 @@ nav .nav-items {
     justify-content: end;
     align-items: center;
     padding: 0;
+    font-size: 20px;
+    line-height: 50px;
+    text-align: left;
+    letter-spacing: 0;
 }
 
 .nav-item:hover {
@@ -63,7 +67,7 @@ nav .nav-items {
 }
 
 nav  li:not(:first-child) {
-    margin-left: 1.875em;
+    margin-left: 30px;
 }
 
 a {
@@ -81,33 +85,34 @@ a {
 
 /* welcome start*/
 
-.welcome {
+
+.container.welcome {
     background: url(images/library-background.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 50%;
     height: 600px;
-}
-
-.container.welcome {
     margin: 0 auto;
     width: 1440px;
     padding: 0;
-    padding-top: 220px;
+    
 }
 
 .welcome-overlay {
     height: 300px;
     background: linear-gradient(180deg, #0C0C0E 0%, #0C0C0E 0.01%, rgba(18, 18, 21, 0.10) 100%);
-    width: 100%;
+    margin: 0 auto;
+    width: 1440px;
+    position: absolute;
 }
 
 .welcome-title {
     background-color: #0C0C0E;
     width: 600px;
-    flex-shrink: 0;
-    bottom: 80px;
-    margin: 0;
+    position: relative;
+    right: 28%;
+    left: 0;
+    margin-top: 220px;
 }
 
 .welcome-title-text {
@@ -132,8 +137,14 @@ a {
     font-family: 'Forum', cursive;
     text-align: center;
     font-size: 40px;
-    font-weight: 200;
-    margin: 0.5em 0
+    font-weight: 400;
+    margin: 0.5em auto;
+    height: 40px;
+    letter-spacing: 2px;
+    width: 106px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-style: normal;
+    color: #0C0C0E;
 }
 
 .underline {
@@ -147,6 +158,8 @@ a {
 .about-subtitle {
     text-align: center;
     font-size: 20px;
+    font-weight: 400;
+    line-height: 40px;  
 }
 
 .about-slider {
@@ -154,10 +167,15 @@ a {
     justify-content: space-between;
 }
 
+.about-slider  {
+    height: 560px;
+}
+
 .about-switcher {
     display: flex;
     justify-content: center;
-    margin: 2.5em 0;
+    margin: 35px 0;
+
 }
 
 .about-switcher-button-wrapper {
@@ -192,7 +210,11 @@ a {
     text-align: center;
     font-size: 40px;
     font-weight: 200;
-    margin: 0.5em 0
+    padding: 0.5em 0;
+    font-weight: 400;
+    line-height: 40px;
+    letter-spacing: 2px;
+    margin: 0;
 }
 
 .favorites-radio-text {
@@ -539,7 +561,7 @@ a {
 .digital_library_card-form-btn:hover {
     background-color: #BB945F;
     cursor: pointer;
-    border: 2px solid #BB945F;
+    border: 1px solid #BB945F;
     transition: 0.5s;
 }
 
@@ -585,7 +607,7 @@ a {
 .digital_library_card-account-btn:hover {
     background-color: #BB945F;
     cursor: pointer;
-    border: 2px solid #BB945F;
+    border: 1px solid #BB945F;
     transition: 0.5s;
 }
 
@@ -593,9 +615,9 @@ a {
 
 /*footer start*/
 
-footer {
-    background-color: #0C0C0E;
-    padding-bottom: 44px;
+footer .container {
+   background-color: #0C0C0E; 
+   padding-bottom: 44px;
 }
 
 .footer-columns {
