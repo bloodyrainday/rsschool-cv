@@ -56,13 +56,13 @@ nav .nav-items {
     align-items: center;
     padding: 0;
     font-size: 20px;
-    line-height: 50px;
+    line-height: 48px;
     text-align: left;
     letter-spacing: 0;
 }
 
 .nav-item:hover {
-    border-bottom: 2px solid #FFFFFF;
+    border-bottom: 1px solid #FFFFFF;
     transition: 0.5s;
 }
 
@@ -227,8 +227,9 @@ a {
 
 .favorites-radio-name {
     font-size: 20px;
-    margin-right: 4.5em;
-    padding: 5px;
+    margin-right: 89px;
+    width: 100%;
+    
 }
 
 .favorites-radio-name, .favorites-radio-btn:hover {
@@ -239,6 +240,14 @@ a {
     margin: 0;
     margin-right: 20px;
     accent-color: black;
+    width: 17px;
+    height: 17px;
+    align-items: end;
+    flex-shrink: 0;
+}
+
+.favorites-radio-name-season {
+    height: 24px;
 }
 
 .favorites-books {
@@ -269,7 +278,9 @@ a {
     font-family: 'Forum', cursive;
     font-size: 20px;
     font-weight: 200;
-    margin: 0 0 1em;
+    margin: 0;
+    line-height: 39px; /* 200% */
+    letter-spacing: 2px;
 }
 
 .favourites-book-underline {
@@ -295,7 +306,7 @@ a {
     letter-spacing: 2px;
     line-height: 40px;
     width: 355px;
-    height: 320px;
+    height: 319px;
     margin: 0;
     text-align: left;
     text-transform: capitalize;
@@ -303,12 +314,16 @@ a {
 
 .favorites-book-btn {
     font-size: 10px;
-    font-weight: 600;
-    padding: 9px 27px;
-    margin-top: 2.4em;
+    font-weight: 700;
+    margin-top: 15px;
     border-radius: 2px;
     background-color: #FFFFFF;
-}
+    width: 75px;
+    height: 30px;
+    letter-spacing: 1px;
+    font-family: 'Inter', cursive;
+    border: 1px solid #0C0C0E;
+}   
 
 .favorites-book-btn:hover {
     border: 2px solid #BB945F;
@@ -326,9 +341,8 @@ a {
 
 .favorites-book-cover {
     position: absolute;
-    left: 385px;
+    left: 391px;
     bottom: 40px;
-    border: 1px solid #0C0C0E;
 }
 
 /*favorites end*/
@@ -339,22 +353,30 @@ a {
     font-family: 'Forum', cursive;
     text-align: center;
     font-size: 40px;
-    font-weight: 200;
-    margin: 0.5em 0
+    font-weight: 400;
+    margin: 0.5em 0;
+    line-height: 40px; /* 100% */
+    letter-spacing: 2px;
 }
 
 .coffee_shop-subtitle {
+    font-family: 'Inter', cursive;
     margin: 0;
     font-size: 20px;
     letter-spacing: 2px;
     text-align: center;
     line-height: 40px;
-    margin-bottom: 2em
+    margin-bottom: 2em;
+    font-weight: 400;
 }
 
 .coffee_shop-menu {
     display: flex;
     justify-content: space-between;
+}
+
+.coffee_shop-drinks {
+    text-align: left;
 }
 
 .coffee_shop-drinks-title {
@@ -366,7 +388,7 @@ a {
     letter-spacing: 2px;
     text-align: left;
     margin: 0;
-    margin-bottom: 2em;
+    margin-bottom: 1em;
 }
 
 .coffee_shop-drinks-string {
@@ -379,9 +401,18 @@ a {
 .coffee_shop-drinks-string-name {
     line-height: 40px;
     letter-spacing: 2px;
+    width: auto;
     font-size: 20px;
-    width: 200px;
-    margin-right: 60px;
+    font-weight: 400;
+    margin: 0;
+}
+
+.coffee_shop-drinks-string-price-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 182px;
+    margin-left: 60px;
 }
 
 .coffee_shop-drinks-string-line {
@@ -394,7 +425,7 @@ a {
     line-height: 40px;
     letter-spacing: 2px;
     font-size: 20px;
-    margin-left: 60px;
+    font-weight: 400;
 }
 
 .coffee_shop-desserts-title {
@@ -406,7 +437,7 @@ a {
     letter-spacing: 2px;
     text-align: right;
     margin: 0;
-    margin-bottom: 2em;
+    margin-bottom: 1em;
 }
 
 .coffee_shop-desserts-string {
@@ -421,8 +452,16 @@ a {
     letter-spacing: 2px;
     font-size: 20px;
     width: 215px;
-    margin-right: 60px;
     text-align: right;
+    margin: 0;
+    margin-right: 60px;
+}
+
+.coffee_shop-desserts-string-price-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 182px;
 }
 
 .coffee_shop-desserts-string-line {
@@ -435,7 +474,6 @@ a {
     line-height: 40px;
     letter-spacing: 2px;
     font-size: 20px;
-    margin-left: 60px;
 }
 
 /*coffee-shop end*/
@@ -447,13 +485,16 @@ a {
     text-align: center;
     font-size: 40px;
     font-weight: 200;
-    margin: 0.5em 0
+    margin: 0.5em 0;
+    font-weight: 400;
+    line-height: 40px; /* 100% */
+    letter-spacing: 2px;
 }
 
 .our_contacts-columns {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 2em;
+    margin-bottom: 40px;
 }
 
 .our_contacts-contacts-column1-text {
@@ -485,8 +526,11 @@ a {
     font-family: 'Forum', cursive;
     text-align: center;
     font-size: 40px;
-    font-weight: 200;
-    margin: 0.5em 0
+    font-weight: 400;
+    line-height: 40px; /* 100% */
+    letter-spacing: 2px;
+    padding: 20px 0;
+    margin: 0;
 }
 
 .digital_library_card-columns {
