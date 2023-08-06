@@ -15,7 +15,7 @@ body {
 
 .container {
     margin: 0 auto;
-    width: 1440px;
+    max-width: 1440px;
     padding: 0 1.25em;
 }
 
@@ -23,7 +23,7 @@ header .container {
     display: flex;
     padding: 1.25em;
     align-items: center;
-    justify-content:end;
+    justify-content: space-between;
     background-color: #0C0C0E;
 }
 
@@ -56,7 +56,7 @@ nav .nav-items {
     align-items: center;
     padding: 0;
     font-size: 20px;
-    line-height: 48px;
+    line-height: 47px;
     text-align: left;
     letter-spacing: 0;
 }
@@ -73,6 +73,10 @@ nav  li:not(:first-child) {
 a {
     text-decoration: none;
     color: #FFFFFF
+}
+
+.icon-burger {
+    display: none;
 }
 
 .icon-profile {
@@ -93,23 +97,23 @@ a {
     background-position: 50%;
     height: 600px;
     margin: 0 auto;
-    width: 1440px;
+    max-width: 1440px;
     padding: 0;
-    
+    position: relative;
 }
 
 .welcome-overlay {
     height: 300px;
     background: linear-gradient(180deg, #0C0C0E 0%, #0C0C0E 0.01%, rgba(18, 18, 21, 0.10) 100%);
     margin: 0 auto;
-    width: 1440px;
-    position: absolute;
+    width: 100%;
+    
 }
 
 .welcome-title {
     background-color: #0C0C0E;
     width: 600px;
-    position: relative;
+    position: absolute;
     right: 28%;
     left: 0;
     margin-top: 220px;
@@ -193,6 +197,10 @@ a {
     border-radius: 10px;
 }
 
+.about-switcher-button-wrapper.fourth, .about-switcher-button-wrapper.fifth {
+    display: none;
+}
+
 .about-switcher-button-wrapper:hover {
     cursor: pointer;
 }
@@ -227,9 +235,11 @@ a {
 
 .favorites-radio-name {
     font-size: 20px;
-    margin-right: 89px;
     width: 100%;
-    
+}
+
+.favorites-radio-name:not(:last-child) {
+    margin-right: 89px;
 }
 
 .favorites-radio-name, .favorites-radio-btn:hover {
@@ -536,6 +546,7 @@ a {
 .digital_library_card-columns {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .digital_library_card-form-title {
@@ -709,7 +720,7 @@ footer .container {
 }
 
 .footer-underline {
-    width: 1400px;
+    max-width: 1400px;
     height: 1px;
     background-color: #FFFFFF;
     margin-bottom: 44px;
@@ -759,3 +770,119 @@ footer .container {
 
 
 /*footer end*/
+
+@media (max-width: 1420px) {
+
+    .about-slider {
+        justify-content: space-around;
+    }
+
+    .about-slider-item:last-child{
+        display: none;
+    }
+}
+
+@media (max-width: 1240px) {
+
+    .title {
+        width: 294px
+    }
+    
+    .favorites-books {
+        justify-content: center;
+    }
+
+    .our_contacts-columns {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+}
+
+@media (max-width: 1160px) {
+
+    .digital_library_card-columns {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .digital_library_card-form-wrapper {
+        margin-bottom: 21px;
+    }
+
+    .digital_library_card-account {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-bottom: 40px;
+    }
+
+    .digital_library_card-account-title {
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    .digital_library_card-account-text {
+        text-align: center;
+        height: 80px;
+        width: 600px;
+        
+    }
+
+    .digital_library_card-account-buttons {
+        text-align: center;
+    }
+}
+
+@media (max-width: 1030px) {
+    nav {
+            display: none;
+        }
+
+        .icons-wrapper {
+            display: flex;
+            align-items: center;
+        }
+
+        .icon-burger {
+            display:inline;
+            margin-left: 40px;
+        }
+}
+
+@media (max-width: 1010px) {
+
+    .about-slider {
+        justify-content: center;
+    }
+
+    .about-slider-item:not(:first-child){
+        display: none;
+    }
+
+    .about-switcher-button-wrapper.fourth, .about-switcher-button-wrapper.fifth {
+        display: flex;
+        
+    }
+
+    .coffee_shop-menu {
+        flex-wrap: wrap;
+    }
+
+    .coffee_shop-desserts {
+       width: 100%;
+       text-align: right;
+    }
+
+    .coffee_shop-desserts-string {
+        justify-content: right;
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    .our_contacts-columns {
+        justify-content: space-between;
+    }
+}
