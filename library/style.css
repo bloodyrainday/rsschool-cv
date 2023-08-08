@@ -11,7 +11,15 @@ body {
     font-family: 'Inter', sans-serif;
 }
 
+.body-wrapper {
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+}
+
 /* header start*/
+
+
 
 .container {
     margin: 0 auto;
@@ -57,7 +65,6 @@ nav .nav-items {
     padding: 0;
     font-size: 20px;
     line-height: 47px;
-    text-align: left;
     letter-spacing: 0;
 }
 
@@ -75,8 +82,30 @@ a {
     color: #FFFFFF
 }
 
-.icon-burger {
+.icons-wrapper {
+   position: relative;
+}
+
+.icon-burger span{
     display: none;
+    width: 45px;
+    height: 2px;
+    position: absolute;
+    right: 0;
+}
+
+.icon-burger span:nth-child(1) {
+    background-color: #FFF;
+    transform: translateY(-10px);
+}
+
+.icon-burger span:nth-child(2) {
+    background-color: #FFF;
+}
+
+.icon-burger span:nth-child(3) {
+    background-color: #FFF;
+    transform: translateY(10px);
 }
 
 .icon-profile {
@@ -88,7 +117,6 @@ a {
 
 
 /* welcome start*/
-
 
 .container.welcome {
     background: url(images/library-background.jpg);
@@ -857,19 +885,74 @@ footer .container {
 }
 
 @media (max-width: 1030px) {
+
     nav {
-            display: none;
+            position: absolute;
+            right: -332px;
+            top: 0;
+            width: 332px;
+            height: 480px;
+            z-index: 100;
+            background-color: #000;
+            top: 100px;
         }
 
-        .icons-wrapper {
-            display: flex;
-            align-items: center;
+        .nav-items {
+            padding-top: 100px;
+            flex-direction: column;
+        }
+
+        .nav-item {
+            text-align: center;
+            width: 118px;
+        }
+
+        .nav-item:nth-child(1) {
+            margin-top: 10px;
+        }
+
+        .nav-item:not(:first-child) {
+            margin: 0;
+        }
+
+        .nav-item:not(:last-child) {
+            margin-bottom: 30px;
+        }
+
+        .nav-item-link {
+            display: block;
         }
 
         .icon-burger {
-            display:inline;
+            display: block;
             margin-left: 40px;
         }
+
+        .icon-burger span{
+            right: 20px;
+            bottom: 25px;
+            display: block;
+        }
+
+        .header.open .icon-burger span:nth-child(1) {
+            background-color: #FFF;
+            transform: translateY(0) rotate(-45deg);
+        }
+        
+        .header.open .icon-burger span:nth-child(2) {
+            opacity: 0;
+        }
+        
+        .header.open .icon-burger span:nth-child(3) {
+            background-color: #FFF;
+            transform: translateY(0) rotate(45deg);
+        }
+
+        .icon-profile {
+            padding-right: 40px;
+    
+        }
+
 }
 
 @media (max-width: 1010px) {
@@ -928,6 +1011,7 @@ footer .container {
         margin-top: 75px;
         width: 100%;
     }
+
 }
 
 @media (max-width: 745px) {

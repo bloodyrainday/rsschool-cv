@@ -14,7 +14,8 @@
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
+    <div class="body-wrapper">
+    <header class="header open">
         <div class="container">
             <a class='title-link' href="#"><h1 class="title">Brooklyn Public Library</h1></a>
             <nav>
@@ -28,11 +29,13 @@
             </nav>
             <div class="icons-wrapper">
                 <a href="#" class="icon-profile">
-                <img src="icons/icon_profile.svg" alt="account-icon">
+                <img class="header-icon-profile" src="icons/icon_profile.svg" alt="account-icon">
             </a>
-            <a href="#" class="icon-burger">
-                <img src="icons/burger.svg" alt="burger">
-            </a>
+            <div class="icon-burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
             </div>
             
         </div>
@@ -546,6 +549,7 @@
               </footer>
 
     </main>
+</div>
     <script src="index.js"></script>
 </body>
 </html>
