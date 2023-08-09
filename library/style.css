@@ -19,7 +19,9 @@ body {
 
 /* header start*/
 
-
+header {
+    position: relative;
+}
 
 .container {
     margin: 0 auto;
@@ -82,20 +84,30 @@ a {
     color: #FFFFFF
 }
 
-.icons-wrapper {
+/*.icons-wrapper {
    position: relative;
+}*/
+
+.icon-burger {
+    
+    position: relative;
+    width: 32px;
+    height: 32px;
+    border: none;
+    outline: none;
+    background-color: #0C0C0E;
 }
 
 .icon-burger span{
-    display: none;
+    position: absolute;
     width: 45px;
     height: 2px;
-    position: absolute;
     right: 0;
+    background-color: #FFF;
 }
 
 .icon-burger span:nth-child(1) {
-    background-color: #FFF;
+    
     transform: translateY(-10px);
 }
 
@@ -891,10 +903,11 @@ footer .container {
             right: -332px;
             top: 0;
             width: 332px;
-            height: 480px;
-            z-index: 100;
+            height: 570px;
+            z-index: 10;
             background-color: #000;
-            top: 100px;
+            padding-top: 90px;
+
         }
 
         .nav-items {
@@ -905,6 +918,7 @@ footer .container {
         .nav-item {
             text-align: center;
             width: 118px;
+            line-height: 50px;
         }
 
         .nav-item:nth-child(1) {
@@ -924,19 +938,20 @@ footer .container {
         }
 
         .icon-burger {
-            display: block;
-            margin-left: 40px;
+            z-index: 20;
+            bottom: 2px;
         }
 
-        .icon-burger span{
-            right: 20px;
-            bottom: 25px;
+        .header.open .icon-burger span{
             display: block;
+            bottom: 25px;
+            left: -6px;
+
         }
 
         .header.open .icon-burger span:nth-child(1) {
             background-color: #FFF;
-            transform: translateY(0) rotate(-45deg);
+            transform: translateY(0) rotate(45deg);
         }
         
         .header.open .icon-burger span:nth-child(2) {
@@ -945,12 +960,22 @@ footer .container {
         
         .header.open .icon-burger span:nth-child(3) {
             background-color: #FFF;
-            transform: translateY(0) rotate(45deg);
+            transform: translateY(0) rotate(-45deg);
         }
 
         .icon-profile {
-            padding-right: 40px;
-    
+            position: absolute;
+            z-index: 20;
+            left: 595px;
+            top: 30px
+        }
+
+        .header.open .icon-profile {
+            position: absolute;
+            z-index: 20;
+            left: 618px;
+            top: 20px;
+            
         }
 
 }
