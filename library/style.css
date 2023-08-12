@@ -809,9 +809,9 @@ footer .container {
 }
 
 .footer-author-course {
+    width: 300px;
     font-family: 'Inter', cursive;
     margin: 0;
-    margin-left: 46px;
     font-size: 20px;
     font-weight: 400;
     line-height: 20px;
@@ -908,7 +908,7 @@ footer .container {
             z-index: 10;
             background-color: #000;
             padding-top: 90px;
-
+            transition: 0.5s;
         }
 
         .nav-items {
