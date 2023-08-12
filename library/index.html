@@ -14,9 +14,10 @@
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
+    <div class="body-wrapper">
+    <header class="header" id="menu">
         <div class="container">
-            <a class='title-link' href="#"></a><h1 class="title">Brooklyn Public Library</h1></a>
+            <a class='title-link' href="#"><h1 class="title">Brooklyn Public Library</h1></a>
             <nav>
                 <ul class="nav-items">
                     <li class="nav-item"><a href="#about" class="nav-item-link">About</a></li>
@@ -26,22 +27,33 @@
                     <li class="nav-item"><a href="#digital_library_card" class="nav-item-link">Library Card</a></li>
                 </ul>
             </nav>
-            <a href="#" class="icon-profile">
-                <img src="icons/icon_profile.svg" alt="account-icon">
+            <div class="icons-wrapper">
+                <a href="#" class="icon-profile">
+                <img class="header-icon-profile" src="icons/icon_profile.svg" alt="account-icon">
             </a>
+            <button class="icon-burger" id="burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            </div> 
+            
         </div>
     </header>
     <main>
             <section class="welcome">
-                <div class="welcome-overlay">
+                
                     <div class="container welcome">
-                        <div class="welcome-title">
-                            <h2 class="welcome-title-text">Welcome <br> 
-                            to the Brooklyn <br> Library
-                            </h2>
-                        </div>
+                        <div class="welcome-overlay">
+                            <div class="welcome-title">
+                                <h2 class="welcome-title-text">  Welcome<br> 
+                                                               to the Brooklyn<br>
+                                                               Library
+                                </h2>
+                            </div>
+                        </div> 
                     </div>
-                </div>    
+                   
             </section>
 
 
@@ -51,14 +63,20 @@
                     <div class="underline about"></div>
                     <p class="about-subtitle">The Brooklyn Library is a free workspace, a large number of books and a cozy coffee shop inside </p>
                     <div class="about-slider">
-                        <div class="about-slider-item">
-                            <img src="images/image 1.png" alt="slider-image" class="about-slider-item-image">
+                        <div class="about-slider-arrow">
+                            <img src="icons/Arrow2.svg" alt="arrow" class="about-slider-arrow-left">
                         </div>
-                        <div class="about-slider-item">
-                            <img src="images/image 2.png" alt="slider-image" class="about-slider-item-image">
+                        <div class="about-slider-item first">
+                            <img src="images/image1.png" alt="slider-image" class="about-slider-item-image">
                         </div>
-                        <div class="about-slider-item">
-                            <img src="images/image 3.png" alt="slider-image" class="about-slider-item-image">
+                        <div class="about-slider-item second">
+                            <img src="images/image2.png" alt="slider-image" class="about-slider-item-image">
+                        </div>
+                        <div class="about-slider-item third">
+                            <img src="images/image3.png" alt="slider-image" class="about-slider-item-image">
+                        </div>
+                        <div class="about-slider-arrow">
+                            <img src="icons/Arrow1.svg" alt="arrow" class="about-slider-arrow-right">
                         </div>
                     </div>
                     <div class="about-switcher">
@@ -71,7 +89,12 @@
                         <div class="about-switcher-button-wrapper">
                             <div class="about-switcher-button right"></div>
                         </div>
-                        
+                        <div class="about-switcher-button-wrapper fourth">
+                            <div class="about-switcher-button "></div>
+                        </div>
+                        <div class="about-switcher-button-wrapper fifth">
+                            <div class="about-switcher-button "></div>
+                        </div>
                     </div>
                 </div>
               </section>
@@ -85,16 +108,16 @@
                     <div class="favorites-radio">
 
                             
-                        <label  class='favorites-radio-name' for="check1"><input class="favorites-radio-btn" type="radio" id="check1" value="Winter" name="season">Winter</label>
+                        <label  class='favorites-radio-name' for="check1"><input class="favorites-radio-btn" type="radio" id="check1" value="Winter" name="season"><span class="favorites-radio-name-season">Winter</span></label>
                     
                         
-                        <label class='favorites-radio-name' for="check2"><input class="favorites-radio-btn" type="radio" id="check2" value="Spring" name="season">Spring</label>
+                        <label class='favorites-radio-name' for="check2"><input class="favorites-radio-btn" type="radio" id="check2" value="Spring" name="season"><span>Spring</span></label>
                     
                         
-                        <label class='favorites-radio-name' for="check3"><input class="favorites-radio-btn" type="radio" id="check3" value="Summer" name="season">Summer</label>
+                        <label class='favorites-radio-name' for="check3"><input class="favorites-radio-btn" type="radio" id="check3" value="Summer" name="season"><span>Summer</span></label>
                     
                         
-                        <label class='favorites-radio-name' for="check4"><input class="favorites-radio-btn" type="radio" id="check4" value="Autumn" name="season">Autumn</label>
+                        <label class='favorites-radio-name' for="check4"><input class="favorites-radio-btn" type="radio" id="check4" value="Autumn" name="season"><span>Autumn</span></label>
                     </div> 
                     <div class="favorites-books">
 
@@ -338,67 +361,92 @@
                         <div class="coffee_shop-drinks">
                             <h2 class="coffee_shop-drinks-title">Coffee & Tea</h2>
                             <div class="coffee_shop-drinks-string">
-                                <div class="coffee_shop-drinks-string-name">Cold Brew Coffee</div>
-                                <div class="coffee_shop-drinks-string-line"></div>
-                                <div class="coffee_shop-drinks-string-price">$3</div>
+                                <p class="coffee_shop-drinks-string-name">Cold Brew Coffee</p>
+                                <div class="coffee_shop-drinks-string-price-wrapper">
+                                    <div class="coffee_shop-drinks-string-line"></div>
+                                    <div class="coffee_shop-drinks-string-price">$3</div>
+                                </div>
+                                
                             </div>
                             <div class="coffee_shop-drinks-string">
-                                <div class="coffee_shop-drinks-string-name">French Press Pot</div>
-                                <div class="coffee_shop-drinks-string-line"></div>
-                                <div class="coffee_shop-drinks-string-price">$5</div>
+                                <p class="coffee_shop-drinks-string-name">French Press Pot</p>
+                                <div class="coffee_shop-drinks-string-price-wrapper">
+                                    <div class="coffee_shop-drinks-string-line"></div>
+                                    <div class="coffee_shop-drinks-string-price">$5</div>
+                                </div>    
                             </div>
                             <div class="coffee_shop-drinks-string">
-                                <div class="coffee_shop-drinks-string-name">Espresso</div>
-                                <div class="coffee_shop-drinks-string-line"></div>
-                                <div class="coffee_shop-drinks-string-price">$2</div>
+                                <p class="coffee_shop-drinks-string-name">Espresso</p>
+                                <div class="coffee_shop-drinks-string-price-wrapper">
+                                    <div class="coffee_shop-drinks-string-line"></div>
+                                    <div class="coffee_shop-drinks-string-price">$2</div>
+                                </div>
                             </div>
                             <div class="coffee_shop-drinks-string">
-                                <div class="coffee_shop-drinks-string-name">Cappuccino</div>
-                                <div class="coffee_shop-drinks-string-line"></div>
-                                <div class="coffee_shop-drinks-string-price">$4</div>
+                                <p class="coffee_shop-drinks-string-name">Cappuccino</p>
+                                <div class="coffee_shop-drinks-string-price-wrapper">
+                                    <div class="coffee_shop-drinks-string-line"></div>
+                                    <div class="coffee_shop-drinks-string-price">$4</div>
+                                </div>
                             </div>
                             <div class="coffee_shop-drinks-string">
-                                <div class="coffee_shop-drinks-string-name">Hot tea</div>
-                                <div class="coffee_shop-drinks-string-line"></div>
-                                <div class="coffee_shop-drinks-string-price">$2</div>
+                                <p class="coffee_shop-drinks-string-name">Hot tea</p>
+                                <div class="coffee_shop-drinks-string-price-wrapper">
+                                    <div class="coffee_shop-drinks-string-line"></div>
+                                    <div class="coffee_shop-drinks-string-price">$2</div>
+                                </div>
                             </div>
                             <div class="coffee_shop-drinks-string">
-                                <div class="coffee_shop-drinks-string-name">Cold tea</div>
-                                <div class="coffee_shop-drinks-string-line"></div>
-                                <div class="coffee_shop-drinks-string-price">$2</div>
+                                <p class="coffee_shop-drinks-string-name">Cold tea</p>
+                                <div class="coffee_shop-drinks-string-price-wrapper">
+                                    <div class="coffee_shop-drinks-string-line"></div>
+                                    <div class="coffee_shop-drinks-string-price">$2</div>
+                                </div>
                             </div>
                         </div>
                         <div class="coffee_shop-desserts">
                             <h2 class="coffee_shop-desserts-title">Desserts & Cakes</h2>
                             <div class="coffee_shop-desserts-string">
-                                <div class="coffee_shop-desserts-string-name">Forest Gateau</div>
-                                <div class="coffee_shop-desserts-string-line"></div>
-                                <div class="coffee_shop-desserts-string-price">$16</div>
+                                <p class="coffee_shop-desserts-string-name">Forest Gateau</p>
+                                <div class="coffee_shop-desserts-string-price-wrapper">
+                                    <div class="coffee_shop-desserts-string-line"></div>
+                                    <div class="coffee_shop-desserts-string-price">$16</div>
+                                </div>
                             </div>
                             <div class="coffee_shop-desserts-string">
-                                <div class="coffee_shop-desserts-string-name">Blue Moon</div>
-                                <div class="coffee_shop-desserts-string-line"></div>
-                                <div class="coffee_shop-desserts-string-price">$16</div>
+                                <p class="coffee_shop-desserts-string-name">Blue Moon</p>
+                                <div class="coffee_shop-desserts-string-price-wrapper">
+                                    <div class="coffee_shop-desserts-string-line"></div>
+                                    <div class="coffee_shop-desserts-string-price">$16</div>
+                                </div>
                             </div>
                             <div class="coffee_shop-desserts-string">
-                                <div class="coffee_shop-desserts-string-name">Truffle Cake</div>
-                                <div class="coffee_shop-desserts-string-line"></div>
-                                <div class="coffee_shop-desserts-string-price">$15</div>
+                                <p class="coffee_shop-desserts-string-name">Truffle Cake</p>
+                                <div class="coffee_shop-desserts-string-price-wrapper">
+                                    <div class="coffee_shop-desserts-string-line"></div>
+                                    <div class="coffee_shop-desserts-string-price">$15</div>
+                                </div>
                             </div>
                             <div class="coffee_shop-desserts-string">
-                                <div class="coffee_shop-desserts-string-name">Chocolate Cake</div>
-                                <div class="coffee_shop-desserts-string-line"></div>
-                                <div class="coffee_shop-desserts-string-price">$18</div>
+                                <p class="coffee_shop-desserts-string-name">Chocolate Cake</p>
+                                <div class="coffee_shop-desserts-string-price-wrapper">
+                                    <div class="coffee_shop-desserts-string-line"></div>
+                                    <div class="coffee_shop-desserts-string-price">$18</div>
+                                </div>
                             </div>
                             <div class="coffee_shop-desserts-string">
-                                <div class="coffee_shop-desserts-string-name">Poet’s Dream Cake</div>
-                                <div class="coffee_shop-desserts-string-line"></div>
-                                <div class="coffee_shop-desserts-string-price">$16</div>
+                                <p class="coffee_shop-desserts-string-name">Poet’s Dream Cake</p>
+                                <div class="coffee_shop-desserts-string-price-wrapper">
+                                    <div class="coffee_shop-desserts-string-line"></div>
+                                    <div class="coffee_shop-desserts-string-price">$16</div>
+                                </div>
                             </div>
                             <div class="coffee_shop-desserts-string">
-                                <div class="coffee_shop-desserts-string-name">Pineapple Cake</div>
-                                <div class="coffee_shop-desserts-string-line"></div>
-                                <div class="coffee_shop-desserts-string-price">$14</div>
+                                <p class="coffee_shop-desserts-string-name">Pineapple Cake</p>
+                                <div class="coffee_shop-desserts-string-price-wrapper">
+                                    <div class="coffee_shop-desserts-string-line"></div>
+                                    <div class="coffee_shop-desserts-string-price">$14</div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -411,13 +459,22 @@
                     <div class="underline our_contacts"></div>
                     <div class="our_contacts-columns">
                         <div class="our_contacts-contacts-column1">
-                            <p class="our_contacts-contacts-column1-text p-1"><b>For all Library inquiries:</b></p>
-                            <p class="our_contacts-contacts-column1-text p-2">Please call <a class='phone-number' href="(617)730-2370">(617) 730-2370</a><br>
-                                                                              For TTY service, please call <a class='phone-number' href="tel:(617)730-2370">(617) 730-2370</a><br>
-                                                                              Putterham Library: <a class='phone-number' href="tel:(617)730-2385">(617) 730-2385</a>
-                            </p>
-                            <p class="our_contacts-contacts-column1-text p-3"><b>Senior Staff</b><br>
-                                                                                 Library Director: <b><a class='mail-adress' href="mailto:AmandaHirst@gmail.com">Amanda Hirst</a></b></p>
+                            <h5 class="our_contacts-contacts-column1-text p-1"><b>For All Library inquiries:</b></h5>
+                            <div class="our_contacts-contacts-column1-text p-2">
+                                <p class="our_contacts-contacts-column1-text-subtext">
+                                    Please call <a class='phone-number' href="tel:(617)730-2370">(617) 730-2370</a>
+                                </p>
+                                <p class="our_contacts-contacts-column1-text-subtext">
+                                    For TTY service, please call <a class='phone-number' href="tel:(617)730-2370">(617) 730-2370</a>
+                                </p>
+                                <p class="our_contacts-contacts-column1-text-subtext">
+                                    Putterham Library: <a class='phone-number' href="tel:(617)730-2385">(617) 730-2385</a>
+                                </p>                                             
+                            </div>
+                            <h5 class="our_contacts-contacts-column1-text p-3"><b>Senior Staff</b><h5>
+                            <p class="our_contacts-contacts-column1-text-subtext">
+                                Library Director: <b><a class='mail-adress' href="mailto:AmandaHirst@gmail.com">Amanda Hirst</a></b>
+                            </p>                                              
                         </div>
                         <div class="our_contacts-contacts-map">
                             <img src="images/map.png" alt="map" class="our_contacts-contacts-map-img">
@@ -434,7 +491,7 @@
                         <div class="digital_library_card-form">
                             <h2 class="digital_library_card-form-title">Find your Library card</h2>
                             <div class="digital_library_card-form-wrapper">
-                                <form action="">
+                                <form action="just-an-action">
                                     <h4 class="digital_library_card-form-subtitle">Brooklyn Public Library</h4>
                                     <input class='digital_library_card-form-input' type="text" pattern='[0-9A-Za-z-]' placeholder="Reader's name"><br>
                                     <input class='digital_library_card-form-input' type="text"  placeholder="Card number">
@@ -458,7 +515,7 @@
                 <div class="container footer">
                     <div class="footer-columns">
                         <div class="footer-columns-contacts">
-                            <a target="_blank class="footer-columns-contacts-text" href="https://www.google.com/maps/place/286+Cadman+Plaza+E,+Brooklyn,+NY+11201,+USA/@40.6956215,-73.9949653,17z/data=!3m1!4b1!4m9!1m2!2m1!1s286+Cadman+Plaza,+New+York,+NY+11238,+United+States!3m5!1s0x89c25a49ebbb4533:0x83b2f30fade7bf9f!8m2!3d40.6956216!4d-73.9900944!15sCjMyODYgQ2FkbWFuIFBsYXphLCBOZXcgWW9yaywgTlkgMTEyMzgsIFVuaXRlZCBTdGF0ZXOSARBnZW9jb2RlZF9hZGRyZXNz4AEA?entry=ttu" >286 Cadman Plaza, New York,<br> NY 11238, United States</a>
+                            <a target="_blank" class="footer-columns-contacts-text" href="https://www.google.com/maps/place/286+Cadman+Plaza+E,+Brooklyn,+NY+11201,+USA/@40.6956215,-73.9949653,17z/data=!3m1!4b1!4m9!1m2!2m1!1s286+Cadman+Plaza,+New+York,+NY+11238,+United+States!3m5!1s0x89c25a49ebbb4533:0x83b2f30fade7bf9f!8m2!3d40.6956216!4d-73.9900944!15sCjMyODYgQ2FkbWFuIFBsYXphLCBOZXcgWW9yaywgTlkgMTEyMzgsIFVuaXRlZCBTdGF0ZXOSARBnZW9jb2RlZF9hZGRyZXNz4AEA?entry=ttu" >286 Cadman Plaza, New York,<br> NY 11238, United States</a>
                             <p class="footer-columns-schedule-text">Mon - Fri<br>
                                 08:00 am - 07:00 pm</p>
                         </div>
@@ -483,7 +540,7 @@
                                 <a target="_blank" class="footer-author-course" href="https://rs.school/js-stage0/">The Rolling Scopes School</a>
                             </li>
                             <li class="footer-author-item github">
-                                <a target="_blank" href="https://github.com/bloodyrainday" class="footer-author-github">bloodyrainday</a>
+                                <a target="_blank" href="https://github.com/bloodyrainday" class="footer-author-github">mikita</a>
                             </li>
                         </ul>
                         
@@ -492,6 +549,7 @@
               </footer>
 
     </main>
+</div>
     <script src="index.js"></script>
 </body>
 </html>
