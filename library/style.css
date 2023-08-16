@@ -148,6 +148,7 @@ a {
     background: linear-gradient(180deg, #0C0C0E 0%, #0C0C0E 0.01%, rgba(18, 18, 21, 0.10) 100%);
     margin: 0 auto;
     width: 100%;
+    
 }
 
 .welcome-title {
@@ -176,6 +177,10 @@ a {
 /* welcome end*/
 
 /* about start*/
+
+.about .container {
+    overflow: hidden;
+}
 
 .about-title {
     font-family: 'Forum', cursive;
@@ -211,10 +216,18 @@ a {
     display: flex;
     justify-content: space-between;
     height: 560px;
+    position: relative;
+    width: 1400px;
+    left: 0;
+    transition: all ease 1s;
 }
 
 .about-slider-arrow {
     display: none;
+}
+
+.about-slider-item:not(:last-child) {
+    margin-right: 25px;
 }
 
 .about-switcher {
@@ -224,7 +237,7 @@ a {
 
 }
 
-.about-switcher-button-wrapper {
+.about-switcher-button-wrapper, .about-switcher-button-wrapper-fourth, .about-switcher-button-wrapper-fifth {
     width: 26px;
     height: 26px;
     display: flex;
@@ -232,22 +245,22 @@ a {
     align-items: center;
 }
 
-.about-switcher-button {
+.about-switcher-button, .about-switcher-button-left, .about-switcher-button-center, .about-switcher-button-right {
     width: 16px;
     height: 16px;
     background-color: #0C0C0E;
     border-radius: 10px;
 }
 
-.about-switcher-button-wrapper.fourth, .about-switcher-button-wrapper.fifth {
+.about-switcher-button-wrapper-fourth, .about-switcher-button-wrapper-fifth {
     display: none;
 }
 
-.about-switcher-button-wrapper:hover {
+.about-switcher-button-wrapper:hover, .about-switcher-button-wrapper-fourth:hover, .about-switcher-button-wrapper-fifth:hover {
     cursor: pointer;
 }
 
-.about-switcher-button.left {
+.about-switcher-button-left {
     background-color: #BB945F
 }
 
@@ -1005,7 +1018,7 @@ footer .container {
         margin-top: 42px;
     }
 
-    .about-switcher-button-wrapper.fourth, .about-switcher-button-wrapper.fifth {
+    .about-switcher-button-wrapper-fourth, .about-switcher-button-wrapper-fifth {
         display: flex;
         
     }
