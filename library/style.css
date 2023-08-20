@@ -125,6 +125,56 @@ a {
     padding-left: 2.5em;
 }
 
+.icon-profile-popup {
+    width: 80px;
+    height: 115px;
+    background-color: #FFF;
+    position: absolute;
+    text-align: center;
+    top: 25px;
+    right: 0;
+    z-index: 1000;
+    visibility: hidden;
+    transition: 0.2s ease;
+}
+
+.icons-wrapper.active .icon-profile-popup {
+    visibility: inherit;
+    top: 35px;
+    transition: 0.2s ease;
+}
+
+.icon-profile-popup p {
+    margin: 0;
+}
+
+.icon-profile-popup .icon-profile-popup-title {
+    font-family: 'Inter', cursive;
+    font-size: 15px;
+    font-weight: 600;
+    margin: 5px 0;
+}
+
+.icon-profile-popup .icon-profile-popup-underline {
+    width: 40px;
+    height: 1px;
+    background-color: #BB945F;
+    margin: 0 auto;
+    margin-bottom: 15px;
+}
+
+.icon-profile-popup .icon-profile-popup-text {
+    font-family: 'Inter', cursive;
+    font-size: 15px;
+}
+
+.icon-profile-popup .icon-profile-popup-text:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.icon-profile-popup .icon-profile-popup-text:last-child {
+    padding-bottom: 20px;
+}
 
 /* header end*/
 
@@ -175,13 +225,10 @@ a {
     padding: 35px 40px;
 }
 
+
 /* welcome end*/
 
 /* about start*/
-
-.about .container {
-    
-}
 
 .about-title {
     font-family: 'Forum', cursive;
@@ -995,11 +1042,14 @@ footer .container {
             transform: translateY(0) rotate(-45deg);
         }
 
+        .icons-wrapper.active .icon-profile-popup {
+            right: 85px
+        }
+
         .icon-profile {
             padding-top: 2px;
             margin-right: 54px;
             z-index: 20;
-            
         }
 
         .header.open .icon-profile {

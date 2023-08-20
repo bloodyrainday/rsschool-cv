@@ -2,19 +2,20 @@ console.log("Вёрстка соответствует макету. Ширин�
 
 const body = document.querySelector('.body-wrapper');
 const header = document.querySelector('.header');
-const nav = document.querySelector('nav');
+const burger = document.getElementById('burger')
+
 
 function openMenu(event) {  
     document.querySelector('.header').classList.toggle('open')
 }
 
 
-document.getElementById('burger').addEventListener('click', openMenu)
+burger.addEventListener('click', openMenu)
 
 document.addEventListener('click', event => {
     console.log(event.target)
     const click = event.composedPath().includes(burger)
         if (!click) {
-            document.querySelector('.header').classList.remove('open')
+            header.classList.remove('open')
         }
       });
