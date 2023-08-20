@@ -135,7 +135,7 @@ a {
     right: 0;
     z-index: 1000;
     visibility: hidden;
-    transition: 0.2s ease;
+    transition: 0.1s ease;
 }
 
 .icons-wrapper.active .icon-profile-popup {
@@ -166,6 +166,7 @@ a {
 .icon-profile-popup .icon-profile-popup-text {
     font-family: 'Inter', cursive;
     font-size: 15px;
+    cursor: pointer;
 }
 
 .icon-profile-popup .icon-profile-popup-text:not(:last-child) {
