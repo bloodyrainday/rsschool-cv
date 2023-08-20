@@ -14,8 +14,9 @@ burger.addEventListener('click', openMenu)
 
 document.addEventListener('click', event => {
     console.log(event.target)
-    const click = event.composedPath().includes(burger)
-        if (!click) {
+    const clickOnBurger = event.composedPath().includes(burger);
+    const clickOnProfileIcon = event.composedPath().includes(iconProfile);
+        if (!clickOnBurger && !clickOnProfileIcon) {
             header.classList.remove('open')
         }
       });
