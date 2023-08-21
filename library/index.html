@@ -15,6 +15,38 @@
 </head>
 <body>
     <div class="body-wrapper">
+
+    <!--pop-ups-->
+
+    <div class="popup-register hidden">
+        <div class="popup-register-content">
+            <h8 class="popup-register-content-title">Register</h8>
+            <form action="" class="popup-register-content-form">
+
+                <label class='popup-register-content-form-label' for="">First name</label>
+                <input type="text" class="popup-register-content-form-input">
+
+                <label class='popup-register-content-form-label' for="">Last name</label>
+                <input type="text" class="popup-register-content-form-input">
+
+                <label class='popup-register-content-form-label' for="">E-mail</label>
+                <input type="text" class="popup-register-content-form-input">
+
+                <label class='popup-register-content-form-label' for="">Password</label>
+                <input type="text" class="popup-register-content-form-input">
+
+            </form>
+            <button class="popup-register-content-button">Sign Up</button>
+            <div class="popup-register-content-subtext">
+                <p class="popup-register-content-subtext-text">Already have an account?</p>
+                <p href="" class="popup-register-content-subtext-link">Login</p>
+            </div>
+            <img alt="close-btn" src="icons/close_btn.svg" class="popup-register-content-close-icon"></img>
+        </div>
+    </div>
+
+    <!--pop-ups-->
+
     <header class="header" id="menu">
         <div class="container">
             <a class='title-link' href="#"><h1 class="title">Brooklyn Public Library</h1></a>
@@ -35,8 +67,8 @@
             <div class="icon-profile-popup">
                  <p class="icon-profile-popup-title">Profile</p>
                 <div class="icon-profile-popup-underline"></div>
-                <p class="icon-profile-popup-text">Log In</p>
-                <p class="icon-profile-popup-text">Register</p>
+                <p class="icon-profile-popup-text login">Log In</p>
+                <p class="icon-profile-popup-text register">Register</p>
             </div>
             <button class="icon-burger" id="burger">
                 <span></span>
@@ -48,21 +80,21 @@
             
         </div>
     </header>
+
+    
+
     <main>
             <section class="welcome">
-                
-                    <div class="container welcome">
-                        
-                        <div class="welcome-overlay">
-                            <div class="welcome-title">
-                                <h2 class="welcome-title-text">  Welcome<br> 
-                                                               to the Brooklyn<br>
-                                                               Library
-                                </h2>
-                            </div>
-                        </div> 
-                    </div>
-                   
+                <div class="container welcome">
+                    <div class="welcome-overlay">
+                        <div class="welcome-title">
+                            <h2 class="welcome-title-text">  Welcome<br> 
+                                                            to the Brooklyn<br>
+                                                            Library
+                            </h2>
+                        </div>
+                    </div> 
+                </div>
             </section>
 
 
