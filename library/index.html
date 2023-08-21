@@ -24,19 +24,20 @@
             <form action="" class="popup-register-content-form">
 
                 <label class='popup-register-content-form-label' for="">First name</label>
-                <input type="text" class="popup-register-content-form-input">
+                <input type="text" class="popup-register-content-form-input" id="input-first-name" value="" required>
 
                 <label class='popup-register-content-form-label' for="">Last name</label>
-                <input type="text" class="popup-register-content-form-input">
+                <input type="text" class="popup-register-content-form-input" id="input-last-name" value="" required>
 
                 <label class='popup-register-content-form-label' for="">E-mail</label>
-                <input type="text" class="popup-register-content-form-input">
+                <input type="email" class="popup-register-content-form-input" id="input-email" required>
 
                 <label class='popup-register-content-form-label' for="">Password</label>
-                <input type="text" class="popup-register-content-form-input">
+                <input type="password" class="popup-register-content-form-input" minlength="8" id="input-password" required>
 
+                <button type="submit" class="popup-register-content-button">Sign Up</button>
             </form>
-            <button class="popup-register-content-button">Sign Up</button>
+            
             <div class="popup-register-content-subtext">
                 <p class="popup-register-content-subtext-text">Already have an account?</p>
                 <p href="" class="popup-register-content-subtext-link">Login</p>
