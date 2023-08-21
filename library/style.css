@@ -86,6 +86,7 @@ body {
     border: 1px solid #0C0C0E;
     background-color: #FFF;
     cursor: pointer;
+    margin-top: 10px;
 }
 
 .popup-register-content .popup-register-content-button:hover {
