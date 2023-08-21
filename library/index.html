@@ -61,10 +61,10 @@
                 </ul>
             </nav>
             <div class="icons-wrapper">
-                <a href="#" class="icon-profile">
+                <div class="icon-profile">
                 <img class="header-icon-profile" src="icons/icon_profile.svg" alt="account-icon">
                 
-            </a>
+                </div>
             <div class="icon-profile-popup">
                  <p class="icon-profile-popup-title">Profile</p>
                 <div class="icon-profile-popup-underline"></div>
@@ -548,10 +548,27 @@
                             <div class="digital_library_card-form-wrapper">
                                 <form action="just-an-action">
                                     <h4 class="digital_library_card-form-subtitle">Brooklyn Public Library</h4>
-                                    <input class='digital_library_card-form-input' type="text" pattern='[0-9A-Za-z-]' placeholder="Reader's name"><br>
-                                    <input class='digital_library_card-form-input' type="text"  placeholder="Card number">
+                                    <input id="input-readers-name" class='digital_library_card-form-input' type="text" pattern='[0-9A-Za-z-]' placeholder="Reader's name"><br>
+                                    <input id="input-card-number" class='digital_library_card-form-input' type="text"  placeholder="Card number">
                                 </form>
                                 <button type="submit" class="digital_library_card-form-btn">Check the card</button>
+                                <div class="users-info">
+                                    <div class="users-info-column">
+                                        <p class="users-info-title">Visits</p>
+                                        <img src="icons/Union.svg" alt="users-icon" class="users-info-icon">
+                                        <p class="users-info-amount">23</p>
+                                    </div>
+                                    <div class="users-info-column">
+                                        <p class="users-info-title">Bonuses</p>
+                                        <img src="icons/Star 1.svg" alt="users-icon" class="users-info-icon">
+                                        <p class="users-info-amount">1240</p>
+                                    </div>
+                                    <div class="users-info-column">
+                                        <p class="users-info-title">Books</p>
+                                        <img src="icons/book.svg" alt="users-icon" class="users-info-icon">
+                                        <p class="users-info-amount">2</p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                         <div class="digital_library_card-account">
