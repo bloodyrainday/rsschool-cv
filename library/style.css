@@ -239,8 +239,24 @@ a {
     transform: translateY(10px);
 }
 
+.activated {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 28px;
+    height: 28px;
+    background-color: #FFF;
+    color: #BB945F;
+    line-height: 20px;
+    font-weight: 400;
+    font-size: 15px;
+    font-family: 'Inter', cursive;
+    border-radius: 13px;
+}
+
 .icon-profile {
-    padding-left: 2.5em;
+    margin-left: 40px;
+    cursor: pointer;
 }
 
 .icon-profile-popup {
@@ -256,7 +272,7 @@ a {
     transition: 0.1s ease;
 }
 
-.icons-wrapper.active .icon-profile-popup {
+.active  {
     visibility: inherit;
     top: 35px;
     transition: 0.2s ease;
@@ -858,6 +874,37 @@ a {
     margin-left: 162px;
 }
 
+/* user's information */
+
+.users-info {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    display: none;
+}
+
+.users-info-column {
+    text-align: center;
+
+}
+
+.users-info-title {
+    font-family: 'Inter', cursive;
+    font-size: 20px;
+    line-height: 20px;
+    letter-spacing: 0.4px;
+    font-weight: 400;
+}
+
+.users-info-amount  {
+    font-family: 'Inter', cursive;
+    font-size: 10px;
+    letter-spacing: 0.2px;
+    line-height: 20px;
+}
+
+/* user's information */
+
 .digital_library_card-form-btn:hover {
     background-color: #BB945F;
     cursor: pointer;
@@ -1160,7 +1207,7 @@ footer .container {
             transform: translateY(0) rotate(-45deg);
         }
 
-        .icons-wrapper.active .icon-profile-popup {
+        .active  {
             right: 85px
         }
 
