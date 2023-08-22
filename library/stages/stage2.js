@@ -1,7 +1,7 @@
 
 const iconProfile = document.querySelector('.icon-profile');
 const headerIconProfile = document.querySelector('.header-icon-profile');
-const popUpLogin = document.querySelector('.icon-profile-popup');
+const iconProfilePopup = document.querySelector('.icon-profile-popup');
 const iconsWrapper = document.querySelector('.icons-wrapper');
 const registerClick = document.querySelector('.icon-profile-popup-text.register');
 const popupRegister = document.querySelector('.popup-register');
@@ -18,7 +18,7 @@ const checkCard = document.querySelector('.digital_library_card-form-btn');
 /*open menu of profile icon*/
 
 function clickIconProfile(event) {
-    popUpLogin.classList.toggle('active');
+    iconProfilePopup.classList.toggle('active');
 }
 
 iconProfile.addEventListener('click', clickIconProfile);
@@ -28,7 +28,7 @@ iconProfile.addEventListener('click', clickIconProfile);
 
 registerClick.addEventListener('click', (event) => {
     popupRegister.classList.toggle('hidden');
-    popUpLogin.classList.toggle('active')
+    iconProfilePopup.classList.toggle('active')
 })
 
 popupRegister.addEventListener('click', (event) => {
