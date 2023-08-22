@@ -693,12 +693,12 @@ a {
     transition: 0.5s;
 }
 
-.favorites-book-btn.the-last-queen {
+/*.favorites-book-btn.the-last-queen {
     color: #BB945F;
     border:1px solid #BB945F;
     cursor: default;
     background-color: #FFF;
-}
+}*/
 
 .favorites-book-cover {
     position: absolute;
