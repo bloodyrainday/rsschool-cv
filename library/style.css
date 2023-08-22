@@ -133,6 +133,110 @@ body {
     visibility: hidden;
 }
 
+.popup-login {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+}
+
+.popup-login-content {
+    width: 250px;
+    height: 262px;
+    background-color: #FFF;
+    padding: 20px 25px;
+    position: relative;
+}
+
+.popup-login-content .popup-login-content-title {
+    font-family: 'Forum', cursive;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0.4px;
+    text-transform: uppercase;
+    margin-left: 30%;
+}
+
+.popup-login-content .popup-login-content-form {
+    margin-top: 20px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.popup-login-content .popup-login-content-form-label {
+    font-family: 'Inter', cursive;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0.3px;
+    color: #000;
+}
+
+.popup-login-content .popup-login-content-form-input {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+    border: 1px solid #BB945F;
+    height: 20px;
+}
+
+.popup-login-content .popup-login-content-button {
+    width: 75px;
+    height: 30px;
+    font-family: 'Inter', cursive;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: #0C0C0E;
+    border-radius: 2px;
+    border: 1px solid #0C0C0E;
+    background-color: #FFF;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.popup-login-content .popup-login-content-subtext {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.popup-login-content .popup-login-content-subtext .popup-login-content-subtext-text {
+    margin: 0;
+    font-size: 10px;
+    font-family: 'Inter', cursive;
+    text-shadow: 0px 2px 3px rgba(255, 255, 255, 0.16);
+    font-weight: 400;
+    margin-right: 10px;
+} 
+
+.popup-login-content .popup-login-content-subtext .popup-login-content-subtext-link {
+    color: #0C0C0E;
+    font-family: 'Inter', cursive;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-decoration-line: underline;
+    margin: 0;
+    cursor: pointer;
+}
+
+.popup-login-content .popup-login-content-close-icon {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    cursor: pointer;
+}
+
 /* pop-ups */
 
 /* header start*/
@@ -266,7 +370,7 @@ a {
     position: absolute;
     text-align: center;
     top: 25px;
-    right: 0;
+    
     z-index: 1000;
     visibility: hidden;
     transition: 0.1s ease;
@@ -879,8 +983,10 @@ a {
 .users-info {
     margin: 0 auto;
     display: flex;
-    justify-content: space-around;
-    display: none;
+    justify-content: space-between;
+    width: 169px;
+    margin-top: 15px;
+    /*display: none;*/
 }
 
 .users-info-column {
@@ -890,10 +996,12 @@ a {
 
 .users-info-title {
     font-family: 'Inter', cursive;
-    font-size: 20px;
+    font-size: 10px;
     line-height: 20px;
     letter-spacing: 0.4px;
     font-weight: 400;
+    margin: 0;
+    margin-bottom: 1px;
 }
 
 .users-info-amount  {
@@ -901,6 +1009,8 @@ a {
     font-size: 10px;
     letter-spacing: 0.2px;
     line-height: 20px;
+    margin: 0;
+    margin-top: 1px;
 }
 
 /* user's information */
@@ -1219,7 +1329,7 @@ footer .container {
 
         .header.open .icon-profile {
             z-index: 20;
-           /* left: 595px;*/
+            /*left: 595px;*/
             /*top: 30px;*/
             
         }
@@ -1228,6 +1338,8 @@ footer .container {
             transform: translateX(-100%);
             transition: 0.5s;
         }
+
+        
 
 }
 
