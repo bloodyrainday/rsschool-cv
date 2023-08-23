@@ -78,12 +78,13 @@ signUpButtonRegister.addEventListener('click', () => {
             cardNumber.push(randomNumbers)
         }
         localStorage.setItem('user-card-number', cardNumber.join('').toUpperCase())
+
         /*console.log('Here is your card number ' + cardNumber.join('').toUpperCase())*/
     } else {
         console.log('fill in the gaps')
     }
     
-    console.log(firstLetterOfName, firstLetterofLastname)
+    console.log(firstLetterOfName, firstLetterofLastname); 
 })
 
 /* check-the-card button*/
