@@ -361,6 +361,7 @@ a {
 .icon-profile {
     margin-left: 40px;
     cursor: pointer;
+    z-index: 200000;
 }
 
 .icon-profile-popup {
@@ -370,7 +371,6 @@ a {
     position: absolute;
     text-align: center;
     top: 25px;
-    
     z-index: 1000;
     visibility: hidden;
     transition: 0.1s ease;
@@ -986,7 +986,7 @@ a {
     justify-content: space-between;
     width: 169px;
     margin-top: 15px;
-    /*display: none;*/
+    display: none;
 }
 
 .users-info-column {

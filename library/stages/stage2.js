@@ -14,15 +14,12 @@ const inputPassword = document.getElementById('input-password');
 const signUpButtonRegister = document.querySelector('.popup-register-content-button');
 const checkCard = document.querySelector('.digital_library_card-form-btn');
 
-
 /*open menu of profile icon*/
 
-function clickIconProfile(event) {
+iconProfile.addEventListener('click', () => {
     iconProfilePopup.classList.toggle('active');
-}
-
-iconProfile.addEventListener('click', clickIconProfile);
-
+    
+});
 
 /*open register menu*/
 
@@ -59,15 +56,18 @@ signUpButtonRegister.addEventListener('click', () => {
     let firstLetterOfName
     let firstLetterofLastname
    
+    console.log('hi')
     
 
-    if (inputEmail.value !== '' && (inputPassword.value !== '') && inputPassword.value.length >= 8) {
+    if ((inputEmail.value !== '') && (inputPassword.value !== '') && (inputPassword.value.length >= 8)) {
         firstLetterOfName = inputFirstName.value[0].toUpperCase();
         firstLetterofLastname = inputLastName.value[0].toUpperCase();
 
         iconProfile.textContent = firstLetterOfName + firstLetterofLastname;
 
-        iconProfile.classList.add('activated')
+        console.log(iconProfile.textContent = firstLetterOfName + firstLetterofLastname);
+
+        iconProfile.classList.toggle('activated')
 
         /* card number */
 

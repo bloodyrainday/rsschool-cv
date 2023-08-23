@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Permissions-Policy" content="interest-cohort=()">
     <title>Brooklyn Public Lybrary</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -23,16 +24,16 @@
             <h8 class="popup-register-content-title">Register</h8>
             <form action="" class="popup-register-content-form">
 
-                <label class='popup-register-content-form-label' for="">First name</label>
+                <label class='popup-register-content-form-label' for="input-first-name">First name</label>
                 <input type="text" class="popup-register-content-form-input" id="input-first-name" value="" required>
 
-                <label class='popup-register-content-form-label' for="">Last name</label>
+                <label class='popup-register-content-form-label' for="input-last-name">Last name</label>
                 <input type="text" class="popup-register-content-form-input" id="input-last-name" value="" required>
 
-                <label class='popup-register-content-form-label' for="">E-mail</label>
+                <label class='popup-register-content-form-label' for="input-email">E-mail</label>
                 <input type="email" class="popup-register-content-form-input" id="input-email" required>
 
-                <label class='popup-register-content-form-label' for="">Password</label>
+                <label class='popup-register-content-form-label' for="input-password">Password</label>
                 <input type="password" class="popup-register-content-form-input" minlength="8" id="input-password" required>
 
                 <button type="submit" class="popup-register-content-button">Sign Up</button>
@@ -51,10 +52,10 @@
             <h8 class="popup-login-content-title">Login</h8>
             <form action="" class="popup-login-content-form">
 
-                <label class='popup-login-content-form-label' for="">E-mail or readers card</label>
+                <label class='popup-login-content-form-label' for="input-login-email">E-mail or readers card</label>
                 <input type="email" class="popup-login-content-form-input" id="input-login-email" required>
 
-                <label class='popup-login-content-form-label' for="">Password</label>
+                <label class='popup-login-content-form-label' for="input-login-password">Password</label>
                 <input type="password" class="popup-login-content-form-input" minlength="8" id="input-login-password" required>
 
                 <button type="submit" class="popup-login-content-button">Log In</button>
@@ -83,7 +84,7 @@
                 </ul>
             </nav>
             <div class="icons-wrapper">
-                <div class="icon-profile">
+                <div title="name" class="icon-profile">
                 <img class="header-icon-profile" src="icons/icon_profile.svg" alt="account-icon">
                 
                 </div>
@@ -317,7 +318,7 @@
                             <div class="favourites-book-underline"></div>
                             <p class="favorites-book-name">
                                 CRUDE: A MEMOIR<br>
-                                By Pablo Fajardo & ​​Sophie Tardy-Joubert
+                                By Pablo Fajardo & Sophie Tardy-Joubert
                             </p>
                             <p class="favorites-book-text">Drawing and color by Damien Roudeau | This book illustrates the struggles of a group of indigenous Ecuadoreans as they try to sue the ChevronTexaco company for damage their oil fields did to the Amazon and her people       </p>
                             <button class="favorites-book-btn the-last-queen" disabled >Own</button>
