@@ -21,6 +21,15 @@ iconProfile.addEventListener('click', () => {
     
 });
 
+document.addEventListener('click', event => {
+    const clickOnBurger = event.composedPath().includes(burger);
+    const clickOnProfileIcon = event.composedPath().includes(iconProfile);
+    
+        if (!clickOnBurger && !clickOnProfileIcon) {
+            iconProfilePopup.classList.remove('active');
+        }
+})
+
 /*open register menu*/
 
 registerClick.addEventListener('click', (event) => {
