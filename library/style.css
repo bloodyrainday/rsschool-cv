@@ -239,6 +239,175 @@ body {
     cursor: pointer;
 }
 
+.my-profile-card {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+}
+
+.my-profile-card-content {
+    width: 600px;
+    height: 400px;
+    background-color: #FFF;
+    display: flex;
+    justify-content: space-between;
+}
+
+.my-profile-card-content-icon {
+    width: 170px;
+    height: 400px;    
+    background-color: #0C0C0E;
+}
+
+.my-profile-card-content-icon-initials {
+    width: 80px;
+    height: 80px;
+    font-family: "Inter", cursive;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 20px;
+    text-transform: capitalize;
+    text-align: center;
+    background-color: #fff;
+    margin-top: 139px;
+    margin-left: 45px;
+    color: #BB945F;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.my-profile-card-content-icon-name {
+    width: 120px;
+    height: 30px;
+    font-family: "Inter", cursive;
+    text-align: center;
+    line-height: 20px;
+    font-weight: 400;
+    font-size: 20px;
+    background-color: #fff;
+    margin-left: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.my-profile-card-content-info {
+    padding: 40px 0 40px 0 ;
+    position: relative;
+    width: 410px;
+}
+
+.my-profile-card-content-info-title {
+    margin: 0;
+    color: #000;
+    text-align: left;
+    font-family: 'Forum', cursive;
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+}
+
+.my-profile-card-content-info-stats {
+    display: flex;
+    justify-content: space-between;
+    width: 237px;
+    margin-bottom: 20px;
+}
+
+.my-profile-card-content-info-stats-column {
+    text-align: center;
+}
+
+.my-profile-card-content-info-stats-column-title {
+    color: #000;
+    text-align: center;
+    font-family: 'Inter', cursive;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0.4px;
+    margin: 0;
+}
+
+.my-profile-card-content-info-stats-column-icon {
+    margin: 10px 0;
+}
+
+.my-profile-card-content-info-stats-column-amount {
+    color: #000;
+    text-align: center;
+    font-family: 'Inter', cursive;
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0.2px;
+    text-transform: capitalize;
+    margin: 0;
+}
+
+.my-profile-card-content-info-books-text {
+    margin: 0;
+}
+
+.my-profile-card-content-info-books-rent {
+    padding-left: 20px;
+    margin: 0;
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
+.my-profile-card-content-info-books-rent-book {
+    list-style: disc ;
+}
+
+.my-profile-card-content-info-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 280px;
+}
+
+.my-profile-card-content-info-card-text {
+    margin: 0;
+    color: #0C0C0E;
+    text-align: center;
+    font-family: 'Inter', cursive;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.my-profile-card-content-info-card-number {
+    color: #BB945F;
+    text-align: center;
+    font-family: 'Inter', cursive;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 20px; 
+}
+
+.my-profile-card-content-info-card-copy {
+    cursor: pointer;
+}
+
+.my-profile-card-content-info-close-btn {
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    cursor: pointer;
+}
 /* pop-ups */
 
 /* header start*/

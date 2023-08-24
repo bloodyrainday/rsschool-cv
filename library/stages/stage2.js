@@ -13,6 +13,7 @@ const inputEmail = document.getElementById('input-email');
 const inputPassword = document.getElementById('input-password');
 const signUpButtonRegister = document.querySelector('.popup-register-content-button');
 const checkCard = document.querySelector('.digital_library_card-form-btn');
+const profileTitleMenu = document.querySelector('.icon-profile-popup-title');
 
 /*open menu of profile icon*/
 
@@ -64,11 +65,10 @@ signUpButtonRegister.addEventListener('click', () => {
 
     let firstLetterOfName
     let firstLetterofLastname
-   
-    console.log('hi')
-    
+    let cardNumber
 
     if ((inputEmail.value !== '') && (inputPassword.value !== '') && (inputPassword.value.length >= 8)) {
+        let fullName = inputFirstName.value + ' ' + inputLastName.value
         firstLetterOfName = inputFirstName.value[0].toUpperCase();
         firstLetterofLastname = inputLastName.value[0].toUpperCase();
 
@@ -76,19 +76,70 @@ signUpButtonRegister.addEventListener('click', () => {
 
         console.log(iconProfile.textContent = firstLetterOfName + firstLetterofLastname);
 
-        iconProfile.classList.toggle('activated')
+        iconProfile.classList.toggle('activated');
 
+        iconProfile.setAttribute('title', fullName);
+
+        /* clicking on the button 'My profile' */
+
+        
+        
+        loginClick.textContent = 'My profile';
+
+        loginClick.addEventListener('click', () => {
+            popupLogin.classList.toggle('hidden');
+            myProfileCard.classList.toggle('hidden');
+            document.querySelector('.my-profile-card-content-info-card-number').textContent = localStorage.getItem('user-card-number')
+
+            document.querySelector('.my-profile-card-content-icon-initials').textContent = iconProfile.textContent = firstLetterOfName + firstLetterofLastname;
+            document.querySelector('.my-profile-card-content-icon-name').textContent = fullName
+        })
+
+        /* clicking on the button 'Log out' */
+
+        
+        
+        registerClick.textContent = 'Log Out';
+        
+        registerClick.addEventListener('click', () => {
+            popupRegister.classList.add('hidden');
+
+            registerClick.textContent = 'Register';
+
+            registerClick.addEventListener('click', () => {
+                popupRegister.classList.remove('hidden');
+            })
+
+            iconProfile.classList.remove('activated');
+            iconProfile.setAttribute('title', '');
+            iconProfile.innerHTML = '<img class="header-icon-profile" src="icons/icon_profile.svg" alt="account-icon">'
+            
+            loginClick.textContent = 'Log In';
+
+            loginClick.addEventListener('click', () => {
+                popupLogin.classList.remove('hidden');
+                myProfileCard.classList.add('hidden');
+                iconProfile.innerHTML = '<img class="header-icon-profile" src="icons/icon_profile.svg" alt="account-icon">'
+            })
+        })
+
+    
+        
         /* card number */
 
-        let cardNumber = [];
+        cardNumber = [];
         let randomNumbers;
         while (cardNumber.length < 9) {
             randomNumbers = Math.floor(Math.random() * 16).toString(16);
             cardNumber.push(randomNumbers)
-        }
-        localStorage.setItem('user-card-number', cardNumber.join('').toUpperCase())
+        };
+        profileTitleMenu.style.fontSize = 12 + 'px';
 
-        /*console.log('Here is your card number ' + cardNumber.join('').toUpperCase())*/
+        profileTitleMenu.textContent = cardNumber.join('').toUpperCase();
+        localStorage.setItem('user-card-number', cardNumber.join('').toUpperCase());
+
+
+        console.log('Here is your card number ' + cardNumber.join('').toUpperCase())
     } else {
         console.log('fill in the gaps')
     }
