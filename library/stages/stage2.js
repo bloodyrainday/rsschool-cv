@@ -113,7 +113,9 @@ signUpButtonRegister.addEventListener('click', () => {
             iconProfile.classList.remove('activated');
             iconProfile.setAttribute('title', '');
             iconProfile.innerHTML = '<img class="header-icon-profile" src="icons/icon_profile.svg" alt="account-icon">'
-            
+            document.querySelector('.icon-profile-popup-title').textContent = 'Profile';
+            document.querySelector('.icon-profile-popup-title').style.fontSize = 15 + 'px'
+
             loginClick.textContent = 'Log In';
 
             loginClick.addEventListener('click', () => {
