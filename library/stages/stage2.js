@@ -68,7 +68,9 @@ signUpButtonRegister.addEventListener('click', () => {
     let cardNumber
 
     if ((inputEmail.value !== '') && (inputPassword.value !== '') && (inputPassword.value.length >= 8)) {
-        let fullName = inputFirstName.value + ' ' + inputLastName.value
+        popupRegister.classList.add('hidden');
+
+        let fullName = inputFirstName.value + ' ' + inputLastName.value;
         firstLetterOfName = inputFirstName.value[0].toUpperCase();
         firstLetterofLastname = inputLastName.value[0].toUpperCase();
 
@@ -79,6 +81,20 @@ signUpButtonRegister.addEventListener('click', () => {
         iconProfile.classList.toggle('activated');
 
         iconProfile.setAttribute('title', fullName);
+
+        /*inputEmail.value = '';
+        inputPassword.value = '';
+        inputFirstName.value = '';
+        inputLastName.value = '';*/
+
+        /* clicking on the button 'Buy' */
+
+        favoritesButtons.forEach(item => {
+            item.addEventListener('click', () => {
+            popupLogin.classList.add('hidden');
+            document.querySelector('.popup-library-card').classList.toggle('hidden');
+        })
+        })
 
         /* clicking on the button 'My profile' */
 
@@ -122,6 +138,13 @@ signUpButtonRegister.addEventListener('click', () => {
                 popupLogin.classList.remove('hidden');
                 myProfileCard.classList.add('hidden');
                 iconProfile.innerHTML = '<img class="header-icon-profile" src="icons/icon_profile.svg" alt="account-icon">'
+            })
+
+            favoritesButtons.forEach(item => {
+                item.addEventListener('click', () => {
+                popupLogin.classList.remove('hidden');
+                document.querySelector('.popup-library-card').classList.add('hidden');
+            })
             })
         })
 

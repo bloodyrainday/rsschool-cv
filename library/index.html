@@ -52,7 +52,7 @@
             <form action="#" class="popup-login-content-form">
 
                 <label class='popup-login-content-form-label' for="input-login-email">E-mail or readers card</label>
-                <input type="email" class="popup-login-content-form-input" id="input-login-email" required>
+                <input type="text" class="popup-login-content-form-input" id="input-login-email" required>
 
                 <label class='popup-login-content-form-label' for="input-login-password">Password</label>
                 <input type="password" class="popup-login-content-form-input" minlength="8" id="input-login-password" required>
@@ -115,7 +115,7 @@
         </div>
     </div>
 
-    <div class="popup-library-card">
+    <div class="popup-library-card hidden">
         <div class="popup-library-card-content">
             <div class="popup-library-card-content-header">
                 <h5 class="popup-library-card-content-header-title">Buy a library card</h5>
@@ -128,14 +128,14 @@
                     <form action="#" class='popup-library-card-content-column1-form'>
 
                         <label for="bank-input" class="popup-library-card-content-column1-bank">Bank card number</label>
-                        <input type="text" class="popup-library-card-content-column1-bank-input" required id="bank-input">
+                        <input type="number" minlength="16" maxlength="16" class="popup-library-card-content-column1-bank-input" required id="bank-input">
 
                         <label for="expiration-input expiration-input2" class="popup-library-card-content-column1-expiration">Expiration code</label>
-                        <input type="text" class="popup-library-card-content-column1-expiration-input" required id="expiration-input">
-                        <input type="text" class="popup-library-card-content-column1-expiration-input" required id="expiration-input2"><br>
+                        <input type="number" pattern="[0-9]{2}" class="popup-library-card-content-column1-expiration-input" required id="expiration-input">
+                        <input type="number" pattern="[0-9]{2}" class="popup-library-card-content-column1-expiration-input" required id="expiration-input2"><br>
 
                         <label for="cvc-input" class="popup-library-card-content-column1-cvc">CVC</label>
-                        <input type="text" class="popup-library-card-content-column1-cvc-input" required id="cvc-input">
+                        <input type="number" pattern="[0-9]{3}" class="popup-library-card-content-column1-cvc-input" required id="cvc-input">
 
                         <label for="cardholder-input" class="popup-library-card-content-column1-cardholder">Cardholder name</label>
                         <input type="text" class="popup-library-card-content-column1-cardholder-input" required id="cardholder-input">

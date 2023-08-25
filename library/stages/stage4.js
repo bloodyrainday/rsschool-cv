@@ -1,7 +1,9 @@
 const profileCardIcon = document.querySelectorAll('.my-profile-card-content-icon-initials');
 const myProfileCard = document.querySelector('.my-profile-card');
-const loginClickLogged = document.querySelector('.icon-profile-popup-text.login');
 const myProfileCardCloseButton = document.querySelector('.my-profile-card-content-info-close-btn');
+const logInButtonEmail = document.getElementById('input-login-email');
+const logInButtonPassword = document.getElementById('input-login-password');
+const logInPopUpButton = document.querySelector('.popup-login-content-button');
 
 
 /*loginClickLogged.addEventListener('click', () => {
@@ -64,4 +66,91 @@ document.querySelector('.popup-library-card-content-header-close-btn').addEventL
     if (event.target.classList.contains('popup-library-card-content-header-close-btn')) {
         document.querySelector('.popup-library-card').classList.toggle('hidden')
     }
+});
+
+
+/* 'Log In' button in the login menu */
+
+logInPopUpButton.addEventListener('click', () => {
+
+    let firstLetterOfName
+    let firstLetterofLastname
+    let cardNumber
+
+    if ((logInButtonEmail.value === localStorage.getItem('user-email') || logInButtonEmail.value === localStorage.getItem('user-card-number')) && (logInButtonPassword.value === localStorage.getItem('user-password'))) {
+        logInButtonEmail.value = '';
+        logInButtonPassword.value = '';
+        popupLogin.classList.add('hidden');
+
+        let fullName = localStorage.getItem('user-first-name') + ' ' + localStorage.getItem('user-last-name');
+
+        firstLetterOfName = localStorage.getItem('user-first-name')[0].toUpperCase();
+        firstLetterofLastname = localStorage.getItem('user-last-name')[0].toUpperCase();
+
+        iconProfile.textContent = firstLetterOfName + firstLetterofLastname;
+
+        iconProfile.classList.toggle('activated');
+
+        iconProfile.setAttribute('title', fullName);
+
+        /* clicking on the button 'Buy' */
+
+        favoritesButtons.forEach(item => {
+            item.addEventListener('click', () => {
+            popupLogin.classList.add('hidden');
+            document.querySelector('.popup-library-card').classList.toggle('hidden');
+        })
+        })
+
+        /* clicking on the button 'My profile' */
+
+        loginClick.textContent = 'My profile';
+
+        loginClick.addEventListener('click', () => {
+            popupLogin.classList.toggle('hidden');
+            myProfileCard.classList.toggle('hidden');
+            document.querySelector('.my-profile-card-content-info-card-number').textContent = localStorage.getItem('user-card-number')
+
+            document.querySelector('.my-profile-card-content-icon-initials').textContent = iconProfile.textContent = firstLetterOfName + firstLetterofLastname;
+            document.querySelector('.my-profile-card-content-icon-name').textContent = fullName
+        })
+
+        /* clicking on the button 'Log out' */
+
+        registerClick.textContent = 'Log Out';
+        
+        registerClick.addEventListener('click', () => {
+            popupRegister.classList.add('hidden');
+
+            registerClick.textContent = 'Register';
+
+            registerClick.addEventListener('click', () => {
+                popupRegister.classList.remove('hidden');
+            })
+
+            iconProfile.classList.remove('activated');
+            iconProfile.setAttribute('title', '');
+            iconProfile.innerHTML = '<img class="header-icon-profile" src="icons/icon_profile.svg" alt="account-icon">'
+            document.querySelector('.icon-profile-popup-title').textContent = 'Profile';
+            document.querySelector('.icon-profile-popup-title').style.fontSize = 15 + 'px'
+
+            loginClick.textContent = 'Log In';
+
+            loginClick.addEventListener('click', () => {
+                popupLogin.classList.remove('hidden');
+                myProfileCard.classList.add('hidden');
+                iconProfile.innerHTML = '<img class="header-icon-profile" src="icons/icon_profile.svg" alt="account-icon">'
+            })
+
+            favoritesButtons.forEach(item => {
+                item.addEventListener('click', () => {
+                popupLogin.classList.remove('hidden');
+                document.querySelector('.popup-library-card').classList.add('hidden');
+            })
+            })
+        })
+
+        /* clicking on the button 'Buy' */
+
+    } 
 })
