@@ -142,6 +142,8 @@ logInPopUpButton.addEventListener('click', () => {
                 iconProfile.innerHTML = '<img class="header-icon-profile" src="icons/icon_profile.svg" alt="account-icon">'
             })
 
+            /* clicking on the button 'Buy' */
+
             favoritesButtons.forEach(item => {
                 item.addEventListener('click', () => {
                 popupLogin.classList.remove('hidden');
@@ -150,7 +152,57 @@ logInPopUpButton.addEventListener('click', () => {
             })
         })
 
-        /* clicking on the button 'Buy' */
+        /* clicking on the button 'Check the Card' */
+
+        checkCard.addEventListener('click', () => {
+            if ((document.getElementById('input-readers-name').value === localStorage.getItem('user-first-name')) && (document.getElementById('input-card-number').value === localStorage.getItem('user-card-number'))) {
+                checkCard.style.display = 'none';
+                document.querySelector('.users-info').style.display = 'flex';
+
+                document.querySelector('.digital_library_card-form-title').textContent = 'Your Library card';
+
+                document.querySelector('.digital_library_card-account-title').textContent = 'Visit your profile';
+
+                document.querySelector('.digital_library_card-account-text').textContent = 'With a digital library card you get free access to the Library’s wide array of digital resources including e-books, databases, educational resources, and more.';
+
+                document.getElementById('digital_library_card-signup').style.display = 'none';
+
+                document.getElementById('digital_library_card-login').textContent = 'Profile';
+
+                document.getElementById('digital_library_card-login').addEventListener('click', () => {
+                    popupLogin.classList.toggle('hidden');
+                    myProfileCard.classList.toggle('hidden');
+                    document.querySelector('.my-profile-card-content-info-card-number').textContent = localStorage.getItem('user-card-number')
+
+                    document.querySelector('.my-profile-card-content-icon-initials').textContent = iconProfile.textContent = firstLetterOfName + firstLetterofLastname;
+                    document.querySelector('.my-profile-card-content-icon-name').textContent = fullName
+                })
+                
+            } else {
+                console.log('this name or card number does not exist!')
+            }
+
+        })
 
     } 
 })
+
+            /* Already have an account? Login */
+
+            document.querySelector('.popup-register-content-subtext-link').addEventListener('click', () => {
+                popupLogin.classList.toggle('hidden');
+                popupRegister.classList.toggle('hidden');
+            })
+
+            /* Don’t have an account? Register */
+
+            document.querySelector('.popup-login-content-subtext-link').addEventListener('click', () => {
+                popupLogin.classList.toggle('hidden');
+                popupRegister.classList.toggle('hidden');
+            })
+
+            /* clicking on the button 'Log In' in the Digital-Lybrary-Card section */
+
+            document.getElementById('digital_library_card-login').addEventListener('click', () => {
+                popupLogin.classList.toggle('hidden');
+            })

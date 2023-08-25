@@ -146,6 +146,8 @@ signUpButtonRegister.addEventListener('click', () => {
                 document.querySelector('.popup-library-card').classList.add('hidden');
             })
             })
+
+            
         })
 
     
@@ -170,23 +172,23 @@ signUpButtonRegister.addEventListener('click', () => {
     }
     
     console.log(firstLetterOfName, firstLetterofLastname); 
+
+    /* check-the-card button*/
+
+    checkCard.addEventListener('click', () => {
+        if ((document.getElementById('input-readers-name').value === localStorage.getItem('user-first-name')) && (document.getElementById('input-card-number').value === localStorage.getItem('user-card-number'))) {
+            checkCard.style.display = 'none';
+            document.querySelector('.users-info').style.display = 'flex'
+            setTimeout(() => {
+                checkCard.style.display = 'block';
+                document.querySelector('.users-info').style.display = 'none';
+                document.getElementById('input-readers-name').value = '';
+                document.getElementById('input-card-number').value = '';
+            }, 10000)
+        } else {
+            console.log('this name or card number does not exist!')
+        }
+    })
+
 })
 
-/* check-the-card button*/
-
-checkCard.addEventListener('click', () => {
-    if ((document.getElementById('input-readers-name').value === localStorage.getItem('user-first-name')) && (document.getElementById('input-card-number').value === localStorage.getItem('user-card-number'))) {
-        checkCard.style.display = 'none';
-        document.querySelector('.users-info').style.display = 'flex'
-        setTimeout(() => {
-            checkCard.style.display = 'block';
-            document.querySelector('.users-info').style.display = 'none';
-            document.getElementById('input-readers-name').value = '';
-            document.getElementById('input-card-number').value = '';
-        }, 10000)
-    } else {
-        console.log('this name or card number does not exist!')
-    }
-    
-    
-})
