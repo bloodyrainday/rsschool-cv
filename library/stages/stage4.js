@@ -52,3 +52,16 @@ myProfileCardCloseButton.addEventListener('click', () => {
 })
 }*/
     
+/* modal library card*/
+
+document.querySelector('.popup-library-card').addEventListener('click', (event) => {
+    if (event.target.classList.contains('popup-library-card')) {
+        document.querySelector('.popup-library-card').classList.toggle('hidden')
+    }
+})
+
+document.querySelector('.popup-library-card-content-header-close-btn').addEventListener('click', () => {
+    if (event.target.classList.contains('popup-library-card-content-header-close-btn')) {
+        document.querySelector('.popup-library-card').classList.toggle('hidden')
+    }
+})
