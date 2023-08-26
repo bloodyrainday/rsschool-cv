@@ -789,6 +789,10 @@ a {
 
 /* about start*/
 
+.about.container {
+    
+}
+
 .about-title {
     font-family: 'Forum', cursive;
     text-align: center;
@@ -819,20 +823,23 @@ a {
     margin-bottom: 22px;  
 }
 
+.about-slider-with-arrows {
+    
+}
+
 .about-slider-wrapper {
-    max-width: 100%;
+    max-width: 1400px;
+    
     /*overflow: hidden;*/
 }
 
 .about-slider {
     display: flex;
-    flex: 0 0 33.3333333333%;
-    justify-content: space-between;
     gap: 25px;
-    height: 560px;
     position: relative;
     left: 0;
     transition: all ease 1s;
+    
 }
 
 .about-slider-arrow {
@@ -840,7 +847,7 @@ a {
 }
 
 .about-slider-item {
-    min-width: 450px;
+    width: 450px;
 }
 
 /*.about-slider-item:not(:last-child) {
@@ -1513,10 +1520,12 @@ footer .container {
 
 }
 
-@media (max-width: 1420px) {
+@media (max-width: 1439px) {
+    
+    .about-slider-item {
+        text-align: center;
+    }
 
-    
-    
 }
 
 @media (max-width: 1240px) {
@@ -1679,10 +1688,35 @@ footer .container {
         
     }*/
 
+    .about-slider-with-arrows {
+        
+    }
+
+    .about-slider-wrapper {
+        
+    }
+
+    .about-slider {
+        justify-content: center;
+    }
+
+    .about-slider-item {
+        
+    }
 
     .about-slider-arrow {
         display: inline;
-        margin-top: 42px;
+        /*position: absolute;
+        top: 286px;
+        left: 77px*/
+    }
+
+    .about-slider-arrow .left {
+        
+    }
+
+    .about-slider-arrow.right {
+        /*margin-left: 545px;*/
     }
 
     .about-switcher-button-wrapper-fourth, .about-switcher-button-wrapper-fifth {
