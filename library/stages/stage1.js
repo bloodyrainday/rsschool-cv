@@ -20,7 +20,10 @@ function init() {
         item.style.width = width + 'px';
         item.style.height = 'auto';
     })
+    /*console.log(document.querySelector('.about-slider-item.first').offsetWidth)*/
 }
+
+
 
 window.addEventListener('resize', init);
 init()
@@ -33,6 +36,9 @@ console.log(Array.from(document.querySelectorAll('.about-slider-item')))
     sliderLine.style.left = '-' + count * 475 + 'px';
 }*/
 
+const itemWidth = document.querySelector('.about-slider-item.first').offsetWidth;
+const sliderLineWidth = document.querySelector('.about-slider').offsetWidth
+
 
 document.querySelector('.about-switcher-button-wrapper.left').addEventListener('click', () => {
     /*count--;
@@ -41,12 +47,23 @@ document.querySelector('.about-switcher-button-wrapper.left').addEventListener('
     }*/
     /*rollSlider()*/
     document.querySelector('.about-switcher-button-left').classList.add('about-buttons-color');
-    if (minWidthScreen1011px.matches) {
+    if (width >= 1400) {
             offset += 950;
         if (offset > 0) {
             offset = 0;
         }
-    } 
+
+    } else if ((width < 1400) && (width >= 970)) {
+        offset += (2 * itemWidth + 50)
+        if (offset > 0 || offset < (2 * itemWidth + 50)) {
+            offset = 0;
+        }
+    } else if (width < 970) {
+        offset += 950;
+        if (offset > 0) {
+            offset = 0;
+        }
+    }
     
 
     sliderLine.style.left = offset + 'px';
@@ -63,12 +80,23 @@ document.querySelector('.about-switcher-button-wrapper.left').addEventListener('
         /*rollSlider()*/
     document.querySelector('.about-switcher-button-center').classList.add('about-buttons-color');
 
-    if (minWidthScreen1011px.matches) {
+    if (width >= 1400) {
         offset -= 475;
         if (offset < -475) {
             offset = -475;
         }
-    } 
+    } else if ((width < 1400) && (width >= 970)) {
+        
+        offset -= (2 * itemWidth + 50)
+        if (offset < - (2 * itemWidth + 50)) {
+            offset = - (2 * itemWidth + 50);
+        }
+    } else if (width < 970) {
+        offset -= 475;
+        if (offset < -475) {
+            offset = -475;
+        }
+    }
 
     sliderLine.style.left = offset + 'px';
     document.querySelector('.about-switcher-button-left').classList.remove('about-buttons-color');
@@ -84,12 +112,22 @@ document.querySelector('.about-switcher-button-wrapper.left').addEventListener('
 
     document.querySelector('.about-switcher-button-right').classList.add('about-buttons-color');
 
-    if (minWidthScreen1011px.matches) {
+    if (width >= 1400) {
         offset -= 950;
         if (offset < -950) {
             offset = -950;
         }
-    } 
+    } else if ((width < 1400) && (width >= 970)) {
+        offset -= (3 * itemWidth + 50)
+        if (offset > -(itemWidth + 25) || offset < -(sliderLineWidth - itemWidth * 2)) {
+            offset = -(sliderLineWidth - itemWidth * 2);
+        }
+    } else if (width < 970) {
+        offset -= 950;
+        if (offset < -950) {
+            offset = -950;
+        }
+    }
 
 
     sliderLine.style.left = offset + 'px';
