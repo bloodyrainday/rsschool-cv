@@ -839,7 +839,7 @@ a {
     position: relative;
     left: 0;
     transition: all ease 1s;
-    
+    text-align: center;
 }
 
 .about-slider-arrow {
@@ -858,7 +858,7 @@ a {
     display: flex;
     justify-content: center;
     margin: 35px 0;
-
+    align-items: center;
 }
 
 .about-switcher-button-wrapper, .about-switcher-button-wrapper-fourth, .about-switcher-button-wrapper-fifth {
@@ -1520,7 +1520,7 @@ footer .container {
 
 }
 
-@media (max-width: 1440px) {
+@media (max-width: 14px) {
     
     .about-slider-item {
         text-align: center;

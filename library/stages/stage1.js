@@ -59,7 +59,7 @@ document.querySelector('.about-switcher-button-wrapper.left').addEventListener('
             offset = 0;
         }
     } else if (width < 970) {
-        offset += 950;
+        offset += (4 * itemWidth);
         if (offset > 0) {
             offset = 0;
         }
@@ -69,6 +69,8 @@ document.querySelector('.about-switcher-button-wrapper.left').addEventListener('
     sliderLine.style.left = offset + 'px';
     document.querySelector('.about-switcher-button-center').classList.remove('about-buttons-color');
     document.querySelector('.about-switcher-button-right').classList.remove('about-buttons-color');
+    document.querySelector('.about-switcher-button.second').classList.remove('about-buttons-color');
+    document.querySelector('.about-switcher-button.fourth').classList.remove('about-buttons-color');
     
 })
 
@@ -92,15 +94,17 @@ document.querySelector('.about-switcher-button-wrapper.left').addEventListener('
             offset = - (2 * itemWidth + 50);
         }
     } else if (width < 970) {
-        offset -= 475;
-        if (offset < -475) {
-            offset = -475;
+        offset -= (2 * itemWidth + 35);
+        if (offset < -(2 * itemWidth + 35)) {
+            offset = -(2 * itemWidth + 35);
         }
     }
 
     sliderLine.style.left = offset + 'px';
     document.querySelector('.about-switcher-button-left').classList.remove('about-buttons-color');
     document.querySelector('.about-switcher-button-right').classList.remove('about-buttons-color');
+    document.querySelector('.about-switcher-button.second').classList.remove('about-buttons-color');
+    document.querySelector('.about-switcher-button.fourth').classList.remove('about-buttons-color');
 })
 
     document.querySelector('.about-switcher-button-wrapper.right').addEventListener('click', () => {
@@ -123,15 +127,60 @@ document.querySelector('.about-switcher-button-wrapper.left').addEventListener('
             offset = -(sliderLineWidth - itemWidth * 2);
         }
     } else if (width < 970) {
-        offset -= 950;
-        if (offset < -950) {
-            offset = -950;
+        offset -= -(4 * itemWidth);
+        if (offset > -(4 * itemWidth)) {
+            offset = -(4 * itemWidth);
         }
     }
 
 
     sliderLine.style.left = offset + 'px';
     document.querySelector('.about-switcher-button-left').classList.remove('about-buttons-color');
-    document.querySelector('.about-switcher-button-center').classList.remove('about-buttons-color')
+    document.querySelector('.about-switcher-button-center').classList.remove('about-buttons-color');
+    document.querySelector('.about-switcher-button.second').classList.remove('about-buttons-color');
+    document.querySelector('.about-switcher-button.fourth').classList.remove('about-buttons-color');
 })
 
+
+
+/* the second button*/
+
+document.querySelector('.about-switcher-button-wrapper-fourth').addEventListener('click', () => {
+    
+
+document.querySelector('.about-switcher-button.second').classList.add('about-buttons-color');
+
+    offset -= (1 * itemWidth );
+    if (offset < -(1 * itemWidth)) {
+        offset = -(1 * itemWidth);
+    }
+
+
+
+sliderLine.style.left = offset + 'px';
+document.querySelector('.about-switcher-button-left').classList.remove('about-buttons-color');
+document.querySelector('.about-switcher-button-center').classList.remove('about-buttons-color');
+document.querySelector('.about-switcher-button.fourth').classList.remove('about-buttons-color');
+document.querySelector('.about-switcher-button-right').classList.remove('about-buttons-color');
+})
+
+
+/* the fourth button*/
+
+document.querySelector('.about-switcher-button-wrapper-fifth').addEventListener('click', () => {
+    
+
+    document.querySelector('.about-switcher-button.fourth').classList.add('about-buttons-color');
+    
+        offset -= (3 * itemWidth + 35);
+        if (offset < -(3 * itemWidth + 35)) {
+            offset = -(3 * itemWidth + 35);
+        }
+    
+    
+    
+    sliderLine.style.left = offset + 'px';
+    document.querySelector('.about-switcher-button-left').classList.remove('about-buttons-color');
+    document.querySelector('.about-switcher-button-center').classList.remove('about-buttons-color');
+    document.querySelector('.about-switcher-button-right').classList.remove('about-buttons-color');
+    })
