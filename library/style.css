@@ -1675,21 +1675,8 @@ footer .container {
 
 @media (max-width: 1010px) {
 
-   /* .about-slider {
-        justify-content: left;
-        align-items: center;
-    }
-
-    .about-slider-item:not(:last-child) {
-        margin-left: 20%;
-    }
-
-    .about-slider-item {
-        
-    }*/
-
     .about-slider-with-arrows {
-        
+        position: relative;
     }
 
     .about-slider-wrapper {
@@ -1698,6 +1685,7 @@ footer .container {
 
     .about-slider {
         justify-content: center;
+        gap: 0;
     }
 
     .about-slider-item {
@@ -1706,9 +1694,9 @@ footer .container {
 
     .about-slider-arrow {
         display: inline;
-        /*position: absolute;
-        top: 286px;
-        left: 77px*/
+        position: absolute;
+        top: 51%;
+        left: 10%;
     }
 
     .about-slider-arrow .left {
@@ -1716,7 +1704,7 @@ footer .container {
     }
 
     .about-slider-arrow.right {
-        /*margin-left: 545px;*/
+        left: 88%
     }
 
     .about-switcher-button-wrapper-fourth, .about-switcher-button-wrapper-fifth {

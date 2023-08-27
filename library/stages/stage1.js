@@ -28,24 +28,14 @@ function init() {
 window.addEventListener('resize', init);
 init()
 
-let minWidthScreen1011px = window.matchMedia('(min-width: 1011px)');
-let maxWidthScreen768px = window.matchMedia('(max-width: 768px)');
-console.log(Array.from(document.querySelectorAll('.about-slider-item')))
-
-/*function rollSlider() {
-    sliderLine.style.left = '-' + count * 475 + 'px';
-}*/
 
 const itemWidth = document.querySelector('.about-slider-item.first').offsetWidth;
 const sliderLineWidth = document.querySelector('.about-slider').offsetWidth
 
+/* the first button */
 
 document.querySelector('.about-switcher-button-wrapper.left').addEventListener('click', () => {
-    /*count--;
-    if (count <= images.length ) {
-        count = 0
-    }*/
-    /*rollSlider()*/
+  
     document.querySelector('.about-switcher-button-left').classList.add('about-buttons-color');
     if (width >= 1400) {
             offset += 950;
@@ -74,12 +64,31 @@ document.querySelector('.about-switcher-button-wrapper.left').addEventListener('
     
 })
 
+/* the second button*/
+
+document.querySelector('.about-switcher-button-wrapper-fourth').addEventListener('click', () => {
+    
+
+    document.querySelector('.about-switcher-button.second').classList.add('about-buttons-color');
+    
+        offset -= (1 * itemWidth );
+        if (offset < -(1 * itemWidth)) {
+            offset = -(1 * itemWidth);
+        }
+    
+    
+    
+    sliderLine.style.left = offset + 'px';
+    document.querySelector('.about-switcher-button-left').classList.remove('about-buttons-color');
+    document.querySelector('.about-switcher-button-center').classList.remove('about-buttons-color');
+    document.querySelector('.about-switcher-button.fourth').classList.remove('about-buttons-color');
+    document.querySelector('.about-switcher-button-right').classList.remove('about-buttons-color');
+    })
+
+    /* the third button*/
+
     document.querySelector('.about-switcher-button-wrapper.center').addEventListener('click', () => {
-        /*count++;
-        if (count >= images.length ) {
-            count = 1
-        }*/
-        /*rollSlider()*/
+        
     document.querySelector('.about-switcher-button-center').classList.add('about-buttons-color');
 
     if (width >= 1400) {
@@ -107,12 +116,29 @@ document.querySelector('.about-switcher-button-wrapper.left').addEventListener('
     document.querySelector('.about-switcher-button.fourth').classList.remove('about-buttons-color');
 })
 
+/* the fourth button*/
+
+document.querySelector('.about-switcher-button-wrapper-fifth').addEventListener('click', () => {
+    
+
+    document.querySelector('.about-switcher-button.fourth').classList.add('about-buttons-color');
+    
+        offset -= (3 * itemWidth + 35);
+        if (offset < -(3 * itemWidth + 35)) {
+            offset = -(3 * itemWidth + 35);
+        }
+    
+    
+    
+    sliderLine.style.left = offset + 'px';
+    document.querySelector('.about-switcher-button-left').classList.remove('about-buttons-color');
+    document.querySelector('.about-switcher-button-center').classList.remove('about-buttons-color');
+    document.querySelector('.about-switcher-button-right').classList.remove('about-buttons-color');
+    })
+
+    /* the fifth button */
+
     document.querySelector('.about-switcher-button-wrapper.right').addEventListener('click', () => {
-        /*count++;
-    if (count >= images.length ) {
-        count = 2
-    }*/
-    /*rollSlider()*/
 
     document.querySelector('.about-switcher-button-right').classList.add('about-buttons-color');
 
@@ -140,47 +166,3 @@ document.querySelector('.about-switcher-button-wrapper.left').addEventListener('
     document.querySelector('.about-switcher-button.second').classList.remove('about-buttons-color');
     document.querySelector('.about-switcher-button.fourth').classList.remove('about-buttons-color');
 })
-
-
-
-/* the second button*/
-
-document.querySelector('.about-switcher-button-wrapper-fourth').addEventListener('click', () => {
-    
-
-document.querySelector('.about-switcher-button.second').classList.add('about-buttons-color');
-
-    offset -= (1 * itemWidth );
-    if (offset < -(1 * itemWidth)) {
-        offset = -(1 * itemWidth);
-    }
-
-
-
-sliderLine.style.left = offset + 'px';
-document.querySelector('.about-switcher-button-left').classList.remove('about-buttons-color');
-document.querySelector('.about-switcher-button-center').classList.remove('about-buttons-color');
-document.querySelector('.about-switcher-button.fourth').classList.remove('about-buttons-color');
-document.querySelector('.about-switcher-button-right').classList.remove('about-buttons-color');
-})
-
-
-/* the fourth button*/
-
-document.querySelector('.about-switcher-button-wrapper-fifth').addEventListener('click', () => {
-    
-
-    document.querySelector('.about-switcher-button.fourth').classList.add('about-buttons-color');
-    
-        offset -= (3 * itemWidth + 35);
-        if (offset < -(3 * itemWidth + 35)) {
-            offset = -(3 * itemWidth + 35);
-        }
-    
-    
-    
-    sliderLine.style.left = offset + 'px';
-    document.querySelector('.about-switcher-button-left').classList.remove('about-buttons-color');
-    document.querySelector('.about-switcher-button-center').classList.remove('about-buttons-color');
-    document.querySelector('.about-switcher-button-right').classList.remove('about-buttons-color');
-    })
