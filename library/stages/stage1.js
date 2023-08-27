@@ -3,6 +3,14 @@ const images = document.querySelectorAll('.about-slider-item');
 const sliderLine = document.querySelector('.about-slider');
 const leftArrowButton = document.querySelector('.about-slider-arrow.left');
 const rightArrowButton = document.querySelector('.about-slider-arrow.right');
+const winterBooks = document.querySelectorAll('.favorites-wrapper.winter');
+const springBooks = document.querySelectorAll('.favorites-wrapper.spring');
+const summerBooks = document.querySelectorAll('.favorites-wrapper.summer');
+const autumnBooks = document.querySelectorAll('.favorites-wrapper.autumn');
+const winterClickButton = document.querySelector('.favorites-radio-name.winter');
+const springClickButton = document.querySelector('.favorites-radio-name.spring');
+const summerClickButton = document.querySelector('.favorites-radio-name.summer');
+const autumnClickButton = document.querySelector('.favorites-radio-name.autumn');
 let width;
 
 
@@ -218,4 +226,75 @@ const clickRightArrowButton = () => {
     sliderLine.style.left = offset + 'px';
 }
 
-rightArrowButton.addEventListener('click', clickRightArrowButton)
+rightArrowButton.addEventListener('click', clickRightArrowButton);
+
+/* the books in the favorite section */
+
+/* the winter button */
+
+winterClickButton.addEventListener('click', () => {
+    springBooks.forEach(item => {
+        item.style.display = 'none';
+    });
+    summerBooks.forEach(item => {
+        item.style.display = 'none';
+    });
+    autumnBooks.forEach(item => {
+        item.style.display = 'none';
+    });
+    winterBooks.forEach(item => {
+        item.style.display = 'flex';
+    })
+})
+
+/* the spring button */
+
+springClickButton.addEventListener('click', () => {
+    winterBooks.forEach(item => {
+        item.style.display = 'none';
+        
+    });
+    summerBooks.forEach(item => {
+        item.style.display = 'none';
+    });
+    autumnBooks.forEach(item => {
+        item.style.display = 'none';
+    });
+    springBooks.forEach(item => {
+        item.style.display = 'flex';
+    })
+});
+
+/* the summer button */
+
+summerClickButton.addEventListener('click', () => {
+    winterBooks.forEach(item => {
+        item.style.display = 'none';
+    });
+    springBooks.forEach(item => {
+        item.style.display = 'none';
+    });
+    autumnBooks.forEach(item => {
+        item.style.display = 'none';
+    });
+    summerBooks.forEach(item => {
+        item.style.display = 'flex';
+    })
+});
+
+/* the autumn button */
+
+autumnClickButton.addEventListener('click', () => {
+    winterBooks.forEach(item => {
+        item.style.display = 'none';
+    });
+    summerBooks.forEach(item => {
+        item.style.display = 'none';
+    });
+    springBooks.forEach(item => {
+        item.style.display = 'none';
+    });
+    autumnBooks.forEach(item => {
+        item.style.display = 'flex';
+    })
+});
