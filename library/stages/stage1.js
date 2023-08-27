@@ -1,7 +1,8 @@
 let offset = 0;
 const images = document.querySelectorAll('.about-slider-item');
 const sliderLine = document.querySelector('.about-slider');
-let count = 0;
+const leftArrowButton = document.querySelector('.about-slider-arrow.left');
+const rightArrowButton = document.querySelector('.about-slider-arrow.right');
 let width;
 
 
@@ -103,9 +104,9 @@ document.querySelector('.about-switcher-button-wrapper-fourth').addEventListener
             offset = - (2 * itemWidth + 50);
         }
     } else if (width < 970) {
-        offset -= (2 * itemWidth + 35);
-        if (offset < -(2 * itemWidth + 35)) {
-            offset = -(2 * itemWidth + 35);
+        offset -= (2 * itemWidth);
+        if (offset < -(2 * itemWidth)) {
+            offset = -(2 * itemWidth);
         }
     }
 
@@ -123,9 +124,9 @@ document.querySelector('.about-switcher-button-wrapper-fifth').addEventListener(
 
     document.querySelector('.about-switcher-button.fourth').classList.add('about-buttons-color');
     
-        offset -= (3 * itemWidth + 35);
-        if (offset < -(3 * itemWidth + 35)) {
-            offset = -(3 * itemWidth + 35);
+        offset -= (3 * itemWidth);
+        if (offset < -(3 * itemWidth)) {
+            offset = -(3 * itemWidth);
         }
     
     
@@ -165,4 +166,24 @@ document.querySelector('.about-switcher-button-wrapper-fifth').addEventListener(
     document.querySelector('.about-switcher-button-center').classList.remove('about-buttons-color');
     document.querySelector('.about-switcher-button.second').classList.remove('about-buttons-color');
     document.querySelector('.about-switcher-button.fourth').classList.remove('about-buttons-color');
+})
+
+/* the arrow buttons */
+
+leftArrowButton.addEventListener('click', () => {
+    offset += itemWidth;
+    if (offset > 0) {
+        offset = 0;
+    }
+
+    sliderLine.style.left = offset + 'px';
+})
+
+rightArrowButton.addEventListener('click', () => {
+    offset -= itemWidth;
+    if (offset < -(sliderLineWidth - itemWidth)) {
+        offset = -(sliderLineWidth - itemWidth);
+    }
+
+    sliderLine.style.left = offset + 'px';
 })

@@ -829,8 +829,7 @@ a {
 
 .about-slider-wrapper {
     max-width: 1400px;
-    
-    /*overflow: hidden;*/
+    overflow: hidden;
 }
 
 .about-slider {
@@ -1697,13 +1696,15 @@ footer .container {
         position: absolute;
         top: 51%;
         left: 10%;
+        cursor: pointer;
     }
 
-    .about-slider-arrow .left {
-        
+    .about-slider-arrow.left {
+        z-index: 10;
     }
 
     .about-slider-arrow.right {
+        z-index: 10;
         left: 88%
     }
 
