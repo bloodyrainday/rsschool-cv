@@ -135,6 +135,7 @@ document.querySelector('.about-switcher-button-wrapper-fifth').addEventListener(
     document.querySelector('.about-switcher-button-left').classList.remove('about-buttons-color');
     document.querySelector('.about-switcher-button-center').classList.remove('about-buttons-color');
     document.querySelector('.about-switcher-button-right').classList.remove('about-buttons-color');
+    document.querySelector('.about-switcher-button.second').classList.remove('about-buttons-color');
     })
 
     /* the fifth button */
@@ -170,20 +171,51 @@ document.querySelector('.about-switcher-button-wrapper-fifth').addEventListener(
 
 /* the arrow buttons */
 
-leftArrowButton.addEventListener('click', () => {
+const clickLeftArrowButton = () => {
     offset += itemWidth;
+    
     if (offset > 0) {
         offset = 0;
+    } else if (offset === - (3 * itemWidth)) {
+        document.querySelector('.about-switcher-button-right').classList.remove('about-buttons-color');
+        document.querySelector('.about-switcher-button.fourth').classList.add('about-buttons-color');
+    } else if (offset === - (2 * itemWidth)) {
+        document.querySelector('.about-switcher-button.fourth').classList.remove('about-buttons-color');
+        document.querySelector('.about-switcher-button-center').classList.add('about-buttons-color');
+    } else if (offset === - itemWidth) {
+        document.querySelector('.about-switcher-button.second').classList.add('about-buttons-color');
+        document.querySelector('.about-switcher-button-center').classList.remove('about-buttons-color');
+    } else if (offset === 0) {
+        document.querySelector('.about-switcher-button.second').classList.remove('about-buttons-color');
+        document.querySelector('.about-switcher-button-left').classList.add('about-buttons-color');
     }
-
+    
     sliderLine.style.left = offset + 'px';
-})
+    
+}
 
-rightArrowButton.addEventListener('click', () => {
+leftArrowButton.addEventListener('click', clickLeftArrowButton)
+
+const clickRightArrowButton = () => {
     offset -= itemWidth;
+    
     if (offset < -(sliderLineWidth - itemWidth)) {
         offset = -(sliderLineWidth - itemWidth);
+    } else if (offset === - itemWidth) {
+        document.querySelector('.about-switcher-button.second').classList.add('about-buttons-color');
+        document.querySelector('.about-switcher-button-left').classList.remove('about-buttons-color');
+    } else if (offset === - (2 * itemWidth)) {
+        document.querySelector('.about-switcher-button.second').classList.remove('about-buttons-color');
+        document.querySelector('.about-switcher-button-center').classList.add('about-buttons-color');
+    } else if (offset === - (3 * itemWidth)) {
+        document.querySelector('.about-switcher-button-center').classList.remove('about-buttons-color');
+        document.querySelector('.about-switcher-button.fourth').classList.add('about-buttons-color');
+    } else if (offset === - (4 * itemWidth)) {
+        document.querySelector('.about-switcher-button.fourth').classList.remove('about-buttons-color');
+        document.querySelector('.about-switcher-button-right').classList.add('about-buttons-color');
     }
 
     sliderLine.style.left = offset + 'px';
-})
+}
+
+rightArrowButton.addEventListener('click', clickRightArrowButton)
