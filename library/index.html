@@ -20,19 +20,19 @@
 
     <div class="popup-register hidden">
         <div class="popup-register-content">
-            <h8 class="popup-register-content-title">Register</h8>
-            <form action="" class="popup-register-content-form">
+            <h6 class="popup-register-content-title">Register</h6>
+            <form action="#" class="popup-register-content-form">
 
-                <label class='popup-register-content-form-label' for="">First name</label>
+                <label class='popup-register-content-form-label' for="input-first-name">First name</label>
                 <input type="text" class="popup-register-content-form-input" id="input-first-name" value="" required>
 
-                <label class='popup-register-content-form-label' for="">Last name</label>
+                <label class='popup-register-content-form-label' for="input-last-name">Last name</label>
                 <input type="text" class="popup-register-content-form-input" id="input-last-name" value="" required>
 
-                <label class='popup-register-content-form-label' for="">E-mail</label>
+                <label class='popup-register-content-form-label' for="input-email">E-mail</label>
                 <input type="email" class="popup-register-content-form-input" id="input-email" required>
 
-                <label class='popup-register-content-form-label' for="">Password</label>
+                <label class='popup-register-content-form-label' for="input-password">Password</label>
                 <input type="password" class="popup-register-content-form-input" minlength="8" id="input-password" required>
 
                 <button type="submit" class="popup-register-content-button">Sign Up</button>
@@ -40,21 +40,21 @@
             
             <div class="popup-register-content-subtext">
                 <p class="popup-register-content-subtext-text">Already have an account?</p>
-                <p href="" class="popup-register-content-subtext-link">Login</p>
+                <p class="popup-register-content-subtext-link">Login</p>
             </div>
-            <img alt="close-btn" src="icons/close_btn.svg" class="popup-register-content-close-icon"></img>
+            <img alt="close-btn" src="icons/close_btn.svg" class="popup-register-content-close-icon"/>
         </div>
     </div>
 
     <div class="popup-login hidden">
         <div class="popup-login-content">
-            <h8 class="popup-login-content-title">Login</h8>
-            <form action="" class="popup-login-content-form">
+            <h6 class="popup-login-content-title">Login</h6>
+            <form action="#" class="popup-login-content-form">
 
-                <label class='popup-login-content-form-label' for="">E-mail or readers card</label>
-                <input type="email" class="popup-login-content-form-input" id="input-login-email" required>
+                <label class='popup-login-content-form-label' for="input-login-email">E-mail or readers card</label>
+                <input type="text" class="popup-login-content-form-input" id="input-login-email" required>
 
-                <label class='popup-login-content-form-label' for="">Password</label>
+                <label class='popup-login-content-form-label' for="input-login-password">Password</label>
                 <input type="password" class="popup-login-content-form-input" minlength="8" id="input-login-password" required>
 
                 <button type="submit" class="popup-login-content-button">Log In</button>
@@ -62,9 +62,107 @@
 
             <div class="popup-login-content-subtext">
                 <p class="popup-login-content-subtext-text">Don’t have an account?</p>
-                <p href="" class="popup-login-content-subtext-link">Register</p>
+                <p class="popup-login-content-subtext-link">Register</p>
             </div>
-            <img alt="close-btn" src="icons/close_btn.svg" class="popup-login-content-close-icon"></img>
+            <img alt="close-btn" src="icons/close_btn.svg" class="popup-login-content-close-icon"/>
+        </div>
+    </div>
+
+    <div class="my-profile-card hidden">
+        <div class="my-profile-card-content">
+            <div class="my-profile-card-content-icon">
+                <div class="my-profile-card-content-icon-initials"></div>
+                <p class="my-profile-card-content-icon-name"></p>
+            </div>
+            <div class="my-profile-card-content-info">
+                <h5 class="my-profile-card-content-info-title">My profile</h5>
+
+                <div class="my-profile-card-content-info-stats">
+                    <div class="my-profile-card-content-info-stats-column">
+                        <p class="my-profile-card-content-info-stats-column-title">Visits</p>
+                        <img src="icons/Union.svg" alt="users-icon" class="my-profile-card-content-info-stats-column-icon">
+                        <p class="my-profile-card-content-info-stats-column-amount">23</p>
+                    </div>
+                    <div class="my-profile-card-content-info-stats-column">
+                        <p class="my-profile-card-content-info-stats-column-title">Bonuses</p>
+                        <img src="icons/Star1.svg" alt="users-icon" class="my-profile-card-content-info-stats-column-icon">
+                        <p class="my-profile-card-content-info-stats-column-amount">1240</p>
+                    </div>
+                    <div class="my-profile-card-content-info-stats-column">
+                        <p class="my-profile-card-content-info-stats-column-title">Books</p>
+                        <img src="icons/book.svg" alt="users-icon" class="my-profile-card-content-info-stats-column-icon">
+                        <p class="my-profile-card-content-info-stats-column-amount">2</p>
+                    </div>
+                </div>
+
+                <div class="my-profile-card-content-info-books">
+                    <p class="my-profile-card-content-info-books-text">Rented books</p>
+                    <ul class="my-profile-card-content-info-books-rent">
+                        <li class="my-profile-card-content-info-books-rent-book">The Last Queen, Clive Irving</li>
+                        <li class="my-profile-card-content-info-books-rent-book">Dominicana, Angie Cruz</li>
+                    </ul>
+                </div>
+
+                <div class="my-profile-card-content-info-card">
+                    <p class="my-profile-card-content-info-card-text">Card number</p>
+                    <p class="my-profile-card-content-info-card-number"></p>
+                    <img src="icons/icon-copy.svg" alt="copy-icon" class="my-profile-card-content-info-card-copy">
+                </div>
+
+                <img alt="close-btn" src="icons/close_btn.svg" class="my-profile-card-content-info-close-btn"/>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="popup-library-card hidden">
+        <div class="popup-library-card-content">
+            <div class="popup-library-card-content-header">
+                <h5 class="popup-library-card-content-header-title">Buy a library card</h5>
+                <img src="icons/white-close_btn.svg" alt="close=btn" class="popup-library-card-content-header-close-btn">
+            </div>
+
+            <div class="popup-library-card-content-columns">
+                <div class="popup-library-card-content-column1">
+                    
+                    <form action="#" class='popup-library-card-content-column1-form'>
+
+                        <label for="bank-input" class="popup-library-card-content-column1-bank">Bank card number</label>
+                        <input type="number" class="popup-library-card-content-column1-bank-input" required id="bank-input">
+
+                        <label for="expiration-input expiration-input2" class="popup-library-card-content-column1-expiration">Expiration code</label>
+                        <input type="number" class="popup-library-card-content-column1-expiration-input" required id="expiration-input">
+                        <input type="number" class="popup-library-card-content-column1-expiration-input" required id="expiration-input2"><br>
+
+                        <label for="cvc-input" class="popup-library-card-content-column1-cvc">CVC</label>
+                        <input type="number" class="popup-library-card-content-column1-cvc-input" required id="cvc-input">
+
+                        <label for="cardholder-input" class="popup-library-card-content-column1-cardholder">Cardholder name</label>
+                        <input type="text" class="popup-library-card-content-column1-cardholder-input" required id="cardholder-input">
+
+                        <label for="postal-input" class="popup-library-card-content-column1-postal">Postal code</label>
+                        <input type="text" class="popup-library-card-content-column1-postal-input" required id="postal-input">
+
+                        <label for="city-input" class="popup-library-card-content-column1-city">City / Town</label>
+                        <input type="text" class="popup-library-card-content-column1-city-input" required id="city-input">
+
+                        <div class="popup-library-card-content-column1-submit">
+                            <button type="submit" class="popup-library-card-content-column1-button">Buy</button>
+                            <p class="popup-library-card-content-column1-price">$ 25.00</p>
+                        </div>
+
+                    </form>
+
+                </div>
+
+                <div class="popup-library-card-content-column2">
+                    <p class="popup-library-card-content-column2-text">If you are live, work, attend school, or pay property taxes in New York State, you can get a $25 digital library card right now using this online form. Visitors to New York State can also use this form to apply for a temporary card.
+                    </p>
+                </div>
+
+            </div>
+
+            
         </div>
     </div>
 
@@ -82,23 +180,27 @@
                     <li class="nav-item"><a href="#digital_library_card" class="nav-item-link">Library Card</a></li>
                 </ul>
             </nav>
-            <div class="icons-wrapper">
-                <div class="icon-profile">
-                <img class="header-icon-profile" src="icons/icon_profile.svg" alt="account-icon">
+
+            
+                <div class="icons-wrapper">
+                    <div  class="icon-profile">
+
+                    <img class="header-icon-profile" src="icons/icon_profile.svg" alt="account-icon">
                 
+                    </div>
+                <div class="icon-profile-popup">
+                    <p class="icon-profile-popup-title">Profile</p>
+                    <div class="icon-profile-popup-underline"></div>
+                    <p class="icon-profile-popup-text login">Log In</p>
+                    <p class="icon-profile-popup-text register">Register</p>
                 </div>
-            <div class="icon-profile-popup">
-                 <p class="icon-profile-popup-title">Profile</p>
-                <div class="icon-profile-popup-underline"></div>
-                <p class="icon-profile-popup-text login">Log In</p>
-                <p class="icon-profile-popup-text register">Register</p>
-            </div>
-            <button class="icon-burger" id="burger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-            </div>
+                <button class="icon-burger" id="burger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                </div>
+            
             
             
         </div>
@@ -127,7 +229,8 @@
                     <div class="underline about"></div>
                     <p class="about-subtitle">The Brooklyn Library is a free workspace, a large number of books and a cozy coffee shop inside </p>
                     
-                    <div class="about-slider-arrow">
+                    <div class="about-slider-with-arrows">
+                        <div class="about-slider-arrow left">
                             <img src="icons/Arrow2.svg" alt="arrow" class="about-slider-arrow-left">
                         </div>
 
@@ -151,26 +254,27 @@
                         </div>
                     </div>   
                     
-
-                    <div class="about-slider-arrow">
+                        <div class="about-slider-arrow right">
                             <img src="icons/Arrow1.svg" alt="arrow" class="about-slider-arrow-right">
                         </div>
+                    </div>
+                    
 
                     <div class="about-switcher">
                         <div class="about-switcher-button-wrapper left">
                             <div class="about-switcher-button-left about-buttons-color"></div>
                         </div>
+                        <div class="about-switcher-button-wrapper-fourth">
+                            <div class="about-switcher-button second"></div>
+                        </div>
                         <div class="about-switcher-button-wrapper center">
                             <div class="about-switcher-button-center"></div>
                         </div>
+                        <div class="about-switcher-button-wrapper-fifth">
+                            <div class="about-switcher-button fourth"></div>
+                        </div>
                         <div class="about-switcher-button-wrapper right">
                             <div class="about-switcher-button-right"></div>
-                        </div>
-                        <div class="about-switcher-button-wrapper-fourth">
-                            <div class="about-switcher-button"></div>
-                        </div>
-                        <div class="about-switcher-button-wrapper-fifth">
-                            <div class="about-switcher-button"></div>
                         </div>
                     </div>
                 </div>
@@ -185,16 +289,16 @@
                     <div class="favorites-radio">
 
                             
-                        <label  class='favorites-radio-name' for="check1"><input class="favorites-radio-btn" type="radio" id="check1" value="Winter" name="season"><span class="favorites-radio-name-season">Winter</span></label>
+                        <label  class='favorites-radio-name winter' for="check1"><input class="favorites-radio-btn" type="radio" id="check1" value="Winter" name="season" checked="checked"><span class="favorites-radio-name-season">Winter</span></label>
                     
                         
-                        <label class='favorites-radio-name' for="check2"><input class="favorites-radio-btn" type="radio" id="check2" value="Spring" name="season"><span>Spring</span></label>
+                        <label class='favorites-radio-name spring' for="check2"><input class="favorites-radio-btn" type="radio" id="check2" value="Spring" name="season"><span>Spring</span></label>
                     
                         
-                        <label class='favorites-radio-name' for="check3"><input class="favorites-radio-btn" type="radio" id="check3" value="Summer" name="season"><span>Summer</span></label>
+                        <label class='favorites-radio-name summer' for="check3"><input class="favorites-radio-btn" type="radio" id="check3" value="Summer" name="season"><span>Summer</span></label>
                     
                         
-                        <label class='favorites-radio-name' for="check4"><input class="favorites-radio-btn" type="radio" id="check4" value="Autumn" name="season"><span>Autumn</span></label>
+                        <label class='favorites-radio-name autumn' for="check4"><input class="favorites-radio-btn" type="radio" id="check4" value="Autumn" name="season"><span>Autumn</span></label>
                     </div> 
                     <div class="favorites-books">
 
@@ -250,7 +354,7 @@
                                 By Sunyi Dean
                             </p>
                             <p class="favorites-book-text">A timely and revelatory new biography of Queen Elizabeth (and her family) exploring how the Windsors have evolved and thrived as the modern world has changed around them.       </p>
-                            <button class="favorites-book-btn the-last-queen">Buy</button>
+                            <button class="favorites-book-btn">Buy</button>
                             <img src="images/book4.png" alt="book-cover" class="favorites-book-cover">
                         </div>
                         </div>
@@ -264,7 +368,7 @@
                                 By Stephen King
                             </p>
                             <p class="favorites-book-text">Powerful novel that takes you back to a nostalgic time, exploring both the beauty and danger and loss of innocence that is youth.       </p>
-                            <button class="favorites-book-btn the-last-queen" disabled >Own</button>
+                            <button class="favorites-book-btn" >Buy</button>
                             <img src="images/book5.png" alt="book-cover" class="favorites-book-cover">
                         </div>
                         </div>
@@ -278,7 +382,7 @@
                                 By Toni Jenson
                             </p>
                             <p class="favorites-book-text">This memoir about the author's relationship with gun violence feels both expansive and intimate, resulting in a lyrical indictment of the way things are.       </p>
-                            <button class="favorites-book-btn the-last-queen" disabled >Own</button>
+                            <button class="favorites-book-btn">Buy</button>
                             <img src="images/book6.png" alt="book-cover" class="favorites-book-cover">
                         </div>
                         </div>
@@ -292,7 +396,7 @@
                                 By Alexandra Chang
                             </p>
                             <p class="favorites-book-text">A sardonic view of Silicon Valley culture, a meditation on race, and a journal of displacement and belonging, all in one form-defying package of spare prose.       </p>
-                            <button class="favorites-book-btn the-last-queen" disabled >Own</button>
+                            <button class="favorites-book-btn">Buy</button>
                             <img src="images/book7.png" alt="book-cover" class="favorites-book-cover">
                         </div>
                         </div>
@@ -306,7 +410,7 @@
                                 By Angie Cruz
                             </p>
                             <p class="favorites-book-text">A fascinating story of a teenage girl who marries a man twice her age with the promise to bring her to America. Her marriage is an opportunity for her family to eventually immigrate. For fans of Isabel Allende and Julia Alvarez.       </p>
-                            <button class="favorites-book-btn the-last-queen" disabled >Own</button>
+                            <button class="favorites-book-btn">Buy</button>
                             <img src="images/book8.png" alt="book-cover" class="favorites-book-cover">
                         </div>
                         </div>
@@ -317,10 +421,10 @@
                             <div class="favourites-book-underline"></div>
                             <p class="favorites-book-name">
                                 CRUDE: A MEMOIR<br>
-                                By Pablo Fajardo & ​​Sophie Tardy-Joubert
+                                By Pablo Fajardo & Sophie Tardy-Joubert
                             </p>
                             <p class="favorites-book-text">Drawing and color by Damien Roudeau | This book illustrates the struggles of a group of indigenous Ecuadoreans as they try to sue the ChevronTexaco company for damage their oil fields did to the Amazon and her people       </p>
-                            <button class="favorites-book-btn the-last-queen" disabled >Own</button>
+                            <button class="favorites-book-btn">Buy</button>
                             <img src="images/book9.png" alt="book-cover" class="favorites-book-cover">
                         </div>
                         </div>
@@ -334,7 +438,7 @@
                                 By Yvon Chouinard
                             </p>
                             <p class="favorites-book-text">Chouinard—climber, businessman, environmentalist—shares tales of courage and persistence from his experience of founding and leading Patagonia, Inc. Full title: Let My People Go Surfing: The Education of a Reluctant Businessman, Including 10 More Years of Business Unusual.       </p>
-                            <button class="favorites-book-btn the-last-queen" disabled >Own</button>
+                            <button class="favorites-book-btn">Buy</button>
                             <img src="images/book10.png" alt="book-cover" class="favorites-book-cover">
                         </div>
                         </div>
@@ -348,7 +452,7 @@
                                 By Brenda Shaughnessy
                             </p>
                             <p class="favorites-book-text">This collection of bold and scathingly beautiful feminist poems imagines what comes after our current age of environmental destruction, racism, sexism, and divisive politics.       </p>
-                            <button class="favorites-book-btn the-last-queen" disabled >Own</button>
+                            <button class="favorites-book-btn">Buy</button>
                             <img src="images/book11.png" alt="book-cover" class="favorites-book-cover">
                         </div>
                         </div>
@@ -362,7 +466,7 @@
                                 By Kiana Davenport
                             </p>
                             <p class="favorites-book-text">An epic saga of seven generations of one family encompasses the tumultuous history of Hawaii as a Hawaiian woman gathers her four granddaughters together in an erotic tale of villains and dreamers, queens and revolutionaries, lepers and healers.       </p>
-                            <button class="favorites-book-btn the-last-queen" disabled >Own</button>
+                            <button class="favorites-book-btn">Buy</button>
                             <img src="images/book12.png" alt="book-cover" class="favorites-book-cover">
                         </div>
                         </div>
@@ -376,7 +480,7 @@
                                 By Renia White
                             </p>
                             <p class="favorites-book-text">White's impressive debut collection takes readers through and beyond the concepts of conversation and the casual - both what we say to each other and what we don't, examining the possibilities around how we construct and communicate identity.        </p>
-                            <button class="favorites-book-btn the-last-queen" disabled >Own</button>
+                            <button class="favorites-book-btn">Buy</button>
                             <img src="images/book13.png" alt="book-cover" class="favorites-book-cover">
                         </div>
                         </div>
@@ -390,7 +494,7 @@
                                 By Lou Ureneck
                             </p>
                             <p class="favorites-book-text">The harrowing story of an ordinary American and a principled Naval officer who, horrified by the burning of Smyrna, led an extraordinary rescue effort that saved a quarter of a million refugees from the Armenian Genocide        </p>
-                            <button class="favorites-book-btn the-last-queen" disabled >Own</button>
+                            <button class="favorites-book-btn">Buy</button>
                             <img src="images/book14.png" alt="book-cover" class="favorites-book-cover">
                         </div>
                         </div>
@@ -404,7 +508,7 @@
                                 By Howard Bryant
                             </p>
                             <p class="favorites-book-text">With the fall rolling around, one can't help but think of baseball's postseason coming up! And what better way to prepare for it than reading the biography of one of the game's all-time greatest performers, the Man of Steal, Rickey Henderson?        </p>
-                            <button class="favorites-book-btn the-last-queen" disabled >Own</button>
+                            <button class="favorites-book-btn">Buy</button>
                             <img src="images/book15.png" alt="book-cover" class="favorites-book-cover">
                         </div>
                         </div>
@@ -418,7 +522,7 @@
                                 By Megan Milks
                             </p>
                             <p class="favorites-book-text">Exes Tegan and Sara find themselves chained together by hairballs of codependency. A father and child experience the shared trauma of giving birth to gods from their wounds.        </p>
-                            <button class="favorites-book-btn the-last-queen" disabled >Own</button>
+                            <button class="favorites-book-btn">Buy</button>
                             <img src="images/book16.png" alt="book-cover" class="favorites-book-cover">
                         </div>
                         </div>
@@ -548,7 +652,7 @@
                                     Putterham Library: <a class='phone-number' href="tel:(617)730-2385">(617) 730-2385</a>
                                 </p>                                             
                             </div>
-                            <h5 class="our_contacts-contacts-column1-text p-3"><b>Senior Staff</b><h5>
+                            <p class="our_contacts-contacts-column1-text p-3"><b>Senior Staff</b></p>
                             <p class="our_contacts-contacts-column1-text-subtext">
                                 Library Director: <b><a class='mail-adress' href="mailto:AmandaHirst@gmail.com">Amanda Hirst</a></b>
                             </p>                                              
@@ -568,7 +672,7 @@
                         <div class="digital_library_card-form">
                             <h2 class="digital_library_card-form-title">Find your Library card</h2>
                             <div class="digital_library_card-form-wrapper">
-                                <form action="just-an-action">
+                                <form action="#">
                                     <h4 class="digital_library_card-form-subtitle">Brooklyn Public Library</h4>
                                     <input id="input-readers-name" class='digital_library_card-form-input' type="text" pattern='[0-9A-Za-z-]' placeholder="Reader's name"><br>
                                     <input id="input-card-number" class='digital_library_card-form-input' type="text"  placeholder="Card number">
@@ -582,7 +686,7 @@
                                     </div>
                                     <div class="users-info-column">
                                         <p class="users-info-title">Bonuses</p>
-                                        <img src="icons/Star 1.svg" alt="users-icon" class="users-info-icon">
+                                        <img src="icons/Star1.svg" alt="users-icon" class="users-info-icon">
                                         <p class="users-info-amount">1240</p>
                                     </div>
                                     <div class="users-info-column">
@@ -597,8 +701,8 @@
                             <h3 class="digital_library_card-account-title">Get a reader card</h3>
                             <p class="digital_library_card-account-text">You will be able to see a reader card after logging into account or you can register a new account</p>
                             <div class="digital_library_card-account-buttons">
-                                <button class="digital_library_card-account-btn">Sign Up</button>
-                                <button class="digital_library_card-account-btn">Log in</button>
+                                <button class="digital_library_card-account-btn" id="digital_library_card-signup">Sign Up</button>
+                                <button class="digital_library_card-account-btn" id="digital_library_card-login">Log in</button>
                             </div>
                         </div>
                     </div>
@@ -648,5 +752,6 @@
     <script src="stages/stage1.js"></script>
     <script src="stages/stage2.js"></script>
     <script src="stages/stage3.js"></script>
+    <script src="stages/stage4.js"></script>
 </body>
 </html>

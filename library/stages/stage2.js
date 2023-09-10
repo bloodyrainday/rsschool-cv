@@ -13,16 +13,23 @@ const inputEmail = document.getElementById('input-email');
 const inputPassword = document.getElementById('input-password');
 const signUpButtonRegister = document.querySelector('.popup-register-content-button');
 const checkCard = document.querySelector('.digital_library_card-form-btn');
-
+const profileTitleMenu = document.querySelector('.icon-profile-popup-title');
 
 /*open menu of profile icon*/
 
-function clickIconProfile(event) {
+iconProfile.addEventListener('click', () => {
     iconProfilePopup.classList.toggle('active');
-}
+    
+});
 
-iconProfile.addEventListener('click', clickIconProfile);
-
+document.addEventListener('click', event => {
+    const clickOnBurger = event.composedPath().includes(burger);
+    const clickOnProfileIcon = event.composedPath().includes(iconProfile);
+    
+        if (!clickOnBurger && !clickOnProfileIcon) {
+            iconProfilePopup.classList.remove('active');
+        }
+})
 
 /*open register menu*/
 
@@ -58,49 +65,122 @@ signUpButtonRegister.addEventListener('click', () => {
 
     let firstLetterOfName
     let firstLetterofLastname
-   
-    
+    let cardNumber
 
-    if (inputEmail.value !== '' && (inputPassword.value !== '') && inputPassword.value.length >= 8) {
+    if ((inputEmail.value !== '') && (inputPassword.value !== '') && (inputPassword.value.length >= 8)) {
+        popupRegister.classList.add('hidden');
+
+        let fullName = inputFirstName.value + ' ' + inputLastName.value;
         firstLetterOfName = inputFirstName.value[0].toUpperCase();
         firstLetterofLastname = inputLastName.value[0].toUpperCase();
 
         iconProfile.textContent = firstLetterOfName + firstLetterofLastname;
 
-        iconProfile.classList.add('activated')
+        console.log(iconProfile.textContent = firstLetterOfName + firstLetterofLastname);
 
+        iconProfile.classList.toggle('activated');
+
+        iconProfile.setAttribute('title', fullName);
+
+        /*inputEmail.value = '';
+        inputPassword.value = '';
+        inputFirstName.value = '';
+        inputLastName.value = '';*/
+
+
+        /* clicking on the button 'My profile' */
+
+        
+        
+        loginClick.textContent = 'My profile';
+
+        loginClick.addEventListener('click', () => {
+            popupLogin.classList.toggle('hidden');
+            myProfileCard.classList.toggle('hidden');
+            document.querySelector('.my-profile-card-content-info-card-number').textContent = localStorage.getItem('user-card-number')
+
+            document.querySelector('.my-profile-card-content-icon-initials').textContent = iconProfile.textContent = firstLetterOfName + firstLetterofLastname;
+            document.querySelector('.my-profile-card-content-icon-name').textContent = fullName
+        })
+
+        /* clicking on the button 'Log out' */
+
+        
+        
+        registerClick.textContent = 'Log Out';
+        
+        registerClick.addEventListener('click', () => {
+            popupRegister.classList.add('hidden');
+
+            registerClick.textContent = 'Register';
+
+            registerClick.addEventListener('click', () => {
+                popupRegister.classList.remove('hidden');
+            })
+
+            iconProfile.classList.remove('activated');
+            iconProfile.setAttribute('title', '');
+            iconProfile.innerHTML = '<img class="header-icon-profile" src="icons/icon_profile.svg" alt="account-icon">'
+            document.querySelector('.icon-profile-popup-title').textContent = 'Profile';
+            document.querySelector('.icon-profile-popup-title').style.fontSize = 15 + 'px'
+
+            loginClick.textContent = 'Log In';
+
+            loginClick.addEventListener('click', () => {
+                popupLogin.classList.remove('hidden');
+                myProfileCard.classList.add('hidden');
+                iconProfile.innerHTML = '<img class="header-icon-profile" src="icons/icon_profile.svg" alt="account-icon">'
+            })
+
+            favoritesButtons.forEach(item => {
+                item.addEventListener('click', () => {
+                popupLogin.classList.remove('hidden');
+                document.querySelector('.popup-library-card').classList.add('hidden');
+            })
+            })
+
+            
+        })
+
+    
+        
         /* card number */
 
-        let cardNumber = [];
+        cardNumber = [];
         let randomNumbers;
         while (cardNumber.length < 9) {
             randomNumbers = Math.floor(Math.random() * 16).toString(16);
             cardNumber.push(randomNumbers)
-        }
-        localStorage.setItem('user-card-number', cardNumber.join('').toUpperCase())
-        /*console.log('Here is your card number ' + cardNumber.join('').toUpperCase())*/
+        };
+        profileTitleMenu.style.fontSize = 12 + 'px';
+
+        profileTitleMenu.textContent = cardNumber.join('').toUpperCase();
+        localStorage.setItem('user-card-number', cardNumber.join('').toUpperCase());
+
+
+        console.log('Here is your card number ' + cardNumber.join('').toUpperCase())
     } else {
         console.log('fill in the gaps')
     }
     
-    console.log(firstLetterOfName, firstLetterofLastname)
+    console.log(firstLetterOfName, firstLetterofLastname); 
+
+    /* check-the-card button*/
+
+    checkCard.addEventListener('click', () => {
+        if ((document.getElementById('input-readers-name').value === localStorage.getItem('user-first-name')) && (document.getElementById('input-card-number').value === localStorage.getItem('user-card-number'))) {
+            checkCard.style.display = 'none';
+            document.querySelector('.users-info').style.display = 'flex'
+            setTimeout(() => {
+                checkCard.style.display = 'block';
+                document.querySelector('.users-info').style.display = 'none';
+                document.getElementById('input-readers-name').value = '';
+                document.getElementById('input-card-number').value = '';
+            }, 10000)
+        } else {
+            console.log('this name or card number does not exist!')
+        }
+    })
+
 })
 
-/* check-the-card button*/
-
-checkCard.addEventListener('click', () => {
-    if ((document.getElementById('input-readers-name').value === localStorage.getItem('user-first-name')) && (document.getElementById('input-card-number').value === localStorage.getItem('user-card-number'))) {
-        checkCard.style.display = 'none';
-        document.querySelector('.users-info').style.display = 'flex'
-        setTimeout(() => {
-            checkCard.style.display = 'block';
-            document.querySelector('.users-info').style.display = 'none';
-            document.getElementById('input-readers-name').value = '';
-            document.getElementById('input-card-number').value = '';
-        }, 10000)
-    } else {
-        console.log('this name or card number does not exist!')
-    }
-    
-    
-})

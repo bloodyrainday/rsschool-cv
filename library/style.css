@@ -48,6 +48,7 @@ body {
     line-height: 20px;
     letter-spacing: 0.4px;
     text-transform: uppercase;
+    margin: 0;
     margin-left: 30%;
 }
 
@@ -162,6 +163,7 @@ body {
     line-height: 20px;
     letter-spacing: 0.4px;
     text-transform: uppercase;
+    margin: 0;
     margin-left: 30%;
 }
 
@@ -203,6 +205,12 @@ body {
     margin-top: 10px;
 }
 
+.popup-login-content .popup-login-content-button:hover {
+    background-color: #BB945F;
+    border: 1px solid #BB945F;
+    transition: 0.5s;
+}
+
 .popup-login-content .popup-login-content-subtext {
     display: flex;
     justify-content: left;
@@ -235,6 +243,323 @@ body {
     top: 15px;
     right: 15px;
     cursor: pointer;
+}
+
+.my-profile-card {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+}
+
+.my-profile-card-content {
+    width: 600px;
+    height: 400px;
+    background-color: #FFF;
+    display: flex;
+    justify-content: space-between;
+}
+
+.my-profile-card-content-icon {
+    width: 170px;
+    height: 400px;    
+    background-color: #0C0C0E;
+}
+
+.my-profile-card-content-icon-initials {
+    width: 80px;
+    height: 80px;
+    font-family: "Inter", cursive;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 20px;
+    text-transform: capitalize;
+    text-align: center;
+    background-color: #fff;
+    margin-top: 139px;
+    margin-left: 45px;
+    color: #BB945F;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.my-profile-card-content-icon-name {
+    width: 120px;
+    height: 30px;
+    font-family: "Inter", cursive;
+    text-align: center;
+    line-height: 20px;
+    font-weight: 400;
+    font-size: 20px;
+    background-color: #fff;
+    margin-left: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.my-profile-card-content-info {
+    padding: 40px 0 40px 0 ;
+    position: relative;
+    width: 410px;
+}
+
+.my-profile-card-content-info-title {
+    margin: 0;
+    color: #000;
+    text-align: left;
+    font-family: 'Forum', cursive;
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+}
+
+.my-profile-card-content-info-stats {
+    display: flex;
+    justify-content: space-between;
+    width: 237px;
+    margin-bottom: 20px;
+}
+
+.my-profile-card-content-info-stats-column {
+    text-align: center;
+}
+
+.my-profile-card-content-info-stats-column-title {
+    color: #000;
+    text-align: center;
+    font-family: 'Inter', cursive;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0.4px;
+    margin: 0;
+}
+
+.my-profile-card-content-info-stats-column-icon {
+    margin: 10px 0;
+}
+
+.my-profile-card-content-info-stats-column-amount {
+    color: #000;
+    text-align: center;
+    font-family: 'Inter', cursive;
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0.2px;
+    text-transform: capitalize;
+    margin: 0;
+}
+
+.my-profile-card-content-info-books-text {
+    margin: 0;
+}
+
+.my-profile-card-content-info-books-rent {
+    padding-left: 20px;
+    margin: 0;
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
+.my-profile-card-content-info-books-rent-book {
+    list-style: disc ;
+}
+
+.my-profile-card-content-info-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 280px;
+}
+
+.my-profile-card-content-info-card-text {
+    margin: 0;
+    color: #0C0C0E;
+    text-align: center;
+    font-family: 'Inter', cursive;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.my-profile-card-content-info-card-number {
+    color: #BB945F;
+    text-align: center;
+    font-family: 'Inter', cursive;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 20px; 
+}
+
+.my-profile-card-content-info-card-copy {
+    cursor: pointer;
+}
+
+.my-profile-card-content-info-close-btn {
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    cursor: pointer;
+}
+
+.popup-library-card {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+}
+
+.popup-library-card-content {
+    width: 640px;
+    height: 540px;
+    background-color: #FFF;
+}
+
+.popup-library-card-content-header {
+    height: 60px;
+    background-color: #0C0C0E;;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.popup-library-card-content-header-title {
+    margin: 0;
+    color: #FFF;
+    text-align: center;
+    font-family: Forum;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px; 
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+    
+}
+
+.popup-library-card-content-header-close-btn {
+    position: absolute;
+    right: 20px;
+    top: 25px;
+    cursor: pointer;
+}
+
+.popup-library-card-content-columns {
+    display: flex;
+}
+
+.popup-library-card-content-column1 {
+    display: flex;
+    flex-direction: column;
+    padding: 30px 40px 40px 40px;
+    
+}
+
+.popup-library-card-content-column1-form label{
+    color: #000;
+    text-align: center;
+    font-family: 'Inter', cursive;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0.3px;
+}
+
+.popup-library-card-content-column1-form input{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #BB945F;
+}
+
+.popup-library-card-content-column1-form input:nth-child(8){
+    margin-bottom: 20px;
+}
+
+.popup-library-card-content-column1-bank-input, .popup-library-card-content-column1-cvc-input, .popup-library-card-content-column1-cardholder-input, .popup-library-card-content-column1-postal-input, .popup-library-card-content-column1-city-input {
+    width: 200px;
+    height: 20px;
+}
+
+.popup-library-card-content-column1-expiration {
+    margin-right: 40px;
+}
+
+.popup-library-card-content-column1-expiration-input {
+    width: 45px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.popup-library-card-content-column1-submit {
+    display: flex;
+    justify-content: space-between;
+    width: 200px;
+    align-items: end;
+    margin-top: 10px;
+}
+
+.popup-library-card-content-column1-button {
+    width: 75px;
+    height: 30px;
+    color: #0C0C0E;
+    text-align: center;
+    font-family: 'Inter', cursive;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    background-color: #FFF;
+    border-radius: 2px;
+    border: 1px solid #0C0C0E;
+    cursor: pointer;
+}
+
+.popup-library-card-content-column1-price {
+    color: #0C0C0E;
+    font-family: 'Inter', cursive;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 20px; 
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.popup-library-card-content-column2 {
+    padding-top: 30px;
+    margin-right: 40px;
+    text-align: left;
+}
+
+.popup-library-card-content-column2-text {
+    color: #8E8E8E;
+    font-family: 'Inter', cursive;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 20px; 
+    letter-spacing: 1.7px;
+    margin: 0;
+    font-style: normal;
 }
 
 /* pop-ups */
@@ -310,6 +635,7 @@ a {
     display: flex;
     position: relative;
     align-items: center;
+    z-index: 100;
 }
 
 .icon-burger {
@@ -361,6 +687,7 @@ a {
 .icon-profile {
     margin-left: 40px;
     cursor: pointer;
+    z-index: 200000;
 }
 
 .icon-profile-popup {
@@ -370,8 +697,7 @@ a {
     position: absolute;
     text-align: center;
     top: 25px;
-    
-    z-index: 1000;
+    z-index: 100;
     visibility: hidden;
     transition: 0.1s ease;
 }
@@ -499,19 +825,17 @@ a {
 }
 
 .about-slider-wrapper {
-    max-width: 100%;
-    /*overflow: hidden;*/
+    max-width: 1400px;
+    overflow: hidden;
 }
 
 .about-slider {
     display: flex;
-    flex: 0 0 33.3333333333%;
-    justify-content: space-between;
     gap: 25px;
-    height: 560px;
     position: relative;
     left: 0;
     transition: all ease 1s;
+    text-align: center;
 }
 
 .about-slider-arrow {
@@ -519,7 +843,7 @@ a {
 }
 
 .about-slider-item {
-    min-width: 450px;
+    width: 450px;
 }
 
 /*.about-slider-item:not(:last-child) {
@@ -530,7 +854,7 @@ a {
     display: flex;
     justify-content: center;
     margin: 35px 0;
-
+    align-items: center;
 }
 
 .about-switcher-button-wrapper, .about-switcher-button-wrapper-fourth, .about-switcher-button-wrapper-fifth {
@@ -620,11 +944,15 @@ a {
 .favorites-wrapper {
     position: relative;
     width: 590px;
-    height: 100%
+    height: 100%;
+    right: 10px;
+    transition: 0.5s;
+    
 }
 
 .favorites-wrapper.spring, .favorites-wrapper.summer, .favorites-wrapper.autumn {
     display: none;
+    transition: 0.5s;
 }
 
 .favorites-book {
@@ -986,7 +1314,7 @@ a {
     justify-content: space-between;
     width: 169px;
     margin-top: 15px;
-    /*display: none;*/
+    display: none;
 }
 
 .users-info-column {
@@ -1179,23 +1507,12 @@ footer .container {
 
 /*footer end*/
 
-@media (max-width: 1430px) {
-
-    /*.about-slider {
-        justify-content: center;
-    }*/
-
-    /*.about-slider-item:not(:last-child) {
-        margin-left: 175px;
-        margin-right: 0;
-    }*/
-
-}
-
-@media (max-width: 1420px) {
-
+@media (max-width: 14px) {
     
-    
+    .about-slider-item {
+        text-align: center;
+    }
+
 }
 
 @media (max-width: 1240px) {
@@ -1329,9 +1646,6 @@ footer .container {
 
         .header.open .icon-profile {
             z-index: 20;
-            /*left: 595px;*/
-            /*top: 30px;*/
-            
         }
         
         .header.open nav {
@@ -1345,23 +1659,30 @@ footer .container {
 
 @media (max-width: 1010px) {
 
-   /* .about-slider {
-        justify-content: left;
-        align-items: center;
+    .about-slider-with-arrows {
+        position: relative;
     }
 
-    .about-slider-item:not(:last-child) {
-        margin-left: 20%;
+    .about-slider {
+        justify-content: center;
+        gap: 0;
     }
-
-    .about-slider-item {
-        
-    }*/
-
 
     .about-slider-arrow {
         display: inline;
-        margin-top: 42px;
+        position: absolute;
+        top: 51%;
+        left: 10%;
+        cursor: pointer;
+    }
+
+    .about-slider-arrow.left {
+        z-index: 10;
+    }
+
+    .about-slider-arrow.right {
+        z-index: 10;
+        left: 88%
     }
 
     .about-switcher-button-wrapper-fourth, .about-switcher-button-wrapper-fifth {
