@@ -205,6 +205,12 @@ body {
     margin-top: 10px;
 }
 
+.popup-login-content .popup-login-content-button:hover {
+    background-color: #BB945F;
+    border: 1px solid #BB945F;
+    transition: 0.5s;
+}
+
 .popup-login-content .popup-login-content-subtext {
     display: flex;
     justify-content: left;
@@ -521,7 +527,6 @@ body {
     font-family: 'Inter', cursive;
     font-size: 10px;
     font-weight: 700;
-    line-height: normal;
     letter-spacing: 1px;
     background-color: #FFF;
     border-radius: 2px;
@@ -942,6 +947,7 @@ a {
     height: 100%;
     right: 10px;
     transition: 0.5s;
+    
 }
 
 .favorites-wrapper.spring, .favorites-wrapper.summer, .favorites-wrapper.autumn {

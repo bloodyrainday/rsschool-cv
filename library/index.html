@@ -128,14 +128,14 @@
                     <form action="#" class='popup-library-card-content-column1-form'>
 
                         <label for="bank-input" class="popup-library-card-content-column1-bank">Bank card number</label>
-                        <input type="number" minlength="16" maxlength="16" class="popup-library-card-content-column1-bank-input" required id="bank-input">
+                        <input type="number" class="popup-library-card-content-column1-bank-input" required id="bank-input">
 
                         <label for="expiration-input expiration-input2" class="popup-library-card-content-column1-expiration">Expiration code</label>
-                        <input type="number" pattern="[0-9]{2}" class="popup-library-card-content-column1-expiration-input" required id="expiration-input">
-                        <input type="number" pattern="[0-9]{2}" class="popup-library-card-content-column1-expiration-input" required id="expiration-input2"><br>
+                        <input type="number" class="popup-library-card-content-column1-expiration-input" required id="expiration-input">
+                        <input type="number" class="popup-library-card-content-column1-expiration-input" required id="expiration-input2"><br>
 
                         <label for="cvc-input" class="popup-library-card-content-column1-cvc">CVC</label>
-                        <input type="number" pattern="[0-9]{3}" class="popup-library-card-content-column1-cvc-input" required id="cvc-input">
+                        <input type="number" class="popup-library-card-content-column1-cvc-input" required id="cvc-input">
 
                         <label for="cardholder-input" class="popup-library-card-content-column1-cardholder">Cardholder name</label>
                         <input type="text" class="popup-library-card-content-column1-cardholder-input" required id="cardholder-input">
@@ -289,7 +289,7 @@
                     <div class="favorites-radio">
 
                             
-                        <label  class='favorites-radio-name winter' for="check1"><input class="favorites-radio-btn" type="radio" id="check1" value="Winter" name="season"><span class="favorites-radio-name-season">Winter</span></label>
+                        <label  class='favorites-radio-name winter' for="check1"><input class="favorites-radio-btn" type="radio" id="check1" value="Winter" name="season" checked="checked"><span class="favorites-radio-name-season">Winter</span></label>
                     
                         
                         <label class='favorites-radio-name spring' for="check2"><input class="favorites-radio-btn" type="radio" id="check2" value="Spring" name="season"><span>Spring</span></label>
@@ -354,7 +354,7 @@
                                 By Sunyi Dean
                             </p>
                             <p class="favorites-book-text">A timely and revelatory new biography of Queen Elizabeth (and her family) exploring how the Windsors have evolved and thrived as the modern world has changed around them.       </p>
-                            <button class="favorites-book-btn the-last-queen">Buy</button>
+                            <button class="favorites-book-btn">Buy</button>
                             <img src="images/book4.png" alt="book-cover" class="favorites-book-cover">
                         </div>
                         </div>
@@ -368,7 +368,7 @@
                                 By Stephen King
                             </p>
                             <p class="favorites-book-text">Powerful novel that takes you back to a nostalgic time, exploring both the beauty and danger and loss of innocence that is youth.       </p>
-                            <button class="favorites-book-btn the-last-queen" disabled >Own</button>
+                            <button class="favorites-book-btn" >Buy</button>
                             <img src="images/book5.png" alt="book-cover" class="favorites-book-cover">
                         </div>
                         </div>
@@ -382,7 +382,7 @@
                                 By Toni Jenson
                             </p>
                             <p class="favorites-book-text">This memoir about the author's relationship with gun violence feels both expansive and intimate, resulting in a lyrical indictment of the way things are.       </p>
-                            <button class="favorites-book-btn the-last-queen" disabled >Own</button>
+                            <button class="favorites-book-btn">Buy</button>
                             <img src="images/book6.png" alt="book-cover" class="favorites-book-cover">
                         </div>
                         </div>
@@ -396,7 +396,7 @@
                                 By Alexandra Chang
                             </p>
                             <p class="favorites-book-text">A sardonic view of Silicon Valley culture, a meditation on race, and a journal of displacement and belonging, all in one form-defying package of spare prose.       </p>
-                            <button class="favorites-book-btn the-last-queen" disabled >Own</button>
+                            <button class="favorites-book-btn">Buy</button>
                             <img src="images/book7.png" alt="book-cover" class="favorites-book-cover">
                         </div>
                         </div>
@@ -410,7 +410,7 @@
                                 By Angie Cruz
                             </p>
                             <p class="favorites-book-text">A fascinating story of a teenage girl who marries a man twice her age with the promise to bring her to America. Her marriage is an opportunity for her family to eventually immigrate. For fans of Isabel Allende and Julia Alvarez.       </p>
-                            <button class="favorites-book-btn the-last-queen" disabled >Own</button>
+                            <button class="favorites-book-btn">Buy</button>
                             <img src="images/book8.png" alt="book-cover" class="favorites-book-cover">
                         </div>
                         </div>
@@ -424,7 +424,7 @@
                                 By Pablo Fajardo & Sophie Tardy-Joubert
                             </p>
                             <p class="favorites-book-text">Drawing and color by Damien Roudeau | This book illustrates the struggles of a group of indigenous Ecuadoreans as they try to sue the ChevronTexaco company for damage their oil fields did to the Amazon and her people       </p>
-                            <button class="favorites-book-btn the-last-queen" disabled >Own</button>
+                            <button class="favorites-book-btn">Buy</button>
                             <img src="images/book9.png" alt="book-cover" class="favorites-book-cover">
                         </div>
                         </div>
@@ -438,7 +438,7 @@
                                 By Yvon Chouinard
                             </p>
                             <p class="favorites-book-text">Chouinard—climber, businessman, environmentalist—shares tales of courage and persistence from his experience of founding and leading Patagonia, Inc. Full title: Let My People Go Surfing: The Education of a Reluctant Businessman, Including 10 More Years of Business Unusual.       </p>
-                            <button class="favorites-book-btn the-last-queen" disabled >Own</button>
+                            <button class="favorites-book-btn">Buy</button>
                             <img src="images/book10.png" alt="book-cover" class="favorites-book-cover">
                         </div>
                         </div>
@@ -452,7 +452,7 @@
                                 By Brenda Shaughnessy
                             </p>
                             <p class="favorites-book-text">This collection of bold and scathingly beautiful feminist poems imagines what comes after our current age of environmental destruction, racism, sexism, and divisive politics.       </p>
-                            <button class="favorites-book-btn the-last-queen" disabled >Own</button>
+                            <button class="favorites-book-btn">Buy</button>
                             <img src="images/book11.png" alt="book-cover" class="favorites-book-cover">
                         </div>
                         </div>
@@ -466,7 +466,7 @@
                                 By Kiana Davenport
                             </p>
                             <p class="favorites-book-text">An epic saga of seven generations of one family encompasses the tumultuous history of Hawaii as a Hawaiian woman gathers her four granddaughters together in an erotic tale of villains and dreamers, queens and revolutionaries, lepers and healers.       </p>
-                            <button class="favorites-book-btn the-last-queen" disabled >Own</button>
+                            <button class="favorites-book-btn">Buy</button>
                             <img src="images/book12.png" alt="book-cover" class="favorites-book-cover">
                         </div>
                         </div>
@@ -480,7 +480,7 @@
                                 By Renia White
                             </p>
                             <p class="favorites-book-text">White's impressive debut collection takes readers through and beyond the concepts of conversation and the casual - both what we say to each other and what we don't, examining the possibilities around how we construct and communicate identity.        </p>
-                            <button class="favorites-book-btn the-last-queen" disabled >Own</button>
+                            <button class="favorites-book-btn">Buy</button>
                             <img src="images/book13.png" alt="book-cover" class="favorites-book-cover">
                         </div>
                         </div>
@@ -494,7 +494,7 @@
                                 By Lou Ureneck
                             </p>
                             <p class="favorites-book-text">The harrowing story of an ordinary American and a principled Naval officer who, horrified by the burning of Smyrna, led an extraordinary rescue effort that saved a quarter of a million refugees from the Armenian Genocide        </p>
-                            <button class="favorites-book-btn the-last-queen" disabled >Own</button>
+                            <button class="favorites-book-btn">Buy</button>
                             <img src="images/book14.png" alt="book-cover" class="favorites-book-cover">
                         </div>
                         </div>
@@ -508,7 +508,7 @@
                                 By Howard Bryant
                             </p>
                             <p class="favorites-book-text">With the fall rolling around, one can't help but think of baseball's postseason coming up! And what better way to prepare for it than reading the biography of one of the game's all-time greatest performers, the Man of Steal, Rickey Henderson?        </p>
-                            <button class="favorites-book-btn the-last-queen" disabled >Own</button>
+                            <button class="favorites-book-btn">Buy</button>
                             <img src="images/book15.png" alt="book-cover" class="favorites-book-cover">
                         </div>
                         </div>
@@ -522,7 +522,7 @@
                                 By Megan Milks
                             </p>
                             <p class="favorites-book-text">Exes Tegan and Sara find themselves chained together by hairballs of codependency. A father and child experience the shared trauma of giving birth to gods from their wounds.        </p>
-                            <button class="favorites-book-btn the-last-queen" disabled >Own</button>
+                            <button class="favorites-book-btn">Buy</button>
                             <img src="images/book16.png" alt="book-cover" class="favorites-book-cover">
                         </div>
                         </div>

@@ -87,14 +87,6 @@ signUpButtonRegister.addEventListener('click', () => {
         inputFirstName.value = '';
         inputLastName.value = '';*/
 
-        /* clicking on the button 'Buy' */
-
-        favoritesButtons.forEach(item => {
-            item.addEventListener('click', () => {
-            popupLogin.classList.add('hidden');
-            document.querySelector('.popup-library-card').classList.toggle('hidden');
-        })
-        })
 
         /* clicking on the button 'My profile' */
 

@@ -6,6 +6,7 @@ const logInButtonPassword = document.getElementById('input-login-password');
 const logInPopUpButton = document.querySelector('.popup-login-content-button');
 
 
+
 /*loginClickLogged.addEventListener('click', () => {
     myProfileCard.classList.toggle('hidden');
 })*/
@@ -146,9 +147,12 @@ logInPopUpButton.addEventListener('click', () => {
 
             favoritesButtons.forEach(item => {
                 item.addEventListener('click', () => {
-                popupLogin.classList.remove('hidden');
-                document.querySelector('.popup-library-card').classList.add('hidden');
+                    popupLogin.classList.remove('hidden');
+                    document.querySelector('.popup-library-card').classList.add('hidden');         
             })
+
+            
+                
             })
         })
 
@@ -205,4 +209,6 @@ logInPopUpButton.addEventListener('click', () => {
 
             document.getElementById('digital_library_card-login').addEventListener('click', () => {
                 popupLogin.classList.toggle('hidden');
-            })
+            });
+
+            
