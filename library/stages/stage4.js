@@ -156,10 +156,10 @@ logInPopUpButton.addEventListener('click', () => {
             })
         })
 
-        /* clicking on the button 'Check the Card' */
+        /* LibraryCard after login in account */
 
-        checkCard.addEventListener('click', () => {
-            if ((document.getElementById('input-readers-name').value === localStorage.getItem('user-first-name')) && (document.getElementById('input-card-number').value === localStorage.getItem('user-card-number'))) {
+        
+            
                 checkCard.style.display = 'none';
                 document.querySelector('.users-info').style.display = 'flex';
 
@@ -173,20 +173,25 @@ logInPopUpButton.addEventListener('click', () => {
 
                 document.getElementById('digital_library_card-login').textContent = 'Profile';
 
+                document.getElementById('input-readers-name').value = localStorage.getItem('user-first-name');
+                document.getElementById('input-card-number').value = localStorage.getItem('user-card-number');
+
                 document.getElementById('digital_library_card-login').addEventListener('click', () => {
                     popupLogin.classList.toggle('hidden');
                     myProfileCard.classList.toggle('hidden');
                     document.querySelector('.my-profile-card-content-info-card-number').textContent = localStorage.getItem('user-card-number')
 
                     document.querySelector('.my-profile-card-content-icon-initials').textContent = iconProfile.textContent = firstLetterOfName + firstLetterofLastname;
-                    document.querySelector('.my-profile-card-content-icon-name').textContent = fullName
+                    document.querySelector('.my-profile-card-content-icon-name').textContent = fullName;
+
+    
                 })
                 
-            } else {
-                console.log('this name or card number does not exist!')
-            }
+             
+                
+            
 
-        })
+        
 
     } 
 })

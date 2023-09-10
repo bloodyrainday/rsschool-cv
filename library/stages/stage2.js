@@ -112,6 +112,9 @@ signUpButtonRegister.addEventListener('click', () => {
         registerClick.addEventListener('click', () => {
             popupRegister.classList.add('hidden');
 
+            document.getElementById('input-readers-name').value = '';
+            document.getElementById('input-card-number').value = '';
+
             registerClick.textContent = 'Register';
 
             registerClick.addEventListener('click', () => {
@@ -139,7 +142,7 @@ signUpButtonRegister.addEventListener('click', () => {
             })
             })
 
-            
+
         })
 
     
