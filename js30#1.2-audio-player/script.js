@@ -8,9 +8,11 @@ const progress = document.querySelector('.progress');
 const songName = document.querySelector('.box-name.song');
 const cover = document.querySelector('.player-cover');
 const imgSrc = document.getElementById('img_src');
-const songs = ['badplace', 'lostinthemail', 'trying'];
+const songs = ['bad place', 'lost in the mail', 'trying'];
+const background = document.querySelector('.background')
 
 let songIndex = 0;
+
 
 function loadSong(song) {
     songName.innerHTML = song;
@@ -50,7 +52,7 @@ function nextSong() {
     if (songIndex > songs.length - 1) {
         songIndex = 0;
     }
-
+    background.src = `images/cover${songIndex + 1}.jpg`
     loadSong(songs[songIndex]);
     playSong();
 }
@@ -65,7 +67,7 @@ function prevSong() {
     if (songIndex < 0) {
         songIndex = songs.length - 1;
     }
-
+    background.src = `images/cover${songIndex + 1}.jpg`
     loadSong(songs[songIndex]);
     playSong();
 };
@@ -80,4 +82,18 @@ function progressLine(event) {
     progress.style.width = `${progressPercent}%`
 }
 
-audio.addEventListener('timeupdate', progressLine)
+audio.addEventListener('timeupdate', progressLine);
+
+function setProgress(event) {
+    const containerWidth = this.clientWidth;
+    const clickX = event.offsetX;
+    const duration = audio.duration;
+
+    audio.currentTime = (clickX / containerWidth) * duration;
+}
+
+progressContainer.addEventListener('click', setProgress)
+
+audio.addEventListener('ended', nextSong);
+
+console.log(audio.currentTime)
