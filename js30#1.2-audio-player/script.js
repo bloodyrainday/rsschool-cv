@@ -23,12 +23,14 @@ loadSong(songs[songIndex])
 function playSong() {
     player.classList.add('play');
     cover.classList.add('active');
+    imgSrc.src = './icons/pause.png';
     audio.play()
 }
 
 function pauseSong() {
     player.classList.remove('play');
     cover.classList.remove('active');
+    imgSrc.src = './icons/play.png'
     audio.pause()
 }
 
@@ -41,3 +43,41 @@ playButton.addEventListener('click', () => {
         playSong()
     }
 })
+
+function nextSong() {
+    songIndex++;
+
+    if (songIndex > songs.length - 1) {
+        songIndex = 0;
+    }
+
+    loadSong(songs[songIndex]);
+    playSong();
+}
+
+nextButton.addEventListener('click', () => {
+    nextSong();
+});
+
+function prevSong() {
+    songIndex--;
+
+    if (songIndex < 0) {
+        songIndex = songs.length - 1;
+    }
+
+    loadSong(songs[songIndex]);
+    playSong();
+};
+
+prevButton.addEventListener('click', () => {
+    prevSong();
+});
+
+function progressLine(event) {
+    const {duration, currentTime} = event.srcElement;
+    const progressPercent = (currentTime / duration) * 100;
+    progress.style.width = `${progressPercent}%`
+}
+
+audio.addEventListener('timeupdate', progressLine)
