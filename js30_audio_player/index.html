@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <img src="images/cover1.jpg" alt="bg" class="background">
+    <div class="wrapper">
+        <div class="player">
+            <div class="player-cover-wrap">
+                <img src="images/lemonade.png" alt="cover" class="player-cover">
+            </div>
+            
+            <div class="box">
+                <img src="icons/play.png" alt="#" id="img_src" class="box-play-icon" width="50px" height="50px">
+
+                <div class="box-names">
+                    <p class="box-name artist">Ricky Hil</p>
+                    <p class="box-name song"></p>
+                </div>
+
+                <div class="box-buttons">
+                    <img src="icons/forward.png" alt="next" class="box-buttons-next" width="30px" height="30px">
+                    <img src="icons/backward.png" alt="next" class="box-buttons-prev" width="30px" height="30px">
+                </div>
+                
+
+                <audio src="audio/badplace.mp3" id="song" onClick='updateTrackTime(this)'></audio>
+
+            </div>
+
+            <div class="progress-wrapper">
+
+                <div class="current-time"></div>
+
+                <div class="progress-container">
+                    <div class="progress"></div>
+                </div>
+
+                <div class="duration"></div>
+
+            </div>
+
+            <div class="contacts">
+                <a href="https://github.com/bloodyrainday" class="github"><span>bloodyrainday</span></a>
+                <p class="year"><span>2023</p>
+                <a href="https://github.com/rolling-scopes-school/tasks/blob/master/tasks/js30%23/js30-2.md" class="school-icon"><img src="icons/rs_school_js.svg" alt="rs"></a>
+            </div>
+
+        </div>
+    </div> 
+    <script src="script.js"></script>
+</body>
+</html>
