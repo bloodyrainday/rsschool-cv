@@ -100,9 +100,11 @@ body {
 
 .progress-wrapper {
     display: flex;
+    flex-wrap: nowrap;
     flex-direction: column;
     padding: 0 20px;
     margin: 20px 0;
+    
 }
 
 .progress-container {
@@ -113,6 +115,7 @@ body {
     display: flex;
     align-items: center;
     cursor: pointer;
+    margin: 5px 0;
 }
 
 .progress {
@@ -142,6 +145,8 @@ body {
 .school-icon {
     width: 50px;
 }
+
+
 
 @keyframes rotateAnimation {
     0% {

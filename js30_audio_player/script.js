@@ -9,7 +9,9 @@ const songName = document.querySelector('.box-name.song');
 const cover = document.querySelector('.player-cover');
 const imgSrc = document.getElementById('img_src');
 const songs = ['bad place', 'lost in the mail', 'trying'];
-const background = document.querySelector('.background')
+const background = document.querySelector('.background');
+const currentTimeLine = document.querySelector('.current-time');
+const durationTimeLine = document.querySelector('.duration');
 
 let songIndex = 0;
 
@@ -97,3 +99,21 @@ progressContainer.addEventListener('click', setProgress)
 audio.addEventListener('ended', nextSong);
 
 console.log(audio.currentTime)
+
+function timeProgress() {
+    let { currentTime } = audio;
+    currentTimeLine.textContent = formatTime(currentTime);
+
+    audio.addEventListener('loadedmetadata', function () {
+        durationTimeLine.textContent = formatTime(audio.duration);
+    }, { once: true });
+}
+
+function formatTime(time) {
+    const min = Math.floor(time / 60);
+    const sec = Math.floor(time % 60);
+    const formattedTime = `${min.toString().padStart(2, '0')}:${sec.toString().padStart(2, '0')}`;
+    return formattedTime;
+}
+
+audio.addEventListener('timeupdate', timeProgress);
