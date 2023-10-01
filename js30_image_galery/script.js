@@ -3,12 +3,22 @@ const formElement = document.querySelector('form');
 const inputElement = document.querySelector('.input');
 const galleryWrapper = document.querySelector('.gallery-wrapper');
 const showMoreButton = document.querySelector('.show_more');
+const closeButton = document.querySelector('.input-close')
 
 let inputData = '';
 let page = 1;
 
+inputElement.focus()
+
 async function searchImages() {
     inputData = inputElement.value;
+
+    if (inputData !== '') {
+        closeButton.style.display = 'block'
+    } else {
+        closeButton.style.display = 'none'
+    }
+
     const url = `https://api.unsplash.com/search/photos?page=${page}&query=${inputData}&client_id=${accessKey}`;
     
     const response = await fetch(url);
@@ -45,4 +55,10 @@ formElement.addEventListener('submit', (event) => {
 
 showMoreButton.addEventListener('click', () => {
     searchImages();
+})
+
+closeButton.addEventListener('click', () => {
+    inputElement.value = '';
+
+    closeButton.style.display = 'none'
 })
