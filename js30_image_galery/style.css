@@ -53,9 +53,20 @@ body {
     z-index: 100;
 }
 
+form {
+    display: flex;
+    justify-content: center;
+}
+
+.input-wrapper {
+    position: relative;
+    width: 450px;
+    
+}
+
 .input {
     position: relative;
-    width: 60%;
+    width: 400px;
     font-size: 18px;
     max-width: 400px;
     padding: 10px 20px;
@@ -68,8 +79,8 @@ body {
 .input-close {
     position: absolute;
     content: '';
-    top: 30px;
-    right: 610px;
+    top: 10px;
+    right: 3%;
     height: 45px;
     width: 45px;
     background-image: url(icons/close_FILL0_wght400_GRAD0_opsz24.svg);
