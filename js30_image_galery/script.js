@@ -3,7 +3,10 @@ const formElement = document.querySelector('form');
 const inputElement = document.querySelector('.input');
 const galleryWrapper = document.querySelector('.gallery-wrapper');
 const showMoreButton = document.querySelector('.show_more');
-const closeButton = document.querySelector('.input-close')
+const closeButton = document.querySelector('.input-close');
+const galleryItem = document.querySelector('.gallery-item');
+const popUp = document.querySelector('.pop-up');
+const galleryItemImage = document.querySelector('.gallery-item-image');
 
 let inputData = '';
 let page = 1;
@@ -45,6 +48,7 @@ async function searchImages() {
     if (page > 1) {
         showMoreButton.style.display = 'block';
     }
+
 }
 
 formElement.addEventListener('submit', (event) => {
@@ -62,3 +66,16 @@ closeButton.addEventListener('click', () => {
 
     closeButton.style.display = 'none'
 })
+
+
+/*galleryItem.addEventListener('click', () => {
+    popUp.classList.toggle('hidden');
+    let popUpImage = document.querySelector('.pop-up_image');
+    popUpImage.src = galleryItemImage.src
+})
+
+popUp.addEventListener('click', (event) => {
+    if (event.target.classList.contains('pop-up')) {
+        popUp.classList.toggle('hidden')
+    }
+})*/
