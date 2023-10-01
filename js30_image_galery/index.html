@@ -4,9 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>image-gallery</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Young+Serif&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
     <div class="title-wrapper">
         <img src="icons/photo_camera_FILL0_wght400_GRAD0_opsz24.svg" width="32px" height="32px" class="icon" alt="icon">
         <h1 class="title">Unsplash API</h1>
@@ -14,10 +18,28 @@
 
     <div class="search-box">
         <form action="">
-            <input type="text" class="input">
-            <button class="button">Search</button> 
+            <input type="text" class="input" placeholder="Type here to find what you need">
+            <button class="button" type="submit">Search</button> 
         </form>
     </div>
+
+    <div class="gallery-wrapper">
+
+        <div class="gallery-item">
+            <img src="https://images.unsplash.com/photo-1604739835169-46f1d28fd3b6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1796&q=80" alt="image" class="gallery-item-image">
+        </div>
+
+        <div class="gallery-item">
+            <img src="" alt="image" class="gallery-item-image">
+        </div>
+
+        <div class="gallery-item">
+            <img src="" alt="image" class="gallery-item-image">
+        </div>
+    
+        </div>
+
+    <button class="show_more">show more</button>
 
     <script src='script.js'></script>
 </body>
