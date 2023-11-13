@@ -1,0 +1,301 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.container {
+  padding: 0 40px;
+}
+
+.not-only {
+  width: 100%;
+}
+
+.header-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+.logo {
+  font-family: Georgia;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 35.2px;
+  color: #545454;
+  text-decoration: none;
+  width: 184px;
+  margin-top: 30px;
+  text-align: center;
+}
+
+.logo-title {
+  margin: 0;
+}
+
+p.logo-subtitle {
+  font-family: Arial;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 14.95px;
+  color: #545454;
+  width: 179px;
+  margin: 10px 0;
+  margin-bottom: 30px;
+}
+
+nav {
+  margin-top: 46px;
+  margin-bottom: 47px;
+}
+
+ul {
+  display: flex;
+  margin-right: 40px;
+}
+
+li {
+  list-style: none;
+}
+li + li {
+  margin-left: 35px;
+}
+
+.menu-link {
+  color: #545454;
+  font-family: Arial;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+#active-menu-link {
+  color: #292929;
+  border-bottom: 2px solid #f1cdb3;
+}
+
+.menu-link:active {
+  border-bottom: 2px solid #f1cdb3;
+}
+
+.menu-link:hover {
+  color: #292929;
+}
+
+.puppy-inner {
+  display: flex;
+}
+
+.img-column {
+  margin-top: 60px;
+}
+
+.text-column {
+  margin: 163px 42px 243px 0;
+}
+
+.friends-container {
+  background: #f6f6f6;
+  max-width: 1280px;
+  padding: 0 40px;
+}
+
+.friends-inner {
+  text-align: center;
+}
+
+.friends-title {
+  font-family: Georgia;
+  font-weight: 400;
+  font-size: 35px;
+  color: #545454;
+  text-align: center;
+
+  padding: 80px 400px 40px;
+  margin: 0;
+}
+
+.friends-slider-item {
+  width: 270px;
+  height: 435px;
+  background: #fff;
+  text-align: center;
+}
+
+.friends-slider-item {
+  margin-top: 30px;
+}
+
+.friends-slider {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.slick-slide img {
+  display: inline;
+}
+
+.slick-prev {
+  position: absolute;
+  font-size: 0;
+  left: 0;
+  bottom: 190px;
+  border: 2px solid #f1cdb3;
+  border-radius: 100px;
+  width: 52px;
+  height: 52px;
+}
+
+.slick-next {
+  position: absolute;
+  font-size: 0;
+  right: 0;
+  bottom: 190px;
+  border: 2px solid #f1cdb3;
+  border-radius: 100px;
+  width: 52px;
+  height: 52px;
+}
+
+.slick-list {
+  margin: 0 53px;
+}
+
+.friends-slider-img {
+  max-width: 270px;
+  height: 270px;
+}
+
+.friends-slider-name {
+  font-family: Georgia;
+  font-weight: 400;
+  font-size: 20px;
+  color: #545454;
+  margin: 30px auto;
+}
+
+.friends-slider-btn {
+  font-family: Georgia;
+  font-weight: 400;
+  font-size: 17px;
+  color: #292929;
+  width: 187px;
+  height: 52px;
+  background: #fff;
+  border: 2px solid #f1cdb3;
+  border-radius: 100px;
+}
+
+.friends-slider-btn:hover {
+  background: #f1cdb3;
+}
+
+.friends-buttons {
+  margin-top: 60px;
+}
+
+.friends-btn {
+  border: 2px solid #cdcdcd;
+  border-radius: 100px;
+  width: 52px;
+  height: 52px;
+  font-size: 20px;
+  line-height: 115%;
+  color: #cdcdcd;
+  margin-bottom: 100px;
+  cursor: pointer;
+}
+
+.friends-btn + .friends-btn {
+  margin-left: 20px;
+}
+
+#btn-page {
+  background: #f1cdb3;
+  color: #000;
+  border: none;
+}
+.friends-btn:hover {
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  border: 2px solid #f1cdb3;
+}
+
+footer {
+  background: url(noise_lines_transparent@2X.png),
+    radial-gradient(110.67% 538.64% at 5.73% 50%, #513d2f 0%, #1a1a1c 100%),
+    #211f20;
+  width: 100%;
+  margin: 0 auto;
+  height: 100%;
+}
+
+.footer-container {
+  display: flex;
+}
+
+.footer-column-questions,
+.footer-column-visit {
+  width: 278px;
+  margin: 35px 40px 0 40px;
+}
+
+.footer-column-questions {
+  margin-right: 160px;
+}
+
+.footer-title {
+  font-weight: 400;
+  font-size: 35px;
+  line-height: 130%;
+  color: #ffffff;
+  margin-bottom: 40px;
+}
+
+.footer-email,
+.footer-addres-boston,
+.footer-addres-london {
+  display: flex;
+  align-items: center;
+  width: 251px;
+  margin-bottom: 40px;
+}
+
+.footer-email-text,
+.footer-phone-number,
+.footer-addres {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 115%;
+  color: #f1cdb3;
+  margin-left: 20px;
+}
+
+.footer-column-img {
+  width: 300px;
+  height: 310px;
+}
+
+.footer-phone {
+  display: flex;
+  align-items: center;
+  width: 251px;
+}
+
+.footer-column-image {
+  margin-left: 120px;
+  position: relative;
+  top: 14px;
+}
