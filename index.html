@@ -4,16 +4,127 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>M.B. cv</title>
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <main>
+    <header>
       <div class="container">
         <nav>
-          <h1>just a header with random text</h1>
-          <p>just a paragraph with random text</p>
+          <span class="photo-profile"><img src="imgs/IMG_E0191.JPG" alt="my-photo"></span>
+          <div class="my-contact-info">
+            <h2 class="contacts-title">my contact info</h2>
+            <ul class='contact-list'>
+              <li class="contact-icon phone">phone:
+                <a href="tel:+375447888851">+375447888851</a>
+              </li>
+              <li class="contact-icon email">email:
+                <a href="mailto:bloodyrainday@gmail.com">bloodyrainday@gmail.com</a>
+              </li>
+              <li class="contact-icon github">github:
+                <a href="https://github.com/bloodyrainday">bloodyrainday</a>
+              </li>
+              <li class="contact-icon discord">discord:
+                <a href="mailto:bloodyrainday@gmail.com">bloodyrainday</a>
+              </li>
+            </ul>
+          </div>
+          <div class="skills">
+            <h2 class="skills-title">skills</h2>
+            <ul class="skill-list">
+              <li class="skill-icon">HTML</li>
+              <li class="skill-icon">CSS</li>
+              <li class="skill-icon">basic JS</li>
+              <li class="skill-icon">Figma</li>
+              <li class="skill-icon">GitHub</li>
+              <li class="skill-icon">editors: VS Code</li>
+              <li class="skill-icon">Angular</li>
+            </ul>
+          </div>
+          <div class="follow-me">
+            <h2 class="links-title">languages</h2>
+            <ul class="language-list">
+              <li class="language">Belarusian (native)</li>
+              <li class="language">Russian (native)</li>
+              <li class="language">English (B2)</li>
+            </ul>
+          </div>
         </nav>
       </div>
+    </header>
+    <main>
+      <div class="container">
+        <h1 class="title-name">MIKITA BIAŁKO</h1>
+        <p class="subtitle">frontend developer</p>
+        <h2 class="title-about">about me</h2>
+        <div class="about">
+          <p class="about-text">
+            My name is Mikita. You can call me Miki in a short form. Currently I work as a mechanical engineer in a small belarusian city. That’s not a pleassure for me to be there. Some people adviced me to choose the IT-sphere. So I started trying to learn something about it. It made me feel that I have a chance to change my life while I was succededing at studying and enjoying this process. That’s the place where I can use english language that I started learning as my hobby and there are lot’s of opportunities and different ways to develop myself. I haven't experienced working as a software developer but I am in process. The IT-sphere is an adorable world.
+          </p>
+        </div>
+        <div class="education">
+          <h2 class="title-education">education</h2>
+          <ul class='education-list'>
+            <li class="education-list-item">(2017-2022) Belarusian-Russian University - mechanical engineer
+            </li>
+          </ul>
+        </div>
+        <div class="code-example">
+          <h2 class="title-code-example">code-example</h2>
+          <code>
+            function initials(name) { <br>
+            return name.toUpperCase().split(' ').map(element => element[0]).join('.')<br>
+            }<br>
+          <br>
+          initials('mikita bialko')
+          </code>
+        </div>
+        <div class="projects">
+          <h2 class="title">my projects</h2>
+          <ul class="project-list">
+            <li class="project-item">
+              <a class="project" href="https://bloodyrainday.github.io/rsschool-cv/library/index.html"><p>The Brooklyn Library website</p></a>
+            </li>
+            <li class="project-item">
+              <a class="project" href="https://bloodyrainday.github.io/rsschool-cv/shelter/main/index.html#contacts"><p>Shelter website (with no js yet)</p></a>
+            </li>
+          </ul>
+        </div>
+        <div class="certificates">
+          <h2 class="title">my certificates</h2>
+          <ul>
+            <li>
+              <a class="certificate" href="https://www.freecodecamp.org/certification/fcc24f73c7b-33a5-4840-89ba-cdf54954a063/responsive-web-design"><p>freeCodeCamp certificate</p></a>
+            </li>
+            <li>
+              <a class="certificate" href="https://www.efset.org/cert/wUnBhV"><p>EF SET English test</p></a>
+            </li>
+          </ul>
+          
+        </div>
+      </div>
     </main>
+    <footer>
+      <div class="container">
+        <h2>you can find me here:</h2>
+        <div class="link"><div class="link-inner">
+        <a href="https://www.linkedin.com/in/mikita-bia%C5%82ko-14a448260/" target='_blank' >
+          <img src="imgs/icons8-linkedin-50.png" alt="linkedin-icon">
+        </a>
+        <a href="https://github.com/bloodyrainday" target='_blank' >
+          <img src="imgs/icons8-github-50.png" alt="github-icon">
+        </a>
+        
+      </div>
+      <div class="footer-course">
+        <a href="https://rs.school/js/" target='_blank'><img src="imgs/rs_school_js.svg" alt="rsschool"></a>
+        
+      </div>
+      <span>2023</span>
+    </div>
+        
+        
+      </div>
+    </footer>
   </body>
 </html>
