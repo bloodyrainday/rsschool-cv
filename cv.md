@@ -52,3 +52,9 @@ initials('mikita bialko')
 - [B2](https://www.efset.org/cert/wUnBhV) - I used to go on english courses (StreamLine) for 2 years. After that I started off learning english on my owm. The goal is being fluent.
 - Belarusian(native)
 - Russian(native)
+
+##certificates:
+
+- [freeCodeCamp certificate](https://www.freecodecamp.org/certification/fcc24f73c7b-33a5-4840-89ba-cdf54954a063/responsive-web-design)
+- [EF SET English test](https://www.efset.org/cert/wUnBhV)
+
