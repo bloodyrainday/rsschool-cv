@@ -1,0 +1,95 @@
+body {
+    margin: 0 auto;
+    background-color: rgb(169, 169, 169);
+}
+
+.slider {
+    max-width: 75%;
+    margin: 1.5em auto;
+    overflow: hidden;
+    display: flex;
+    justify-content: end;
+    flex-direction: column;
+    gap: 0.8em;
+}
+
+.slider-line-images {
+    display: flex;
+    height: 40rem;
+    transition: all ease 0.5s;
+}
+
+.slider-line-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.captions-buttons-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.switch-buttons {
+    display: flex;
+    gap: 0.8em;
+}
+
+.switch-button-wrapper {
+    width: 1.4em;
+    height: 1.4em;
+    text-align: center;
+    cursor: pointer;
+}
+
+.switch-button {
+    width: 1.1em;
+    height: 1.1em;
+    border-radius: 1.2em;
+    cursor: pointer;
+}
+
+.switch-button-wrapper .switch-button:hover {
+    background-color: rgb(169, 0, 0, 1.2);
+}
+
+.slider-text {
+    width: 50%;
+    overflow: hidden;
+}
+
+.slider-line-text {
+    display: flex;
+    align-items: center;
+    transition: all ease 0.5s;
+}
+
+.slider-line-caption {
+    font-family: 'Puppins', sans-serif;
+    font-size: 2rem;
+    margin: 0;
+}
+
+.active {
+    background-color: rgb(145, 143, 143);
+    border: 2px solid rgb(79, 79, 79);
+}
+
+@media (max-width: 540px) {
+    
+    .captions-buttons-wrapper {
+        flex-direction:column-reverse;
+        text-align: center;
+        gap: 1.1rem;   
+    }
+
+    .slider-line-image {
+        object-fit: contain;
+        border-radius: 1.2rem;
+    }
+
+    .slider-line-images {
+        height: 18rem;
+    }
+}

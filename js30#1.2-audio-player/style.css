@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    position: relative;
+}
+
+.background {
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    filter: blur(10px);
+    object-fit: cover;
+    z-index: -20;
+}
+
+.wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 90vh;
+    filter: blur(0px);
+}
+
+.player {
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+    background-color: gray;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #000000;
+}
+
+.player-cover-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 250px;
+}
+
+.player-cover {
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+}
+
+.player-cover.active {
+    animation: rotateAnimation 3s linear infinite;
+}
+
+.box {
+   background-color: (45deg, rgb(40, 40, 40), rgb(133, 133, 133));
+    padding: 20px 20px;
+    display: flex;
+    justify-content: space-between;
+    gap: 5px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.box-play-icon {
+    cursor: pointer;
+}
+
+.box-names {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.box-name {
+    margin: 0;
+}
+
+.box-name.artist {
+    color: rgb(193, 255, 6);
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.box-name.song {
+    font-size: 17px;
+    color: white;
+}
+
+.box-buttons {
+    text-align: right;
+    width: 40px;
+}
+
+.box-buttons-next, .box-buttons-prev {
+    cursor: pointer;
+}
+
+.progress-wrapper {
+    display: flex;
+    flex-direction: column;
+    padding: 0 20px;
+    margin: 20px 0;
+}
+
+.progress-container {
+    background: #E4E9ED;
+    border-radius: 5px;
+    width: 100%;
+    height: 10px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.progress {
+    background: #2B3C5B;
+    border-radius: 5px;
+    height: 6px;
+    /*width: 150px;*/
+}
+
+.contacts {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 5px 20px 5px 20px;
+}
+
+.year {
+    font-weight: bold;
+}
+
+.github {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.school-icon {
+    width: 50px;
+}
+
+@keyframes rotateAnimation {
+    0% {
+        transform: rotate(0);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
