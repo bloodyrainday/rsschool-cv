@@ -56,5 +56,8 @@ initials('mikita bialko')
 ##certificates:
 
 - [freeCodeCamp certificate](https://www.freecodecamp.org/certification/fcc24f73c7b-33a5-4840-89ba-cdf54954a063/responsive-web-design)
-- [EF SET English test](https://www.efset.org/cert/wUnBhV)
 
+##projects:
+
+- [The Brooklyn Library website](https://bloodyrainday.github.io/rsschool-cv/library/index.html)
+- [Shelter website](https://bloodyrainday.github.io/rsschool-cv/shelter/main/index.html#contacts)
