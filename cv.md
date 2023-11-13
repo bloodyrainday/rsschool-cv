@@ -23,7 +23,7 @@ My name is Mikita. You can call me Miki in a short form. Currently I work as a m
 - Figma
 - Git/GitHub
 - editors: VS Code
-- React JS
+- Angular
 
 ---
 
@@ -49,6 +49,6 @@ initials('mikita bialko')
 
 ##languags:
 
-- [B2](https://www.efset.org/cert/wUnBhV) - I used to enroll on english courses (StreamLine) for 2 years. After that I started off learning english on my owm. But I still lack of practicing my speaking skill. The goal is being fluent.
+- [B2](https://www.efset.org/cert/wUnBhV) - I used to go on english courses (StreamLine) for 2 years. After that I started off learning english on my owm. The goal is being fluent.
 - Belarusian(native)
 - Russian(native)
