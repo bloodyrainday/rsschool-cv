@@ -67,7 +67,7 @@ nav {
 /* Enjoy section */
 
 .container.enjoy {
-    margin: 0 40px 20px 40px;
+    margin: 0 40px 0 40px;
     background: url(images/container.jpg), lightgray 50% / cover no-repeat;
     border-radius: 40px;
     padding: 0;
@@ -116,4 +116,76 @@ nav {
     background-color: #E1D4C9;
     border-radius: 100px;
     border: none;
+}
+
+/* Favorite_coffee section */
+
+.favorite_coffee {
+    margin-top: 82px;
+    margin-bottom: 82px;
+}
+
+.favorite_coffee-title {
+    margin-bottom: 40px;
+    font-size: 60px;
+    line-height: 125%;
+    text-align: center;
+}
+
+.favorite_coffee-slider {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+}
+
+.favorite_coffee-slider-center {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    width: 480px;
+    gap: 20px;
+}
+
+.favorite_coffee-slider-description {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.favorite_coffee-slider-title {
+    margin: 0;
+    font-size: 24px;
+    line-height: 125%;
+}
+
+.favorite_coffee-slider-text {
+    margin: 0;
+    font-size: 16px;
+    line-height: 150%;
+}
+
+.favorite_coffee-slider-cost {
+    margin: 0;
+    font-size: 24px;
+    line-height: 125%;
+}
+
+.favorite_coffee-switches {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 40px;
+}
+
+.favorite_coffee-switch {
+    width: 40px;
+    height: 4px;
+    border-radius: 100px;
+    background-color: #C1B6AD;
+}
+
+.favorite_coffee-switch.active {
+    background-color: #665F55;
 }
