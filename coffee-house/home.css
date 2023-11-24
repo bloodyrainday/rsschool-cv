@@ -122,7 +122,7 @@ nav {
 
 .favorite_coffee {
     margin-top: 82px;
-    margin-bottom: 82px;
+    margin-bottom: 64px;
 }
 
 .favorite_coffee-title {
@@ -188,4 +188,37 @@ nav {
 
 .favorite_coffee-switch.active {
     background-color: #665F55;
+}
+
+/* About section */
+
+.about {
+    margin-bottom: 64px;
+}
+
+.container.about {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.about-text {
+    font-size: 60px;
+    line-height: 125%;
+    margin: 0;
+}
+
+.about-images {
+    display: flex;
+    gap: 40px;
+}
+
+.about-images-column {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.about-images-column img {
+    border-radius: 20px;
 }
