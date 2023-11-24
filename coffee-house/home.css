@@ -1,5 +1,4 @@
 * {
-    margin: 0 auto;
     padding: 0;
     margin-top: 0;
 }
@@ -10,6 +9,8 @@ body {
     max-width: 1440px;
     border: 1px solid black;
     font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    margin: 0 auto;
 }
 
 a {
@@ -27,7 +28,7 @@ header {
 }
 
 .container {
-    margin: 20px 40px;
+    padding: 18px 40px;
 }
 
 .container-inner {
@@ -49,15 +50,70 @@ nav {
     display: flex;
     justify-content: center;
     gap: 40px;
+    padding-top: 1%;
 }
 
 .nav-items-list-item-link {
     font-size: 16px;
-    font-weight: 600;
     font-style: normal;
     line-height: 150%;
+    align-items: center;
 }
 
 .nav-menu {
     margin: 0;
+}
+
+/* Enjoy section */
+
+.container.enjoy {
+    margin: 0 40px 20px 40px;
+    background: url(images/container.jpg), lightgray 50% / cover no-repeat;
+    border-radius: 40px;
+    padding: 0;
+    display: flex;
+    justify-content: left;
+}
+
+.enjoy-block {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 100px;
+    padding-right: 0;
+    align-items: left;
+    width: 530px;
+    margin: 0;
+}
+
+.enjoy-block-title {
+    margin: 0;
+    font-size: 72px;
+    color: #E1D4C9;
+    font-style: normal;
+    line-height: 105%;
+}
+
+.enjoy-span {
+    color: #B0907A;
+    font-style: italic;
+}
+
+.enjoy-block-text {
+    margin: 0;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    color: #E1D4C9;
+}
+
+.enjoy-block-btn {
+    width: 200px;
+    padding: 20px 78px;
+    font-size: 16px;
+    line-height: 150%;
+    background-color: #E1D4C9;
+    border-radius: 100px;
+    border: none;
 }
