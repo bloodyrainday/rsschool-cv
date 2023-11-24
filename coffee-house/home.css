@@ -222,3 +222,75 @@ nav {
 .about-images-column img {
     border-radius: 20px;
 }
+
+/* Mobile App section */
+
+.mobile_app-columns {
+    display: flex;
+    justify-content: space-between;
+}
+
+.mobile_app-column {
+    width: 630px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 40px;
+}
+
+.mobile_app-column-title {
+    margin: 0;
+    font-size: 60px;
+    line-height: 125%;
+}
+
+.mobile_app-column-text {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 150%;
+}
+
+.mobile_app-column-buttons {
+    display: flex;
+    justify-content: left;
+    gap: 20px;
+}
+
+.mobile_app-column-buttons-btn {
+    width: 200px;
+    height: 64px;
+    border-radius: 100px;
+    border: 1px solid #665F55;
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    justify-content: left;
+}
+
+.icon {
+    background-image: url(icons/icon.svg);
+    width: 36px;
+    height: 36px;
+    margin-left: 20px;
+}
+
+.icon.second {
+    background-image: url(icons/icon2.svg);
+}
+
+.btn-text {
+
+}
+
+.btn-text-1 {
+    margin: 0;
+    font-size: 10px;
+    line-height: 140%;
+}
+
+.btn-text-2 {
+    margin: 0;
+    font-size: 16px;
+    line-height: 150%;   
+}
