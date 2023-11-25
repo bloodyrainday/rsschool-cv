@@ -1,0 +1,159 @@
+* {
+    padding: 0;
+    margin-top: 0;
+}
+
+body {
+    background-color: #E1D4C9;
+    color: #403F3D;
+    max-width: 1440px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+    color: #403F3D;
+}
+
+li {
+    list-style: none;
+    margin: 0;
+}
+
+header {
+    
+}
+
+.container {
+    padding: 18px 40px;
+}
+
+.container-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-logo {
+    margin: 0;
+}
+
+nav {
+    margin: 0;
+    width: 80%;
+}
+
+.nav-items-list {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding-top: 1%;
+}
+
+.nav-items-list-item-link {
+    font-size: 16px;
+    font-style: normal;
+    line-height: 150%;
+    align-items: center;
+}
+
+.nav-menu {
+    margin: 0;
+}
+
+.nav-menu img{
+    border-bottom: 3px solid #403F3D;
+}
+
+/* menu section */
+
+.container.menu {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.menu-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+}
+
+.menu-title {
+    font-size: 60px;
+    line-height: 125%;
+    margin: 0;
+    text-align: center;
+    width: 800px;
+}
+
+.enjoy-span {
+    color: #B0907A;
+    font-style: italic;
+}
+
+.menu-tabs {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+}
+
+.menu-tabs-tab {
+    height: 46px;
+    border: 1px solid #C1B6AD;
+    border-radius: 100px;
+    padding: 8px 16px 8px 8px;
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    height: 30px;
+}
+
+.menu-tabs-tab.active{
+    background-color: #665F55;
+}
+
+.menu-tabs-tab.active .menu-tabs-tab-circle {
+    background-color: #E1D4C9;
+}
+
+.menu-tabs-tab-circle {
+    width: 30px;
+    height: 30px;
+    border-radius: 100px;
+    background-color: #C1B6AD;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-tabs-tab-circle-icon.coffee {
+    width: 16px;
+    height: 16px;
+    background-image: url(icons/coffee.svg);
+}
+
+.menu-tabs-tab-circle-icon.tea {
+    width: 16px;
+    height: 16px;
+    background-image: url(icons/tea.svg);
+}
+
+.menu-tabs-tab-circle-icon.dessert {
+    width: 16px;
+    height: 16px;
+    background-image: url(icons/dessert.svg);
+}
+
+.menu-tabs-tab-text p {
+    margin: 0;
+    color: #403F3D;
+    font-size: 16px;
+    line-height: 150%;
+}
+
+.menu-tabs-tab.active .menu-tabs-tab-text p{
+    color: #E1D4C9;
+}

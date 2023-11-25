@@ -53,15 +53,57 @@ nav {
 }
 
 .nav-items-list-item-link {
+    position: relative;
     font-size: 16px;
     font-style: normal;
     line-height: 150%;
     align-items: center;
 }
 
+.nav-items-list-item-link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background-color: #403F3D;
+    bottom: -5px;
+}
+
+.nav-items-list-item-link:hover::after {
+    width: 100%;
+    transition: all 0.3s;
+}
+
+.nav-items-list-item-link:hover {
+    filter: brightness(170%);
+    transition: all 0.3s;
+}
+
 .nav-menu {
+    position: relative;
     margin: 0;
 }
+
+.nav-menu::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background-color: #403F3D;
+    bottom: 2px;
+}
+
+.nav-menu:hover::after {
+    width: 100%;
+    transition: all 0.3s;
+}
+
+/*.nav-menu img:hover {
+    border-bottom: 3px solid #403F3D;
+    transition: all 0.1s;
+}*/
 
 /* Enjoy section */
 
