@@ -101,14 +101,13 @@ nav {
 }
 
 .menu-tabs-tab {
-    height: 46px;
     border: 1px solid #C1B6AD;
     border-radius: 100px;
     padding: 8px 16px 8px 8px;
     display: flex;
     gap: 8px;
     align-items: center;
-    height: 30px;
+    height: 26px;
 }
 
 .menu-tabs-tab.active{
@@ -156,4 +155,55 @@ nav {
 
 .menu-tabs-tab.active .menu-tabs-tab-text p{
     color: #E1D4C9;
+}
+
+.menu-collection {
+    display: flex;
+    gap: 37px;
+    justify-content: left;
+    flex-wrap: wrap;
+}
+
+.menu-collection-item {
+    width: 310px;
+    height: 506px;
+    border-radius: 40px;
+    border: 1px solid #C1B6AD;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.menu-collection-item-image {
+    border-radius: 40px;
+}
+
+.menu-collection-item-description {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    
+    height: 100%;
+    gap: 12px;
+}
+
+.menu-collection-item-description-title {
+    margin: 0;
+    font-size: 24px;
+    line-height: 125%;
+}
+
+.menu-collection-item-description-text {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 150%;
+    height: 72px;
+}
+
+.menu-collection-item-description-cost {
+    margin: 0;
+    font-size: 24px;
+    line-height: 125%;
 }
