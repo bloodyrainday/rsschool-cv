@@ -173,7 +173,7 @@ nav {
 .menu-tabs-tab:hover {
     cursor: pointer;
     background-color: #665F55;
-    transition: all 0.3s;
+    transition: all 0.5s;
 }
 
 .menu-tabs-tab:hover .menu-tabs-tab-circle {
@@ -219,6 +219,14 @@ nav {
     justify-content: space-between;
 }
 
+.menu-collection-item:hover {
+    cursor: pointer;
+    background-color: #B0907A;
+    color: #E1D4C9;
+    filter: brightness(80%);
+    transition: all 0.5s;
+}
+
 .menu-collection-item-image {
     border-radius: 40px;
 }
@@ -227,8 +235,6 @@ nav {
     padding: 20px;
     display: flex;
     flex-direction: column;
-    
-    height: 100%;
     gap: 12px;
 }
 
@@ -302,6 +308,16 @@ footer {
     align-items: center;
 }
 
+.footer-column-icons-icon:hover {
+    cursor: pointer;
+    background-color: #C1B6AD;
+} 
+
+.footer-column-icons-icon:hover .icon-social {
+    transition: all 0.5s;
+    background-image: url(icons/twitter-hover.svg);
+} 
+
 .icon-social {
     width: 24px;
     height: 24px;
@@ -312,8 +328,18 @@ footer {
     background-image: url(icons/instagram.svg);
 }
 
+.footer-column-icons-icon:hover .icon-social.second {
+    transition: all 0.5s;
+    background-image: url(icons/instagram-hover.svg);
+}
+
 .icon-social.third {
     background-image: url(icons/facebook.svg);
+}
+
+.footer-column-icons-icon:hover .icon-social.third {
+    transition: all 0.5s;
+    background-image: url(icons/facebook-hover.svg);
 }
 
 .footer-column-contacts-text {
@@ -329,6 +355,9 @@ footer {
     font-size: 16px;
     line-height: 150%;
     color: #E1D4C9;
+    display: flex;
+    gap: 8px;
+    align-items: center;
 }
 
 .footer-column-contacts-item {

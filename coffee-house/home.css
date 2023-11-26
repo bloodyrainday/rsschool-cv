@@ -198,6 +198,36 @@ nav {
     gap: 40px;
 }
 
+.favorite_coffee-slider-arrow {
+    display: flex;
+}
+
+.favorite_coffee-slider-arrow-left {
+    background-image: url(icons/button-icon-left.svg);
+    width: 60px;
+    height: 60px;
+}
+
+.favorite_coffee-slider-arrow-left:hover {
+    cursor: pointer;
+    transition: 0.3s;
+    rotate: -180deg;
+    background-image: url(icons/button-icon-right-hover.svg);
+}
+
+.favorite_coffee-slider-arrow-right:hover {
+    transition: 0.3s;
+    rotate: 360deg;
+    cursor: pointer;
+    background-image: url(icons/button-icon-right-hover.svg);
+}
+
+.favorite_coffee-slider-arrow-right {
+    background-image: url(icons/button-icon-right.svg);
+    width: 60px;
+    height: 60px;
+}
+
 .favorite_coffee-slider-center {
     display: flex;
     flex-direction: column;
@@ -245,8 +275,14 @@ nav {
     background-color: #C1B6AD;
 }
 
+.favorite_coffee-switch:hover {
+    cursor: pointer;
+    filter: brightness(110%);
+}
+
 .favorite_coffee-switch.active {
     background-color: #665F55;
+    cursor: default
 }
 
 /* About section */
@@ -418,6 +454,16 @@ nav {
     align-items: center;
 }
 
+.footer-column-icons-icon:hover {
+    cursor: pointer;
+    background-color: #C1B6AD;
+} 
+
+.footer-column-icons-icon:hover .icon-social {
+    transition: all 0.5s;
+    background-image: url(icons/twitter-hover.svg);
+} 
+
 .icon-social {
     width: 24px;
     height: 24px;
@@ -428,8 +474,18 @@ nav {
     background-image: url(icons/instagram.svg);
 }
 
+.footer-column-icons-icon:hover .icon-social.second {
+    transition: all 0.5s;
+    background-image: url(icons/instagram-hover.svg);
+}
+
 .icon-social.third {
     background-image: url(icons/facebook.svg);
+}
+
+.footer-column-icons-icon:hover .icon-social.third {
+    transition: all 0.5s;
+    background-image: url(icons/facebook-hover.svg);
 }
 
 .footer-column-contacts-text {
