@@ -1,6 +1,7 @@
 * {
     padding: 0;
     margin-top: 0;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -20,10 +21,6 @@ a {
 li {
     list-style: none;
     margin: 0;
-}
-
-header {
-    
 }
 
 .container {
@@ -100,11 +97,6 @@ nav {
     transition: all 0.3s;
 }
 
-/*.nav-menu img:hover {
-    border-bottom: 3px solid #403F3D;
-    transition: all 0.1s;
-}*/
-
 /* Enjoy section */
 
 .container.enjoy {
@@ -114,6 +106,7 @@ nav {
     padding: 0;
     display: flex;
     justify-content: left;
+    
 }
 
 .enjoy-block {
@@ -149,7 +142,17 @@ nav {
     color: #E1D4C9;
 }
 
+.enjoy-block-btn-link {
+    margin: 0;
+    width: 44px;
+}
+
+.enjoy-block-btn:hover {
+    cursor: pointer;
+}
+
 .enjoy-block-btn {
+    position: relative;
     width: 200px;
     padding: 20px 78px;
     font-size: 16px;
@@ -157,6 +160,21 @@ nav {
     background-color: #E1D4C9;
     border-radius: 100px;
     border: none;
+}
+
+.enjoy-block-btn::after {
+    content: "";
+    position: absolute;
+    right: 55px;
+    background-image: url(icons/coffee-cup.svg);
+    width: 0;
+    height: 0;
+}
+
+.enjoy-block-btn:hover::after {
+    width: 20px;
+    height: 20px;
+    transition: all 0.3s;
 }
 
 /* Favorite_coffee section */
@@ -304,6 +322,7 @@ nav {
 }
 
 .mobile_app-column-buttons-btn {
+    cursor: pointer;
     width: 200px;
     height: 64px;
     border-radius: 100px;
@@ -312,6 +331,22 @@ nav {
     gap: 8px;
     align-items: center;
     justify-content: left;
+}
+
+.mobile_app-column-buttons-btn:hover {
+    background-color: #665F55;
+    transition: all 0.3s;
+    color: #E1D4C9;
+}
+
+.mobile_app-column-buttons-btn:hover .icon {
+    background-image: url(icons/icon-hover.svg);
+    transition: all 0.3s;
+}
+
+.mobile_app-column-buttons-btn:hover .icon.second {
+    background-image: url(icons/icon2-hover.svg);
+    transition: all 0.3s;
 }
 
 .icon {
@@ -364,6 +399,7 @@ nav {
     margin: 0;
     font-size: 60px;
     line-height: 125%;
+    color: #E1D4C9;
 }
 
 .footer-column-icons {
@@ -396,10 +432,6 @@ nav {
     background-image: url(icons/facebook.svg);
 }
 
-.footer-column-contact {
-    
-}
-
 .footer-column-contacts-text {
     margin: 0;
     font-size: 24px;
@@ -413,6 +445,9 @@ nav {
     font-size: 16px;
     line-height: 150%;
     color: #E1D4C9;
+    display: flex;
+    gap: 8px;
+    align-items: center;
 }
 
 .footer-column-contacts-item {

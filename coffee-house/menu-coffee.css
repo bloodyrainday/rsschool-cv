@@ -1,6 +1,7 @@
 * {
     padding: 0;
     margin-top: 0;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -59,12 +60,37 @@ nav {
     align-items: center;
 }
 
+.nav-items-list-item-link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background-color: #403F3D;
+    bottom: -5px;
+}
+
+.nav-items-list-item-link:hover::after {
+    width: 100%;
+    transition: all 0.3s;
+}
+
+.nav-items-list-item-link:hover {
+    filter: brightness(170%);
+    transition: all 0.3s;
+}
+
 .nav-menu {
     margin: 0;
 }
 
+.nav-menu-link {
+    cursor: default
+}
+
 .nav-menu img{
     border-bottom: 3px solid #403F3D;
+    cursor: default
 }
 
 /* menu section */
@@ -138,6 +164,24 @@ nav {
     width: 16px;
     height: 16px;
     background-image: url(icons/tea.svg);
+}
+
+.menu-tabs-tab.active:hover {
+    cursor: default;
+}
+
+.menu-tabs-tab:hover {
+    cursor: pointer;
+    background-color: #665F55;
+    transition: all 0.3s;
+}
+
+.menu-tabs-tab:hover .menu-tabs-tab-circle {
+    background-color: #E1D4C9;
+}
+
+.menu-tabs-tab:hover .menu-tabs-tab-text p {
+    color: #E1D4C9;
 }
 
 .menu-tabs-tab-circle-icon.dessert {
@@ -239,6 +283,7 @@ footer {
     margin: 0;
     font-size: 60px;
     line-height: 125%;
+    color: #E1D4C9;
 }
 
 .footer-column-icons {
