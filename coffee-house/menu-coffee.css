@@ -23,10 +23,6 @@ li {
     margin: 0;
 }
 
-header {
-    
-}
-
 .container {
     padding: 18px 40px;
 }
@@ -262,6 +258,7 @@ nav {
 
 footer {
     margin-top: 100px;
+    margin-bottom: 40px;
 }
 
 .container.footer {
@@ -358,6 +355,11 @@ footer {
     display: flex;
     gap: 8px;
     align-items: center;
+}
+
+.footer-column-contacts-item-text:hover {
+    cursor: pointer;
+    filter: brightness(120%);
 }
 
 .footer-column-contacts-item {

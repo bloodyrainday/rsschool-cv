@@ -144,7 +144,7 @@ nav {
 
 .enjoy-block-btn-link {
     margin: 0;
-    width: 44px;
+    width: 200px;
 }
 
 .enjoy-block-btn:hover {
@@ -153,7 +153,6 @@ nav {
 
 .enjoy-block-btn {
     position: relative;
-    width: 200px;
     padding: 20px 78px;
     font-size: 16px;
     line-height: 150%;
@@ -165,7 +164,7 @@ nav {
 .enjoy-block-btn::after {
     content: "";
     position: absolute;
-    right: 55px;
+    right: 50px;
     background-image: url(icons/coffee-cup.svg);
     width: 0;
     height: 0;
@@ -410,6 +409,10 @@ nav {
 
 /* footer */
 
+footer {
+    margin-bottom: 40px;
+}
+
 .container.footer {
     background-color: #665F55;
     border-radius: 40px;
@@ -504,6 +507,11 @@ nav {
     display: flex;
     gap: 8px;
     align-items: center;
+}
+
+.footer-column-contacts-item-text:hover {
+    cursor: pointer;
+    filter: brightness(120%);
 }
 
 .footer-column-contacts-item {
