@@ -561,6 +561,16 @@ footer {
     }
 }
 
+@media screen and (max-width: 1030px) {
+
+    .footer-columns {
+        flex-direction: column;
+        gap: 100px;
+        padding: 100px 60px
+    }
+
+}
+
 @media screen and (max-width: 768px) {
 
     .nav-menu {
@@ -607,6 +617,8 @@ footer {
     }
 
     .container.enjoy {
+        background-position: 50%;
+
         
     }
 
@@ -652,12 +664,6 @@ footer {
         padding-left: 30px;
     }
 
-    .footer-columns {
-        flex-direction: column;
-        gap: 100px;
-        padding: 100px 60px
-    }
-
 }
 
 @media screen and (max-width: 725px) {
@@ -678,6 +684,10 @@ footer {
         max-width: 348px;
         max-height: 590px;
         object-fit: cover;
+    }
+
+    .about-text {
+        font-size: 32px;
     }
 
     .mobile_app-column {
@@ -761,10 +771,6 @@ footer {
     .favorite_coffee-slider-text {
         text-align: center;
         
-    }
-
-    .about-text {
-        font-size: 32px;
     }
 
     .mobile_app {

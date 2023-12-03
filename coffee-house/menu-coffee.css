@@ -254,6 +254,10 @@ nav {
     line-height: 125%;
 }
 
+.menu-button {
+    display: none;
+}
+
 /* footer section */
 
 footer {
@@ -387,4 +391,116 @@ footer {
     display: flex;
     flex-direction: column;
     gap: 16px;
+}
+
+@media screen and (max-width: 1437px) {
+
+    .menu-collection {
+        justify-content: space-evenly;
+    }
+
+    .menu-collection-item:nth-child(7) {
+        display: none;
+    }
+
+    .menu-collection-item:nth-child(8) {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1320px) {
+
+    .menu-title {
+        width: 680px;
+    }
+
+    .footer-columns {
+        flex-direction: column;
+        align-items: center;
+        gap: 100px;
+    }
+
+}
+
+@media screen and (max-width: 1095px) {
+
+    .menu-collection-item:nth-child(5) {
+        display: none;
+    }
+
+    .menu-collection-item:nth-child(6) {
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    .nav-menu {
+        display: flex;
+        justify-content: center;
+    }
+
+    .nav-menu-link {
+        display: none;
+    }
+
+    .nav-menu-burger {
+        width: 44px;
+        height: 44px;
+        border-radius: 100px;
+        border: 1px solid  #665F55;
+        position: relative;
+    }
+
+    .nav-menu-burger::before {
+        content: '';
+        position: absolute;
+        left: 14px;
+        top: 17px;
+        width: 16px;
+        border-radius: 100px;
+        height: 1.5px;
+        background-color: #403F3D;
+    }
+
+    .nav-menu-burger::after {
+        content: '';
+        position: absolute;
+        left: 14px;
+        top: 25px;
+        width: 16px;
+        border-radius: 100px;
+        height: 1.5px;
+        background-color: #403F3D;
+    }
+
+    .nav-items-list {
+        display: none;
+    }
+
+    .menu-button {
+        display: flex;
+        justify-content: center;
+    }
+
+    .menu-button span {
+        width: 60px;
+        height: 60px;
+        background-image: url(icons/button-icon-dark.svg);
+    }
+
+    .menu-collection {
+       gap: 40px;
+       margin: 0 12px;
+    }
+
+    .footer-columns {
+        padding: 100px 60px;
+        align-items: start;
+    }
+
+    .footer-column-icons-icon {
+        border: none;
+    }
+
 }
