@@ -252,6 +252,7 @@ nav {
     margin: 0;
     font-size: 16px;
     line-height: 150%;
+    font-weight: 400;
 }
 
 .favorite_coffee-slider-cost {
@@ -305,6 +306,11 @@ nav {
 .about-images {
     display: flex;
     gap: 40px;
+}
+
+.about-images-column-wrap {
+    width: 660px;
+    overflow: hidden;
 }
 
 .about-images-column {
@@ -506,7 +512,7 @@ footer {
     color: #E1D4C9;
     display: flex;
     gap: 8px;
-    align-items: center;
+    align-items: start;
 }
 
 .footer-column-contacts-item-text:hover {
@@ -600,6 +606,10 @@ footer {
         display: none;
     }
 
+    .container.enjoy {
+        
+    }
+
     .enjoy-block {
         padding-left: 60px;
     }
@@ -646,6 +656,148 @@ footer {
         flex-direction: column;
         gap: 100px;
         padding: 100px 60px
+    }
+
+}
+
+@media screen and (max-width: 725px) {
+
+    .favorite_coffee-slider-arrow {
+        display: none;
+    }
+
+    .favorite_coffee-slider {
+        justify-content: center;
+    }
+
+    .favorite_coffee-slider-description {
+        width: 348px;
+    }
+
+    .about-images-column img {
+        max-width: 348px;
+        max-height: 590px;
+        object-fit: cover;
+    }
+
+    .mobile_app-column {
+        display: flex;
+        justify-content: center;
+        width: 348px;
+    }
+
+    .mobile_app-column img {
+        height: 348px;
+        width: 348px;
+        padding: 0;
+    }
+
+    .mobile_app-column-title, .mobile_app-column-text {
+        width: 348px;
+    }
+
+    .footer-column {
+        width: 348px;
+    }
+
+    .footer-column-title {
+        width: 316px;
+        font-size: 32px; 
+    }
+}
+
+@media screen and (max-width: 520px) {
+
+    .container {
+        padding: 18px 16px;
+    }
+
+    .container.enjoy {
+        margin: 0 16px;
+    }
+
+    .enjoy-block {
+        padding: 60px 16px;
+    }
+
+    .enjoy-block-title {
+        font-size: 42px;
+    }
+
+    .favorite_coffee-slider-img {
+        width: 348px;
+        height: 348px;
+    }
+
+    .mobile_app-column-buttons {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .footer-columns {
+        padding: 60px 16px;
+    }
+
+    .footer-column {
+        width: 316px;
+    }
+
+    .container.footer {
+        margin: 0 16px;
+    }
+
+}
+
+@media screen and (max-width: 380px) {
+
+    .enjoy-block-title {
+        line-height: 115%;
+    }
+
+    .favorite_coffee-title {
+        font-size: 32px;
+    }
+
+    .favorite_coffee-slider-text {
+        text-align: center;
+        
+    }
+
+    .about-text {
+        font-size: 32px;
+    }
+
+    .mobile_app {
+        margin-bottom: 81px;
+    }
+
+    .mobile_app-column-title {
+        font-size: 32px;
+    }
+
+    .mobile_app-column-buttons {
+        gap: 17px;
+    }
+
+    .mobile_app-columns {
+        gap: 40px;
+    }
+
+    .footer-column-title {
+
+    }
+
+    .footer-columns {
+        padding-top: 62px;
+        padding-bottom: 64px;
+    }
+
+    .footer-column-icons-icon {
+        border: none
+    }
+
+    .footer-columns {
+        gap: 40px;
     }
 
 }
