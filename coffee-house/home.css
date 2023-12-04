@@ -67,16 +67,6 @@ nav {
     bottom: -5px;
 }
 
-.nav-items-list-item-link:hover::after {
-    width: 100%;
-    transition: all 0.3s;
-}
-
-.nav-items-list-item-link:hover {
-    filter: brightness(170%);
-    transition: all 0.3s;
-}
-
 .nav-menu {
     position: relative;
     margin: 0;
@@ -90,11 +80,6 @@ nav {
     height: 3px;
     background-color: #403F3D;
     bottom: 2px;
-}
-
-.nav-menu:hover::after {
-    width: 100%;
-    transition: all 0.3s;
 }
 
 /* Enjoy section */
@@ -170,12 +155,6 @@ nav {
     height: 0;
 }
 
-.enjoy-block-btn:hover::after {
-    width: 20px;
-    height: 20px;
-    transition: all 0.3s;
-}
-
 /* Favorite_coffee section */
 
 .favorite_coffee {
@@ -205,20 +184,6 @@ nav {
     background-image: url(icons/button-icon-left.svg);
     width: 60px;
     height: 60px;
-}
-
-.favorite_coffee-slider-arrow-left:hover {
-    cursor: pointer;
-    transition: 0.3s;
-    rotate: -180deg;
-    background-image: url(icons/button-icon-right-hover.svg);
-}
-
-.favorite_coffee-slider-arrow-right:hover {
-    transition: 0.3s;
-    rotate: 360deg;
-    cursor: pointer;
-    background-image: url(icons/button-icon-right-hover.svg);
 }
 
 .favorite_coffee-slider-arrow-right {
@@ -273,11 +238,6 @@ nav {
     height: 4px;
     border-radius: 100px;
     background-color: #C1B6AD;
-}
-
-.favorite_coffee-switch:hover {
-    cursor: pointer;
-    filter: brightness(110%);
 }
 
 .favorite_coffee-switch.active {
@@ -374,22 +334,6 @@ nav {
     justify-content: left;
 }
 
-.mobile_app-column-buttons-btn:hover {
-    background-color: #665F55;
-    transition: all 0.3s;
-    color: #E1D4C9;
-}
-
-.mobile_app-column-buttons-btn:hover .icon {
-    background-image: url(icons/icon-hover.svg);
-    transition: all 0.3s;
-}
-
-.mobile_app-column-buttons-btn:hover .icon.second {
-    background-image: url(icons/icon2-hover.svg);
-    transition: all 0.3s;
-}
-
 .icon {
     background-image: url(icons/icon.svg);
     width: 36px;
@@ -463,16 +407,6 @@ footer {
     align-items: center;
 }
 
-.footer-column-icons-icon:hover {
-    cursor: pointer;
-    background-color: #C1B6AD;
-} 
-
-.footer-column-icons-icon:hover .icon-social {
-    transition: all 0.5s;
-    background-image: url(icons/twitter-hover.svg);
-} 
-
 .icon-social {
     width: 24px;
     height: 24px;
@@ -483,18 +417,8 @@ footer {
     background-image: url(icons/instagram.svg);
 }
 
-.footer-column-icons-icon:hover .icon-social.second {
-    transition: all 0.5s;
-    background-image: url(icons/instagram-hover.svg);
-}
-
 .icon-social.third {
     background-image: url(icons/facebook.svg);
-}
-
-.footer-column-icons-icon:hover .icon-social.third {
-    transition: all 0.5s;
-    background-image: url(icons/facebook-hover.svg);
 }
 
 .footer-column-contacts-text {
@@ -513,11 +437,6 @@ footer {
     display: flex;
     gap: 8px;
     align-items: start;
-}
-
-.footer-column-contacts-item-text:hover {
-    cursor: pointer;
-    filter: brightness(120%);
 }
 
 .footer-column-contacts-item {
@@ -545,6 +464,91 @@ footer {
     display: flex;
     flex-direction: column;
     gap: 16px;
+}
+
+@media (hover: hover) {
+
+    .nav-items-list-item-link:hover::after {
+        width: 100%;
+        transition: all 0.3s;
+    }
+    
+    .nav-items-list-item-link:hover {
+        filter: brightness(170%);
+        transition: all 0.3s;
+    }
+
+    .nav-menu:hover::after {
+        width: 100%;
+        transition: all 0.3s;
+    }
+
+    .enjoy-block-btn:hover::after {
+        width: 20px;
+        height: 20px;
+        transition: all 0.3s;
+    }
+
+    .favorite_coffee-slider-arrow-left:hover {
+        cursor: pointer;
+        transition: 0.3s;
+        rotate: -180deg;
+        background-image: url(icons/button-icon-right-hover.svg);
+    }
+    
+    .favorite_coffee-slider-arrow-right:hover {
+        transition: 0.3s;
+        rotate: 360deg;
+        cursor: pointer;
+        background-image: url(icons/button-icon-right-hover.svg);
+    }
+
+    .favorite_coffee-switch:hover {
+        cursor: pointer;
+        filter: brightness(110%);
+    }
+
+    .mobile_app-column-buttons-btn:hover {
+        background-color: #665F55;
+        transition: all 0.3s;
+        color: #E1D4C9;
+    }
+    
+    .mobile_app-column-buttons-btn:hover .icon {
+        background-image: url(icons/icon-hover.svg);
+        transition: all 0.3s;
+    }
+    
+    .mobile_app-column-buttons-btn:hover .icon.second {
+        background-image: url(icons/icon2-hover.svg);
+        transition: all 0.3s;
+    }
+
+    .footer-column-icons-icon:hover {
+        cursor: pointer;
+        background-color: #C1B6AD;
+    } 
+    
+    .footer-column-icons-icon:hover .icon-social {
+        transition: all 0.5s;
+        background-image: url(icons/twitter-hover.svg);
+    }
+
+    .footer-column-icons-icon:hover .icon-social.second {
+        transition: all 0.5s;
+        background-image: url(icons/instagram-hover.svg);
+    }
+
+    .footer-column-icons-icon:hover .icon-social.third {
+        transition: all 0.5s;
+        background-image: url(icons/facebook-hover.svg);
+    }
+
+    .footer-column-contacts-item-text:hover {
+        cursor: pointer;
+        filter: brightness(120%);
+    }
+
 }
 
 @media screen and (max-width: 1420px) {
