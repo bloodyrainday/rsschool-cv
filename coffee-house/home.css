@@ -635,30 +635,30 @@ footer {
 
     /*BURGER MENU start*/
 
-.burger-menu.active {
-    transform: translateX(0);
-    
-}
+    .burger-menu.active {
+        transform: translateX(0);
+        
+    }
 
-.burger-menu-links-list{
-    display: flex;
-    flex-direction: column;
-    gap: 60px;
-    align-items: center;
-    margin: 0;
-}
+    .burger-menu-links-list{
+        display: flex;
+        flex-direction: column;
+        gap: 60px;
+        align-items: center;
+        margin: 0;
+    }
 
-.burger-menu-links-list-item {
-    font-size: 32px;
-    line-height: 125%;
-}
+    .burger-menu-links-list-item {
+        font-size: 32px;
+        line-height: 125%;
+    }
 
-.burger-menu-links-menu-link-img {
-    width: 138px;
-    
-}
+    .burger-menu-links-menu-link-img {
+        width: 138px;
+        
+    }
 
-/*BURGER MENU end*/
+    /*BURGER MENU end*/
 
     .nav-menu {
         display: flex;
