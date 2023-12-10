@@ -252,9 +252,14 @@ nav {
     display: flex;
     flex-direction: column;
     text-align: center;
-    align-items: center;
     width: 480px;
     gap: 20px;
+    overflow: hidden;
+}
+
+.favorite_coffee-slider-center-slide_line {
+    display: flex;
+    transition: all ease 0.5s;
 }
 
 .favorite_coffee-slider-description {
