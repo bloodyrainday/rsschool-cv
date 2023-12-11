@@ -16,6 +16,27 @@
         <header>
             <div class="container">
                 <div class="container-inner">
+
+                    <!--burger-menu start-->
+
+                    <div class="burger-menu">
+                        <div class="burger-menu-links">
+                            <ul class="burger-menu-links-list">
+                                <li class="burger-menu-links-list-item"><a href="#favorite" class="burger-menu-links-list-item-link">Favorite coffee</a></li>
+                                <li class="burger-menu-links-list-item"><a href="#about" class="burger-menu-links-list-item-link">About</a></li>
+                                <li class="burger-menu-links-list-item"><a href="#mobile_app" class="burger-menu-links-list-item-link">Mobile app</a></li>
+                                <li class="burger-menu-links-list-item"><a href="#footer" class="burger-menu-links-list-item-link">Contact us</a></li>
+                            </ul>
+                        </div>
+                        <div class="burger-menu-links-menu">
+                            <a href="menu-cofee.html" class="burger-menu-links-menu-link">
+                                <img src="icons/menu-item.svg" class="burger-menu-links-menu-link-img" alt="menu-item-icon">
+                            </a>
+                        </div>
+                    </div>
+
+                    <!--burger-menu end-->
+
                     <div class="nav-logo">
                         <a href="#" class="nav-logo-link">
                             <img src="icons/logo.svg" alt="logo" class="nav-logo-link-img">
@@ -24,7 +45,7 @@
                     <nav>
                         <ul class="nav-items-list">
                             <li class="nav-items-list-item"><a href="#favorite" class="nav-items-list-item-link">Favorite coffee</a></li>
-                            <li class="nav-items-list-item"><a href="#enjoy" class="nav-items-list-item-link">About</a></li>
+                            <li class="nav-items-list-item"><a href="#about" class="nav-items-list-item-link">About</a></li>
                             <li class="nav-items-list-item"><a href="#mobile_app" class="nav-items-list-item-link">Mobile app</a></li>
                             <li class="nav-items-list-item"><a href="#footer" class="nav-items-list-item-link">Contact us</a></li>
                         </ul>
@@ -41,6 +62,11 @@
 
         <section class="enjoy" id="enjoy">
             <div class="container enjoy">
+
+                <video autoplay loop muted plays-inline class="background-video" width="100%">
+                    <source src="video/video (2160p).mp4" type="video/mp4">
+                </video>
+
                 <div class="enjoy-block">
                     <h1 class="enjoy-block-title"><span class="enjoy-span">Enjoy</span> premium coffee at our charming cafe</h1>
                     <p class="enjoy-block-text">With its inviting atmosphere and delicious coffee options, the Coffee House Resource is a popular destination for coffee lovers and those seeking a warm and inviting space to enjoy their favorite beverage.</p>
@@ -54,34 +80,59 @@
                 <h2 class="favorite_coffee-title">Choose your <span class="enjoy-span">favorite</span> coffee</h2>
                 <div class="favorite_coffee-slider">
 
-                    <div class="favorite_coffee-slider-arrow">
+                    <div class="favorite_coffee-slider-arrow left">
                         <span class="favorite_coffee-slider-arrow-left"></span>
                     </div>
 
                     <div class="favorite_coffee-slider-center">
-                        <img class='favorite_coffee-slider-img' src="images/coffee-slider-1.png" alt="slider-img">
-                        <div class="favorite_coffee-slider-description">
-                            <h3 class="favorite_coffee-slider-title">S’mores Frappuccino</h3>
-                            <p class="favorite_coffee-slider-text">This new drink takes an espresso and mixes it with brown sugar and cinnamon before being topped with oat milk.</p>
-                            <p class="favorite_coffee-slider-cost">$5.50</p>
+
+                        <div class="favorite_coffee-slider-center-slide_line">
+
+                            <div class="favorite_coffee-slider-center-slide">
+                                <img class='favorite_coffee-slider-img' src="images/coffee-slider-1.png" alt="slider-img">
+                                <div class="favorite_coffee-slider-description">
+                                    <h3 class="favorite_coffee-slider-title">S’mores Frappuccino</h3>
+                                    <p class="favorite_coffee-slider-text">This new drink takes an espresso and mixes it with brown sugar and cinnamon before being topped with oat milk.</p>
+                                    <p class="favorite_coffee-slider-cost">$5.50</p>
+                                </div>
+                            </div>
+                        
+                            <div class="favorite_coffee-slider-center-slide">
+                                <img class='favorite_coffee-slider-img' src="images/coffee-slider-2.png" alt="slider-img">
+                                <div class="favorite_coffee-slider-description">
+                                    <h3 class="favorite_coffee-slider-title">Caramel Macchiato</h3>
+                                    <p class="favorite_coffee-slider-text">Fragrant and unique classic espresso with rich caramel-peanut syrup, with cream under whipped thick foam.</p>
+                                    <p class="favorite_coffee-slider-cost">$5.00</p>
+                                </div>
+                            </div>
+                        
+                            <div class="favorite_coffee-slider-center-slide">
+                                <img class='favorite_coffee-slider-img' src="images/coffee-slider-3.png" alt="slider-img">
+                                <div class="favorite_coffee-slider-description">
+                                    <h3 class="favorite_coffee-slider-title">Ice coffee</h3>
+                                    <p class="favorite_coffee-slider-text">A popular summer drink that tones and invigorates. Prepared from coffee, milk and ice.</p>
+                                    <p class="favorite_coffee-slider-cost">$4.50</p>
+                                </div>
+                            </div>
+
                         </div>
                         
                     </div>
 
-                    <div class="favorite_coffee-slider-arrow">
+                    <div class="favorite_coffee-slider-arrow right">
                         <span class="favorite_coffee-slider-arrow-right"></span>
                     </div>
 
                 </div>
                 <div class="favorite_coffee-switches">
-                    <div class="favorite_coffee-switch active"></div>
-                    <div class="favorite_coffee-switch"></div>
-                    <div class="favorite_coffee-switch"></div>
+                    <div class="favorite_coffee-switch first" style="--width:0"></div>
+                    <div class="favorite_coffee-switch second" style="--width:0"></div>
+                    <div class="favorite_coffee-switch third" style="--width:0"></div>
                 </div>
             </div>
         </section>
 
-        <section class="about">
+        <section class="about" id="about">
             <div class="container about">
                 <h3 class="about-text">Resource is <span class="enjoy-span">the perfect and cozy place</span> where you can enjoy a variety of hot beverages, relax, catch up with friends, or get some work done.</h3>
                 <div class="about-images">
@@ -172,5 +223,6 @@
         </footer>
 
     </div>
+    <script src="home.js"></script>
 </body>
 </html>

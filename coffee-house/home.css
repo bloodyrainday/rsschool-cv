@@ -4,6 +4,8 @@
     scroll-behavior: smooth;
 }
 
+
+
 body {
     background-color: #E1D4C9;
     color: #403F3D;
@@ -11,6 +13,10 @@ body {
     font-family: 'Inter', sans-serif;
     font-weight: 600;
     margin: 0 auto;
+}
+
+.wrapper {
+    overflow: hidden;
 }
 
 a {
@@ -23,6 +29,11 @@ li {
     margin: 0;
 }
 
+header {
+    position: relative;
+    z-index: 1;
+}
+
 .container {
     padding: 18px 40px;
 }
@@ -32,6 +43,51 @@ li {
     align-items: center;
     justify-content: space-between;
 }
+
+/*BURGER MENU start*/
+
+.burger-menu {
+    position: absolute;
+    top: 99px;
+    left: 0;
+    background-color: #E1D4C9;
+    padding: 3.75em 2.5em;
+    width: 89%;
+    height: 804px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 100px;
+    z-index: 10;
+    transform: translateX(150%);
+    transition: all 0.5s;
+}
+
+/*.burger-menu.active {
+    transform: translateX(0);
+    
+}
+
+.burger-menu-links-list{
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    align-items: center;
+    margin: 0;
+}
+
+.burger-menu-links-list-item {
+    font-size: 32px;
+    line-height: 125%;
+}
+
+.burger-menu-links-menu-link-img {
+    width: 138px;
+    
+}*/
+
+/*BURGER MENU end*/
+
 
 .nav-logo {
     margin: 0;
@@ -84,14 +140,25 @@ nav {
 
 /* Enjoy section */
 
-.container.enjoy {
-    margin: 0 40px 0 40px;
-    background: url(images/container.jpg), lightgray 50% / cover no-repeat;
+.background-video {
+    position: absolute;
     border-radius: 40px;
+    z-index: -1;
+    height: 100%;
+    width: 100%; 
+    object-fit: cover;
+}
+
+.container.enjoy {
+    position: relative;
+    margin: 0 40px 0 40px;
+    /*background: url(images/container.jpg), lightgray 50% / cover no-repeat;*/
     padding: 0;
     display: flex;
     justify-content: left;
-    
+    z-index: 0;
+    overflow: hidden;
+    border-radius: 40px;
 }
 
 .enjoy-block {
@@ -196,9 +263,14 @@ nav {
     display: flex;
     flex-direction: column;
     text-align: center;
-    align-items: center;
     width: 480px;
     gap: 20px;
+    overflow: hidden;
+}
+
+.favorite_coffee-slider-center-slide_line {
+    display: flex;
+    transition: all ease 0.5s;
 }
 
 .favorite_coffee-slider-description {
@@ -234,10 +306,23 @@ nav {
 }
 
 .favorite_coffee-switch {
+    position: relative;
     width: 40px;
     height: 4px;
     border-radius: 100px;
     background-color: #C1B6AD;
+}
+
+.favorite_coffee-switch::before {
+    content: "";
+    position: absolute;
+    display: flex;
+    max-width: 100%;
+    width: calc(var(--width, 0) * 1%);
+    min-width: 0%;
+    height: 4px;
+    border-radius: 100px;
+    background-color: #665F55;
 }
 
 .favorite_coffee-switch.active {
@@ -577,6 +662,33 @@ footer {
 
 @media screen and (max-width: 768px) {
 
+    /*BURGER MENU start*/
+
+    .burger-menu.active {
+        transform: translateX(0);
+        
+    }
+
+    .burger-menu-links-list{
+        display: flex;
+        flex-direction: column;
+        gap: 60px;
+        align-items: center;
+        margin: 0;
+    }
+
+    .burger-menu-links-list-item {
+        font-size: 32px;
+        line-height: 125%;
+    }
+
+    .burger-menu-links-menu-link-img {
+        width: 138px;
+        
+    }
+
+    /*BURGER MENU end*/
+
     .nav-menu {
         display: flex;
         justify-content: center;
@@ -603,6 +715,7 @@ footer {
         border-radius: 100px;
         height: 1.5px;
         background-color: #403F3D;
+        transition: all 0.5s;
     }
 
     .nav-menu-burger::after {
@@ -614,16 +727,21 @@ footer {
         border-radius: 100px;
         height: 1.5px;
         background-color: #403F3D;
+        transition: all 0.5s;
+    }
+
+    .nav-menu-burger.active::before {
+        top: 21px;
+        rotate: -45deg;
+    }
+
+    .nav-menu-burger.active::after {
+        rotate: 45deg;
+        top: 21px
     }
 
     .nav-items-list {
         display: none;
-    }
-
-    .container.enjoy {
-        background-position: 50%;
-
-        
     }
 
     .enjoy-block {
@@ -722,6 +840,12 @@ footer {
 
 @media screen and (max-width: 520px) {
 
+    .burger-menu {
+        padding: 3.75em 1em;
+        width: 92%;
+        height: 604px;
+    }
+
     .container {
         padding: 18px 16px;
     }
@@ -791,10 +915,6 @@ footer {
 
     .mobile_app-columns {
         gap: 40px;
-    }
-
-    .footer-column-title {
-
     }
 
     .footer-columns {
