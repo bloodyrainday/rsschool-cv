@@ -4,9 +4,13 @@ const burgerMenu = document.querySelector('.burger-menu');
 const burgerMenuCloseButton = document.querySelector('.nav-menu-burger');
 const slider = document.querySelector('.favorite_coffee-slider-center');
 const slides = document.querySelectorAll(".favorite_coffee-slider-center-slide");
-const sliderLine = document.querySelector('.favorite_coffee-slider-center-slide_line');
+const sliderLine = document.querySelector('.favorite_coffee-slider-center-slide_line'); 
+const progressBarFirst = document.getElementsByClassName('favorite_coffee-switch')[0];
+const progressBarSecond = document.getElementsByClassName('favorite_coffee-switch')[1]; 
+const progressBarThird = document.getElementsByClassName('favorite_coffee-switch')[2];  
 let count = 0;
 let width;
+
 
 /* BURGER MENU START */
 
@@ -64,12 +68,13 @@ function rollSlider() {
 
 /*slider rolls automatically*/
 
-let myInterval = setInterval(function() {
+      let myInterval = setInterval(function() {
             count++;
                 if (count >= slides.length) {
                     count = 0;
-                }
+                } 
                 rollSlider();
+                
 }, 5000)
 
 
@@ -89,9 +94,59 @@ sliderLine.addEventListener('mouseout', (event) => {
                     count = 0;
                 }
                 rollSlider();
-}, 1000)
+}, 5000)
     }
 })
+
+/* progress bar */
+
+setInterval(() => {
+    
+
+    if (count == 1) {
+        progressBarFirst.style.setProperty('--width', 0);
+        progressBarThird.style.setProperty('--width', 0);
+        const computedStyle = getComputedStyle(progressBarSecond);
+        const width = parseFloat(computedStyle.getPropertyValue('--width' || 0));
+        progressBarSecond.style.setProperty('--width', width + .1)
+    } else if ( count == 2) {
+        progressBarFirst.style.setProperty('--width', 0);
+        progressBarSecond.style.setProperty('--width', 0);
+        const computedStyle = getComputedStyle(progressBarThird);
+        const width = parseFloat(computedStyle.getPropertyValue('--width' || 0));
+        progressBarThird.style.setProperty('--width', width + .1)
+    } else if (count == 0) {
+        progressBarThird.style.setProperty('--width', 0);
+        progressBarSecond.style.setProperty('--width', 0);
+        const computedStyle = getComputedStyle(progressBarFirst);
+        const width = parseFloat(computedStyle.getPropertyValue('--width' || 0));
+        progressBarFirst.style.setProperty('--width', width + .1)
+    }
+    
+}, 5) 
+
+    /*if (count == 0) {
+
+       setInterval(() => {
+        const computedStyle = getComputedStyle(progressBarFirst);
+        const width = parseFloat(computedStyle.getPropertyValue('--width' || 0));
+        progressBarFirst.style.setProperty('--width', width + .1)
+        
+    }, 4) 
+
+    } else if (count == 1) {
+
+        setInterval(() => {
+            const computedStyle = getComputedStyle(progressBarSecond);
+            const width = parseFloat(computedStyle.getPropertyValue('--width' || 0));
+            progressBarSecond.style.setProperty('--width', width + .1)
+            
+        }, 4) 
+
+    }*/
+    
+
+
 
 /* SLIDER END */
 

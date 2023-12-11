@@ -295,10 +295,23 @@ nav {
 }
 
 .favorite_coffee-switch {
+    position: relative;
     width: 40px;
     height: 4px;
     border-radius: 100px;
     background-color: #C1B6AD;
+}
+
+.favorite_coffee-switch::before {
+    content: "";
+    position: absolute;
+    display: flex;
+    max-width: 100%;
+    width: calc(var(--width, 0) * 1%);
+    min-width: 0%;
+    height: 4px;
+    border-radius: 100px;
+    background-color: #665F55;
 }
 
 .favorite_coffee-switch.active {
