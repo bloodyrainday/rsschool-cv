@@ -19,7 +19,14 @@ burgerMenuButton.addEventListener('click', (event) => {
     burgerMenuCloseButton.classList.toggle('active');
 });
 
-    
+
+burgerMenuItems.forEach(item => {
+    item.addEventListener('click', () => {
+        burgerMenu.classList.toggle('active');
+        burgerMenuCloseButton.classList.toggle('active');
+    })
+})
+
 /*for (let i = 0; i <= burgerMenuItems.length; i++) {
     burgerMenuItems[i].addEventListener('click', () => {
         burgerMenu.classList.toggle('active');
@@ -100,51 +107,30 @@ sliderLine.addEventListener('mouseout', (event) => {
 
 /* progress bar */
 
-setInterval(() => {
-    
-
-    if (count == 1) {
-        progressBarFirst.style.setProperty('--width', 0);
-        progressBarThird.style.setProperty('--width', 0);
-        const computedStyle = getComputedStyle(progressBarSecond);
-        const width = parseFloat(computedStyle.getPropertyValue('--width' || 0));
-        progressBarSecond.style.setProperty('--width', width + .1)
-    } else if ( count == 2) {
-        progressBarFirst.style.setProperty('--width', 0);
-        progressBarSecond.style.setProperty('--width', 0);
-        const computedStyle = getComputedStyle(progressBarThird);
-        const width = parseFloat(computedStyle.getPropertyValue('--width' || 0));
-        progressBarThird.style.setProperty('--width', width + .1)
-    } else if (count == 0) {
-        progressBarThird.style.setProperty('--width', 0);
-        progressBarSecond.style.setProperty('--width', 0);
-        const computedStyle = getComputedStyle(progressBarFirst);
-        const width = parseFloat(computedStyle.getPropertyValue('--width' || 0));
-        progressBarFirst.style.setProperty('--width', width + .1)
-    }
-    
-}, 5) 
-
-    /*if (count == 0) {
-
-       setInterval(() => {
-        const computedStyle = getComputedStyle(progressBarFirst);
-        const width = parseFloat(computedStyle.getPropertyValue('--width' || 0));
-        progressBarFirst.style.setProperty('--width', width + .1)
+    setInterval(() => {
         
-    }, 4) 
 
-    } else if (count == 1) {
-
-        setInterval(() => {
+        if (count == 1) {
+            progressBarFirst.style.setProperty('--width', 0);
+            progressBarThird.style.setProperty('--width', 0);
             const computedStyle = getComputedStyle(progressBarSecond);
             const width = parseFloat(computedStyle.getPropertyValue('--width' || 0));
             progressBarSecond.style.setProperty('--width', width + .1)
-            
-        }, 4) 
-
-    }*/
-    
+        } else if ( count == 2) {
+            progressBarFirst.style.setProperty('--width', 0);
+            progressBarSecond.style.setProperty('--width', 0);
+            const computedStyle = getComputedStyle(progressBarThird);
+            const width = parseFloat(computedStyle.getPropertyValue('--width' || 0));
+            progressBarThird.style.setProperty('--width', width + .1)
+        } else if (count == 0) {
+            progressBarThird.style.setProperty('--width', 0);
+            progressBarSecond.style.setProperty('--width', 0);
+            const computedStyle = getComputedStyle(progressBarFirst);
+            const width = parseFloat(computedStyle.getPropertyValue('--width' || 0));
+            progressBarFirst.style.setProperty('--width', width + .1)
+        }
+        
+    }, 5) 
 
 
 
