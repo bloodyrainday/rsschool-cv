@@ -61,4 +61,41 @@ document.querySelector('.favorite_coffee-slider-arrow.left').addEventListener('c
 function rollSlider() {
     sliderLine.style.transform = 'translate(-' + count * width + 'px)';
 }
+
+/*slider rolls automatically*/
+
+let myInterval = setInterval(function() {
+            count++;
+                if (count >= slides.length) {
+                    count = 0;
+                }
+                rollSlider();
+}, 5000)
+
+
+sliderLine.addEventListener('mouseover', (event) => {
+    if (!(event.target = 'favorite_coffee-slider-center-slide_line')) {
+        myInterval
+    } else {
+        clearInterval(myInterval);
+    }
+})
+
+sliderLine.addEventListener('mouseout', (event) => {
+    if ((event.target = 'favorite_coffee-slider-center-slide_line')) {
+        myInterval = setInterval(function() {
+            count++;
+                if (count >= slides.length) {
+                    count = 0;
+                }
+                rollSlider();
+}, 1000)
+    }
+})
+
 /* SLIDER END */
+
+
+
+
+    
