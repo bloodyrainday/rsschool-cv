@@ -140,14 +140,25 @@ nav {
 
 /* Enjoy section */
 
-.container.enjoy {
-    margin: 0 40px 0 40px;
-    background: url(images/container.jpg), lightgray 50% / cover no-repeat;
+.background-video {
+    position: absolute;
     border-radius: 40px;
+    z-index: -1;
+    height: 100%;
+    width: 100%; 
+    object-fit: cover;
+}
+
+.container.enjoy {
+    position: relative;
+    margin: 0 40px 0 40px;
+    /*background: url(images/container.jpg), lightgray 50% / cover no-repeat;*/
     padding: 0;
     display: flex;
     justify-content: left;
-    
+    z-index: 0;
+    overflow: hidden;
+    border-radius: 40px;
 }
 
 .enjoy-block {
@@ -731,12 +742,6 @@ footer {
 
     .nav-items-list {
         display: none;
-    }
-
-    .container.enjoy {
-        background-position: 50%;
-
-        
     }
 
     .enjoy-block {
