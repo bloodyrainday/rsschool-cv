@@ -6,6 +6,7 @@ const menuTeaButton = document.querySelector('.menu-tabs-tab.tea');
 const menuCoffeeButton = document.querySelector('.menu-tabs-tab.coffee');
 const menuDessertButton = document.querySelector('.menu-tabs-tab.dessert');
 const menuLoadMoreButton = document.querySelector('.menu-button');
+const popUp = document.querySelector('.pop_up');
 
 /* burger menu */
 
@@ -109,4 +110,21 @@ menuLoadMoreButton.addEventListener('click', () => {
         item.style.transform = 'translateX(0)';
     })
     menuLoadMoreButton.style.display = 'none'
+})
+
+/* POP UPS*/
+
+document.querySelectorAll('.menu-collection-item').forEach(item => {
+    item.addEventListener('click', () => {
+        popUp.classList.toggle('hidden')
+
+        document.querySelector('.pop_up-content-image').src = 'images/coffee-1.png'
+    })
+})
+
+popUp.addEventListener('click', (event) => {
+    if (event.target.classList.contains('pop_up')) {
+        popUp.classList.toggle('hidden')
+    }
+   
 })
