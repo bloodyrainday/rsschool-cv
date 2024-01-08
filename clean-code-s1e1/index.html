@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta 
+      name="viewport" 
+      content="width=device-width, initial-scale=1.0"
+    >
+    <title>Todo App</title>
+    <link 
+      href="https://fonts.googleapis.com/css?family=Lato:300,400,700" 
+      rel="stylesheet" 
+      type="text/css"
+    >
+    <link 
+      rel="stylesheet" 
+      href="style.css" 
+      media="screen" 
+      charset="utf-8"
+    >
+  </head>
+  <body>
+    <div class="eisenhower-matrix">
+      <img class="eisenhower-matrix__img" src="./eisenhower-matrix.jpg" alt="matrix image">
+      <a class="eisenhower-matrix__more-inf" href="https://goal-life.com/page/method/matrix-eisenhower">Want more details?</a>
+    </div>
+    <div class="main-page">
+      <p id="main-page__add-item">
+        <label for="new-task">Add Item</label>
+        <div class="main-page__task-row-wrapper">
+          <input id="main-page__new-task"class="main-page__task" type="text">
+          <button>Add</button>
+        </div>
+      </p>
+      <h3>Todo</h3>
+      <ul id="main-page__incomplete-tasks">
+        <li>
+          <input type="checkbox">
+          <label class="main-page__task">Pay Bills</label>
+          <input type="text" class="main-page__task">
+          <button class="main-page__edit">Edit</button>
+          <button class="main-page__delete">
+            <img class="main-page__remove-img" src="./remove.svg" alt="remove icon">
+          </button>
+        </li>
+        <li class="main-page__edit-mode">
+          <input type="checkbox">
+          <label class="main-page__task">Go Shopping</label>
+          <input type="text" value="Go Shopping" class="main-page__task">
+          <button class="main-page__edit">Save</button>
+          <button class="main-page__delete">
+            <img class="main-page__remove-img" src="./remove.svg" alt="remove icon">
+          </button>
+        </li>
+      </ul>
+      <h3>Completed</h3>
+      <ul id="main-page__completed-tasks">
+        <li>
+          <input type="checkbox" checked>
+          <label class="main-page__task">See the Doctor</label>
+          <input type="text" class="main-page__task">
+          <button class="main-page__edit">Edit</button>
+          <button class="main-page__delete">
+            <img class="main-page__remove-img" src="./remove.svg" alt="remove icon">
+          </button>
+        </li>
+      </ul>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
