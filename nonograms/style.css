@@ -45,3 +45,34 @@
 .hidden {
   visibility: hidden;
 }
+
+/* table */
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+table {
+  width: 50%;
+  height: 50%;
+  border: 2px solid black;
+  border-collapse: collapse;
+}
+
+tr {
+  width: 50%;
+  height: 50%;
+}
+
+td {
+  border: 2px solid black;
+  height: 5rem;
+  width: 5rem;
+  font-size: 2.5rem;
+  text-align: center;
+  font-weight: bold;
+  cursor: pointer;
+}
+
