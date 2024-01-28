@@ -5,7 +5,7 @@ const startTitleElement = document.createElement('h1');
 const startButtonElement = document.createElement('button');
 
 
-startPopupElement.setAttribute('class', 'start-pop-up hidden');
+startPopupElement.setAttribute('class', 'start-pop-up');
 body.prepend(startPopupElement);
 
 startPopupContentElement.setAttribute('class', 'start-pop-up__content');
@@ -21,4 +21,5 @@ startButtonElement.textContent = 'START GAME';
 
 startButtonElement.addEventListener('click', () => {
   startPopupElement.classList.add('hidden');
+  wrapperElement.style.display = 'flex';
 })

@@ -2,6 +2,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: 'Poppins', sans-serif;
 }
 
 .start-pop-up {
@@ -38,7 +39,7 @@
   border: 10px solid white;
   color: white;
   font-size: 25px;
-  font-weight: bold;
+  font-weight: 900;
   cursor: pointer;
 }
 
@@ -49,12 +50,16 @@
 /* table */
 
 .wrapper {
-  display: flex;
+  display: block;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  z-index: 1;
+  display: none;
 }
 
 table {
+  margin-top: 2%;
   width: 50%;
   height: 50%;
   border: 2px solid black;
@@ -67,6 +72,7 @@ tr {
 }
 
 td {
+  position: relative;
   border: 2px solid black;
   height: 5rem;
   width: 5rem;
@@ -76,3 +82,39 @@ td {
   cursor: pointer;
 }
 
+.black {
+  background-color: black;
+}
+
+.cross {
+  position: absolute;
+  width: 126px;
+  height: 2px;
+  background-color: black;
+  left: -11px;
+  top: 36px;
+  transform: rotate(35deg);
+}
+
+.cross::after {
+  content: '';
+  position: absolute;
+  width: 126px;
+  height: 2px;
+  background-color: black;
+  left: 0;
+  top: 0x;
+  transform: rotate(-70deg);
+}
+
+.check-result-button {
+  height: 100px;
+  width: 250px;
+  background-color: rgb(182, 60, 60);
+  border: 10px solid #a9a9a9;
+  color: white;
+  font-size: 25px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-left: 10%;
+}
