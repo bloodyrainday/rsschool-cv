@@ -149,6 +149,6 @@ checkButtonElement.addEventListener('click', () => {
       cellsTable[45].classList.contains('black') && 
       cellsTable[46].classList.contains('black') && 
       cellsTable[47].classList.contains('black')) {
-    console.log('win')
+        endPopupElement.classList.remove('hidden');
   }
 })
