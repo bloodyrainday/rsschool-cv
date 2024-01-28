@@ -133,8 +133,6 @@ for (let i = 9; i <= 13; i++) {
     cellsTable[i].textContent = '1';
 }
 
-
-
 checkButtonElement.addEventListener('click', () => {
   if (cellsTable[16].classList.contains('black') && 
       cellsTable[17].classList.contains('black') && 
@@ -149,6 +147,19 @@ checkButtonElement.addEventListener('click', () => {
       cellsTable[45].classList.contains('black') && 
       cellsTable[46].classList.contains('black') && 
       cellsTable[47].classList.contains('black')) {
+        putCrossInCell(cellsTable[18]);
+        putCrossInCell(cellsTable[25]);
+        putCrossInCell(cellsTable[30]);
+        putCrossInCell(cellsTable[31]);
+        putCrossInCell(cellsTable[32]);
+        putCrossInCell(cellsTable[33]);
+        putCrossInCell(cellsTable[34]);
+        putCrossInCell(cellsTable[38]);
+        putCrossInCell(cellsTable[39]);
+        putCrossInCell(cellsTable[40]);
+        putCrossInCell(cellsTable[44]);
+        putCrossInCell(cellsTable[48]);
         endPopupElement.classList.remove('hidden');
   }
 })
+

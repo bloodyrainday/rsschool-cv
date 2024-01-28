@@ -88,11 +88,11 @@ td {
 
 .cross {
   position: absolute;
-  width: 126px;
-  height: 2px;
+  width: 125%;
+  height: 3%;
   background-color: black;
-  left: -11px;
-  top: 36px;
+  left: -10.9%;
+  top: 49.2%;
   transform: rotate(35deg);
 }
 
