@@ -11,7 +11,7 @@ endPopupElement.prepend(endPopupContentElement);
 
 endPopupContentElement.prepend(endTitleElement);
 endTitleElement.setAttribute('class', 'end-pop-up__title');
-endTitleElement.textContent = 'YOU WON!';
+endTitleElement.textContent = 'Great! You have solved the nonogram!';
 
 endPopupContentElement.append(endButtonElement);
 endButtonElement.setAttribute('class', 'end-pop-up__button');
