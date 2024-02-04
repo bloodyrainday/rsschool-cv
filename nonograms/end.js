@@ -17,6 +17,7 @@ endPopupContentElement.append(endButtonElement);
 endButtonElement.setAttribute('class', 'end-pop-up__button');
 endButtonElement.textContent = 'EXIT';
 
+
 endButtonElement.addEventListener('click', () => {
   endPopupElement.classList.add('hidden');
   startPopupElement.classList.remove('hidden');
