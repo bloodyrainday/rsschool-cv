@@ -2,7 +2,9 @@ const wrapperElement = document.createElement('div');
 const tableElement = document.createElement('table');
 const rowsElement  = document.createElement('tr');
 const cellsElement = document.createElement('td');
+const buttonsWrapperElement = document.createElement('div');
 const checkButtonElement = document.createElement('button');
+const resetButtonElement = document.createElement('button');
 const cloneRowsElement = rowsElement.cloneNode(5);
 const rowsCount = 7;
 const rows = '<tr></tr>';
@@ -13,7 +15,14 @@ body.prepend(wrapperElement);
 wrapperElement.prepend(tableElement);
 wrapperElement.setAttribute('class', 'wrapper');
 
-wrapperElement.append(checkButtonElement);
+wrapperElement.append(buttonsWrapperElement);
+buttonsWrapperElement.setAttribute('class', 'buttons-wrapper');
+
+buttonsWrapperElement.append(resetButtonElement);
+resetButtonElement.setAttribute('class', 'reset-game-button');
+resetButtonElement.textContent = 'reset the game';
+
+buttonsWrapperElement.append(checkButtonElement);
 checkButtonElement.setAttribute('class', 'check-result-button');
 checkButtonElement.textContent = 'check the result';
 
@@ -26,21 +35,6 @@ document.querySelectorAll('tr').forEach(item => {
 const rowsTable = document.querySelectorAll('tr');
 const cellsTable = document.querySelectorAll('td');
 
-
-/*for (let i = 0; i < rowsTable.length; i++) {
-  let cellsInRow = rowsTable[i].childNodes;
-
-  rowsTable[0].style.backgroundColor = 'black';
-
-  for (let j = 0; j < cellsInRow.length; j++) {
-    console.log(cellsInRow[0])
-
-  }
-}*/
-
-
-
-  
   cellsTable[0].style.backgroundColor = 'black';
   cellsTable[1].style.backgroundColor = 'black';
   cellsTable[7].style.backgroundColor = 'black';
@@ -99,7 +93,12 @@ const cellsTable = document.querySelectorAll('td');
 
   cellsTable.forEach((item, index) => {
     item.setAttribute('oncontextmenu', 'return false');
-    if ((index >= 16 && index <= 20) || (index >= 23 && index <= 27) || (index >= 30 && index <= 34) || (index >= 37 && index <= 41) || (index >= 44 && index <= 48)) {
+    if ((index >= 16 && index <= 20) ||
+        (index >= 23 && index <= 27) || 
+        (index >= 30 && index <= 34) || 
+        (index >= 37 && index <= 41) || 
+        (index >= 44 && index <= 48)) 
+        {
       item.addEventListener('click', () => {
         if (item.firstChild) {
           const removeElement = item.firstChild;
@@ -163,3 +162,19 @@ checkButtonElement.addEventListener('click', () => {
   }
 })
 
+resetButtonElement.addEventListener('click', () => {
+  cellsTable.forEach((item, index) => {
+    if ((index >= 16 && index <= 20) ||
+        (index >= 23 && index <= 27) || 
+        (index >= 30 && index <= 34) || 
+        (index >= 37 && index <= 41) || 
+        (index >= 44 && index <= 48)) 
+    {
+      item.classList.remove('black');
+      if (item.firstChild) {
+        const removeElement = item.firstChild;
+        removeElement.remove();
+      }
+    }
+  });
+})

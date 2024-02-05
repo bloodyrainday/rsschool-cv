@@ -50,9 +50,10 @@
 /* table */
 
 .wrapper {
-  display: block;
+  display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-around;
+  gap: 50px;
   align-items: center;
   z-index: 1;
   display: none;
@@ -106,6 +107,14 @@ td {
   transform: rotate(-72deg);
 }
 
+.buttons-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 50px;
+}
+
 .check-result-button {
   height: 100px;
   width: 250px;
@@ -115,7 +124,17 @@ td {
   font-size: 25px;
   font-weight: bold;
   cursor: pointer;
-  margin-left: 10%;
+}
+
+.reset-game-button {
+  height: 100px;
+  width: 250px;
+  background-color: rgb(75, 100, 213);
+  border: 10px solid #a9a9a9;
+  color: white;
+  font-size: 25px;
+  font-weight: bold;
+  cursor: pointer;
 }
 
 /* end pop-up */
@@ -127,7 +146,7 @@ td {
 .end-pop-up {
   position: absolute;
   width: 100%;
-  height: 100vh;
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -166,9 +185,12 @@ td {
   .wrapper {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 100px;
+    gap: 50px;
+    display: none;
+  }
+
+  .buttons-wrapper {
+    flex-direction: row;
   }
 
   .check-result-button {
@@ -201,6 +223,14 @@ td {
     top: 0;
     transform: rotate(-95deg);
   }
+
+  .check-result-button {
+    width: 150px;
+  }
+
+  .reset-game-button {
+    width: 150px;
+  }
 }
 
 @media screen and (max-width: 560px) {
@@ -231,5 +261,9 @@ td {
     left: 0px;
     top: 0;
     transform: rotate(-97deg);
+  }
+
+  .end-pop-up__content {
+    width: 450px;
   }
 }
